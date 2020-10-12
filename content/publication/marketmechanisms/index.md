@@ -2,7 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Market-based mechanisms"
-authors: [with [Quitzé Valenzuela-Stookey](http://sites.northwestern.edu/qvr919)]
+authors: ["with [Quitzé Valenzuela-Stookey](http://sites.northwestern.edu/qvr919)"]
 date: 2020-10-11T22:21:13-05:00
 doi: ""
 
