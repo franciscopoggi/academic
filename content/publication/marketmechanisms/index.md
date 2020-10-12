@@ -34,7 +34,7 @@ summary = "with [Quitzé Valenzuela-Stookey](http://sites.northwestern.edu/qvr91
 doi = ""
 
 # Is this a featured publication? (true/false)
-featured = false
+featured = true
 
 # Tags (optional).
 #   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
