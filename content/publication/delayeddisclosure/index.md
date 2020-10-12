@@ -1,28 +1,28 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "The timing of innovation"
+title: "Delayed disclosure"
 authors: []
-date: 2020-10-12T16:32:52-05:00
+date: 2020-10-12T16:35:50-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2020-10-12T16:32:52-05:00
+publishDate: 2020-10-12T16:35:50-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["0"]
 
 # Publication name and optional abbreviated publication name.
-publication: "The timing of innovation"
+publication: ""
 publication_short: ""
 
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: ""
+summary: "with [Ludvig Sinander](http://www.ludvigsinander.net)"
 
 tags: []
 categories: []
