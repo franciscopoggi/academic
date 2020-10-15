@@ -81,5 +81,5 @@ My research is focused on the dynamics of information acquisition and experiment
 {{% callout note %}}
 I will be available for interviews on the 2020–21 job market. 
 
-Please visit my [job market website](https://sites.northwestern.edu/fpz773/).
+Please visit my <a href="https://sites.northwestern.edu/fpz773/" target="_blank">job market website</a>.
 {{% /callout %}}
