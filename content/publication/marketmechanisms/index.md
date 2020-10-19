@@ -49,7 +49,7 @@ featured = true
 projects = []
 
 # Links (optional).
-url_pdf = "https://cpb-us-e1.wpmucdn.com/sites.northwestern.edu/dist/a/4968/files/2020/10/Market-Based-Mechanisms-10-4-20.pdf"
+url_pdf = "https://northwestern.box.com/s/aveeon5flwvlzd4ij4m9zasgj8978mnq"
 #url_code = "#"
 #url_dataset = "#"
 #url_project = ""
