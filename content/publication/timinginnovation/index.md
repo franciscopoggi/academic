@@ -38,7 +38,7 @@ featured: true
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: https://franciscopoggi.com/files/jmp.pdf
+url_pdf: https://www.franciscopoggi.com/files/jmp.pdf
 url_code:
 url_dataset:
 url_poster:
