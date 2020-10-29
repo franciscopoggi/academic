@@ -3,7 +3,7 @@
 
 title: "The timing of complementary innovations"
 authors: []
-date: 2020-10-12T16:32:52-05:00
+date: 2020-11-12T16:32:52-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -28,7 +28,7 @@ Socially-valuable technologies sometimes require complementary innovations. This
 
 tags: []
 categories: []
-featured: false
+featured: true
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
@@ -38,7 +38,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: https://franciscopoggi.com/files/jmp.pdf
 url_code:
 url_dataset:
 url_poster:
