@@ -22,7 +22,7 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "**Job Market Paper**. Draft coming soon.<br/>
+summary: "**Job Market Paper**.<br/>
 <br/>
 Socially-valuable technologies sometimes require complementary innovations. This paper studies the development of innovations that exhibit such complementarity. At each point in time, a unit of attention is allocated across different innovation projects. The projects are completed stochastically in the form of breakthroughs. The social value of the technology depends on the set of completed projects by the time the agent decides to stop the development stage. In some cases it is optimal to develop the innovations in sequence. In others, it is optimal to develop multiple innovations simultaneously. I provide conditions that determine the efficient timing of development: sequential development is efficient when costs are high and there is more uncertainty about the innovations' rate of success. I compare the efficient allocation to the equilibrium outcome with a decentralized industry in which many firms compete for the development of the innovations."
 
