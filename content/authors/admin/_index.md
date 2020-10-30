@@ -21,10 +21,10 @@ organizations:
 bio: Microeconomic theorist from Argentina currently finishing a PhD at Northwestern University. Prior to that, I completed a BA and MA at [Universidad de San Andrés](https://www.udesa.edu.ar/departamento-de-economia).
  
 interests:
-- Applied Economic Theory
-- Information Economics
-- Innovation 
+- Microeconomic Theory
 - Law and Economics
+- Information Economics
+- Innovation
 
 education:
   courses:
@@ -74,9 +74,9 @@ user_groups:
 - Visitors
 ---
 
-I'm an applied microeconomic theorist currently finishing my PhD at Northwestern University. 
+I am a microeconomic theorist currently finishing my PhD at Northwestern University. 
 
-My research is focused on the dynamics of information acquisition and experimentation. More broadly, I'm interested in innovation and the design of law and organizations.
+In my research, I use advance methods to answer questions of policy and practical relevance. My research is focused on the dynamics of information acquisition and experimentation. More broadly, I'm interested in innovation and the design of laws and organizations.
 
 {{% callout note %}}
 I will be available for interviews on the 2020–21 job market. 
