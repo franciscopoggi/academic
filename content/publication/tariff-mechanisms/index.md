@@ -37,7 +37,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: https://www.franciscopoggi.com/files/tariffs.pdf
 url_code:
 url_dataset:
 url_poster:
