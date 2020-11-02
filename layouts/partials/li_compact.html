@@ -35,9 +35,9 @@
 
     <h3 class="article-title mb-0 mt-0">
         {{ if site.Params.publications.links_title }} <!-- Create a link on the publication title -->
-          <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>.
+          <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
         {{ else }}
-          {{ $item.Title }}.
+          {{ $item.Title }}
         {{ end }}  
     </h3>
 
