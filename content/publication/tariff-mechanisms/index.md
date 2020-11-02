@@ -22,9 +22,7 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "with [Bruno Strulovici](https://faculty.wcas.northwestern.edu/~bhs675/)<br/>
-<br/>"
-
+summary: "with [Bruno Strulovici](https://faculty.wcas.northwestern.edu/~bhs675/)"
 tags: []
 categories: []
 featured: false
