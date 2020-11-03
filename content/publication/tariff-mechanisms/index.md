@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Tariff Mechanisms"
+title: "Tariff mechanisms"
 authors: []
 date: 2020-11-02T14:58:39-06:00
 doi: ""
