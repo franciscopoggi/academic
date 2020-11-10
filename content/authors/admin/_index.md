@@ -76,7 +76,7 @@ user_groups:
 
 I am a microeconomic theorist currently finishing my PhD at Northwestern University. 
 
-In my research, I use advance methods to answer questions of policy and practical relevance. My research is focused on the dynamics of information acquisition and experimentation. More broadly, I'm interested in innovation and the design of laws and organizations.
+My research focuses on the dynamics of information acquisition and experimentation. The questions I find more exciting are mostly related to research and development, innovation, law, and organizations.
 
 {{% callout note %}}
 I will be available for interviews on the 2020–21 job market. 
