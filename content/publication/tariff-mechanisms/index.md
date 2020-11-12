@@ -3,7 +3,7 @@
 
 title: "A Taxation Principle for Offenses"
 authors: []
-date: 2020-11-02T14:58:39-06:00
+date: 2020-11-12 T14:58:39-06:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -28,7 +28,7 @@ In some legal settings it is not possible to contract with an agent ex ante. For
 "
 tags: []
 categories: []
-featured: false
+featured: true
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
