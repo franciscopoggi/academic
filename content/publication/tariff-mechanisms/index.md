@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Tariff mechanisms"
+title: "A Taxation Principle for Offenses"
 authors: []
 date: 2020-11-02T14:58:39-06:00
 doi: ""
@@ -35,7 +35,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: https://www.franciscopoggi.com/files/tariffs.pdf
+url_pdf: https://www.franciscopoggi.com/files/taxation.pdf
 url_code:
 url_dataset:
 url_poster:
