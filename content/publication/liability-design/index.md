@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Liability design with information acquisition"
+title: "Liability Design with Information Acquisition"
 authors: []
 date: 2020-11-02T15:06:45-06:00
 doi: ""

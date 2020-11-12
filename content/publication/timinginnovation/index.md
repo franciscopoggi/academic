@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "The timing of complementary innovations"
+title: "The Timing of Complementary Innovations"
 authors: []
 date: 2020-11-12T16:32:52-05:00
 doi: ""
