@@ -22,7 +22,10 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "with [Bruno Strulovici](https://faculty.wcas.northwestern.edu/~bhs675/)"
+summary: "with [Bruno Strulovici](https://faculty.wcas.northwestern.edu/~bhs675/)<br/>
+<br/>
+In some legal settings it is not possible to contract with an agent ex ante. For example, a criminal process only start after the crime was committed and only if the agent is apprehended. We study a quasilinear single-agent setting with private information and private actions in which the intervention of the designer is only triggered by certain outcomes. We introduce a property of social choice functions, *identifiability*, and show that implementable social choice functions satisfying this property can be implemented with a *tariff*, that is transfers that depend only on the realized outcome.
+"
 tags: []
 categories: []
 featured: false
