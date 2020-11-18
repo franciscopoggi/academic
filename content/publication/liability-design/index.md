@@ -35,7 +35,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: https://www.franciscopoggi.com/files/liability.pdf
+# url_pdf: https://www.franciscopoggi.com/files/liability.pdf
 url_code:
 url_dataset:
 url_poster:
