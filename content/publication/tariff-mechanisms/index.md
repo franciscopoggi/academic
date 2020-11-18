@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "A Taxation Principle for Offenses"
+title: "A Taxation Principle with Non-Contractible Events"
 authors: []
 date: 2020-11-12 T14:58:39-06:00
 doi: ""
