@@ -22,7 +22,9 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "with [Bruno Strulovici](https://faculty.wcas.northwestern.edu/~bhs675/)"
+summary: "with [Bruno Strulovici](https://faculty.wcas.northwestern.edu/~bhs675/)<br/>
+<br/>
+    A firm acquires evidence about the riskiness of a product before launching it to the market. We characterize the optimal liability rule when the firm has private information, the regulator can penalize the firm only when damage occurs, and the liability is capped and can depend on the likelihood ratio of the evidence collected by the firm."
 tags: []
 categories: []
 featured: false
