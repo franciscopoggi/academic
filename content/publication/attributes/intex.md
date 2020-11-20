@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Delayed Disclosure"
+title: "Attributes"
 authors: []
 date: 2020-1-12T16:35:50-05:00
 doi: ""
@@ -22,10 +22,7 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "with [Ludvig Sinander](http://www.ludvigsinander.net)</br>
-</br>
-A principal owns a project, and recruits an agent to learn about its viability. The agent’s participation over time is observable and costly. Learning is private, allowing the agent to delay the (verifiable) disclosure of any discoveries. The principal incentivises the agent by promising a (history-dependent and possibly random) share of any revenue generated. What is the optimal contract?"
-
+summary: "with [Wojciech Olszewski](https://sites.northwestern.edu/wol737/)
 tags: []
 categories: []
 featured: false
