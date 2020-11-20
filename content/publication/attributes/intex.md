@@ -22,7 +22,7 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "with [Wojciech Olszewski](https://sites.northwestern.edu/wol737/)
+summary: "with [Wojciech Olszewski](https://sites.northwestern.edu/wol737/)"
 tags: []
 categories: []
 featured: false
