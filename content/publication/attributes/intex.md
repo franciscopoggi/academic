@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Attributes"
+# title: "Attributes"
 authors: []
 date: 2020-1-10T16:35:50-05:00
 doi: ""
@@ -22,7 +22,7 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "with [Wojciech Olszewski](https://sites.northwestern.edu/wol737/)"
+# summary: "with [Wojciech Olszewski](https://sites.northwestern.edu/wol737/)"
 tags: []
 categories: []
 featured: false
