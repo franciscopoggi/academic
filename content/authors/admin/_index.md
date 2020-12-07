@@ -74,7 +74,7 @@ user_groups:
 - Visitors
 ---
 
-I am a microeconomic theorist currently finishing my PhD at Northwestern University. 
+I am a microeconomic theorist currently finishing my Ph.D. at Northwestern University. 
 
 My research focuses on the dynamics of information acquisition and experimentation. The questions I find most exciting are related to research and development, innovation, law, and organizations.
 
