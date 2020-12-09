@@ -3,11 +3,11 @@
 
 title: "Liability Design with Information Acquisition"
 authors: []
-date: 2020-11-02T15:06:45-06:00
+date: 2020-12-02T15:06:45-06:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2020-11-02T15:06:45-06:00
+publishDate: 2020-12-02T15:06:45-06:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -27,7 +27,7 @@ summary: "with [Bruno Strulovici](https://faculty.wcas.northwestern.edu/~bhs675/
     How to guarantee that firms perform due diligence before launching potentially dangerous products? We study the design of liability rules when (i) limited liability prevents firms from internalizing the full damage they may cause, (ii) penalties are paid only if damage occurs, regardless of the product's inherent riskiness, (iii) firms have private information about their products' riskiness before performing due diligence. We show that (i) any liability mechanism can be implemented by a *tariff* that depends only on the evidence acquired by the firm if a damage occurs, not on any initial report by the firm about its private information, (ii) firms that assign a higher prior to product riskiness always perform more due diligence but less than is socially optimal, and (iii) under a simple and intuitive condition, any type-specific launch thresholds can be implemented by a monotonic tariff."
 tags: []
 categories: []
-featured: false
+featured: true
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
@@ -37,7 +37,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-# url_pdf: https://www.franciscopoggi.com/files/liability.pdf
+url_pdf: https://www.franciscopoggi.com/files/liability.pdf
 url_code:
 url_dataset:
 url_poster:
