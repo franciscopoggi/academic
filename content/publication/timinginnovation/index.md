@@ -3,11 +3,11 @@
 
 title: "The Timing of Complementary Innovations"
 authors: []
-date: 2021-02-15T16:32:52-05:00
+date: 2021-12-15T16:32:52-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-02-15T16:32:52-05:00
+publishDate: 2020-01-15T16:32:52-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
