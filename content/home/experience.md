@@ -1,30 +1,46 @@
-+++
-# Experience widget.
-widget = "experience"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
-weight = 95  # Order that this section will appear.
+---
+# An instance of the Experience widget.
+# Documentation: https://sourcethemes.com/academic/docs/page-builder/
+widget: experience
 
-title = "Teaching Experience"
-subtitle = ""
+# Activate this widget? true/false
+active: true
 
-# Date format for experience
+# This file represents a page section.
+headless: true
+
+# Order that this section appears on the page.
+weight: 95
+
+title: Teaching Experience
+subtitle:
+
+# Date format
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
-date_format = "Jan 2006"
+date_format: Jan 2006
 
 # Experiences.
-#   Add/remove as many `[[experience]]` blocks below as you like.
+#   Add/remove as many `experience` blocks below as you like.
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
-#   Begin/end multi-line descriptions with 3 quotes `"""`.
-
-[[experience]]
-  title = "Teaching Assistant: Econ 410-1"
-  company = "See Teacher Evaluations"
-  company_url = "https://www.franciscopoggi.com/files/ctec.pdf"
-  location = ""
-  date_start = "2019-09-01"
-  date_end = "2019-12-15"
-  description = """"""
-
-+++
+#   You can begin a multiline `description` using YAML's `|-`.
+experience:
+- company: See Teacher Evaluations
+  company_url: "https://www.franciscopoggi.com/files/ctec.pdf"
+  date_end: "2019-12-15"
+  date_start: "2019-09-01"
+  description: |-
+    Responsibilities include:
+    * Analysing
+    * Modelling
+    * Deploying
+  location: 
+  title: Teaching Assistant
+- company: See Teacher Evaluations
+  company_url: "https://www.franciscopoggi.com/files/ctec.pdf"
+  date_end: "2020-12-15"
+  date_start: "2020-09-01"
+  description: Analytical Approach to Uncertainty
+  location: Coral Gables, FL
+  title: Teaching Assistant
+---
