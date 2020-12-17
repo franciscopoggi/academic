@@ -27,13 +27,13 @@ date_format = "Jan 2006"
   date_end = "2019-12-15"
   description = """"""
 
-[[experience]]
+<!-- [[experience]]
   title = "Teaching Assistant: EMBA"
   company = "See Teacher Evaluations"
   company_url = "https://www.franciscopoggi.com/files/ctecemba1.pdf"
   location = "Analytical Approach to Uncertainty"
   date_start = ""
   date_end = ""
-  description = """"""
+  description = """""" -->
 
 +++
