@@ -45,5 +45,5 @@ experience:
   date_start: "2020-09-01"
   description: 
   location: Evanston, IL
-  title: EMBA - Statistical Analysis
+  title: EMBA - Statistical Decision Analysis
 ---
