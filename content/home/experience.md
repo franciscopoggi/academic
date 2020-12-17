@@ -25,22 +25,25 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   You can begin a multiline `description` using YAML's `|-`.
 experience:
-- company: See Teacher Evaluations
+- company: See Evaluations
   company_url: "https://www.franciscopoggi.com/files/ctec.pdf"
   date_end: "2019-12-15"
   date_start: "2019-09-01"
-  description: |-
-    Responsibilities include:
-    * Analysing
-    * Modelling
-    * Deploying
+  description:
   location: 
-  title: Teaching Assistant
-- company: See Teacher Evaluations
-  company_url: "https://www.franciscopoggi.com/files/ctec.pdf"
+  title: PhD Micro - Econ 410-1
+- company: See Evaluations
+  company_url: "https://www.franciscopoggi.com/files/ctecemba1.pdf"
   date_end: "2020-12-15"
   date_start: "2020-09-01"
-  description: Analytical Approach to Uncertainty
+  description: 
   location: Coral Gables, FL
-  title: Teaching Assistant
+  title: EMBA - Analytical Approach to Uncertainty
+- company: See Evaluations
+  company_url: "https://www.franciscopoggi.com/files/ctecemba2.pdf"
+  date_end: "2020-12-15"
+  date_start: "2020-09-01"
+  description: 
+  location: Evanston, IL
+  title: EMBA - Statistical Analysis
 ---
