@@ -30,7 +30,7 @@ experience:
   date_end: "2019-12-15"
   date_start: "2019-09-01"
   description:
-  location: 
+  location: Evanston, IL
   title: PhD Micro - Econ 410-1
 - company: See Evaluations
   company_url: "https://www.franciscopoggi.com/files/ctecemba1.pdf"
