@@ -78,6 +78,6 @@ I am a microeconomic theorist currently finishing my Ph.D. at Northwestern Unive
 
 My research focuses on the dynamics of information acquisition and experimentation. The questions I find most exciting are related to research and development, innovation, law, and organizations.
 
-{{% callout note %}}
+<!-- {{% callout note %}}
 At some point in the summer, I will join <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">the University of Mannheim</a> as an Assistant Professor.
-{{% /callout %}}
+{{% /callout %}} -->
