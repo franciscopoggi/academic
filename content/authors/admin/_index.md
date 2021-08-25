@@ -73,7 +73,12 @@ user_groups:
 - Visitors
 ---
 
-I am a microeconomic theorist currently finishing my Ph.D. at Northwestern University.
+I am a microeconomic theorist from Argentina trained at UdeSA and Northwestern University.
+
+News:
+
+(New version!) Market-Based Mechanisms (with Quitzé Valenzuela-Stookey)
+(Coming soon!) Rewarding Scientific Discoveries
 
 <!-- My research focuses on the dynamics of information acquisition and experimentation. --> <!-- The questions I find most exciting are related to research and development, innovation, law, and organizations. -->
 
