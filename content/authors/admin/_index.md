@@ -77,7 +77,7 @@ I am a microeconomic theorist from Argentina trained at UdeSA and Northwestern U
 
 News:
 
-(<font size="6"
+(<font size="4"
           color="red">
           New version!
         </font>) <b>Market-Based Mechanisms</b> (with Quitzé Valenzuela-Stookey)
