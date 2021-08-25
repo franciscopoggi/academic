@@ -77,6 +77,8 @@ I am a microeconomic theorist from Argentina trained at UdeSA and Northwestern U
 
 News:
 
+
+{{% callout note %}}
 <font size="5"
           color="red">
           New version:
@@ -86,6 +88,8 @@ News:
           color="red">
           Draft coming soon:
         </font> Rewarding Scientific Discoveries
+        
+{{% /callout %}}
 
 <!-- My research focuses on the dynamics of information acquisition and experimentation. --> <!-- The questions I find most exciting are related to research and development, innovation, law, and organizations. -->
 
