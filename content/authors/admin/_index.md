@@ -81,7 +81,7 @@ News:
 {{% callout note %}}
 <font size="5"
           color="red">
-          New version:
+          New version:   
         </font>  <b>Market-Based Mechanisms</b> (with Quitzé Valenzuela-Stookey)
 
 <font size="5"
