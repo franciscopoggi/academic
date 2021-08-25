@@ -73,9 +73,12 @@ user_groups:
 - Visitors
 ---
 
-I am a microeconomic theorist from Argentina trained at UdeSA and Northwestern University.
+I am a microeconomic theorist from Argentina, trained at UdeSA and Northwestern University.
 
-News:
+
+
+
+<b>News:</b>
 
 
 {{% callout note %}}
