@@ -79,10 +79,13 @@ News:
 
 <font size="5"
           color="red">
-          New version!
-        </font> <b>Market-Based Mechanisms</b> (with Quitzé Valenzuela-Stookey)
+          New version:
+        </font>  <b>Market-Based Mechanisms</b> (with Quitzé Valenzuela-Stookey)
 
-(Coming soon!) Rewarding Scientific Discoveries
+<font size="5"
+          color="red">
+          Draft coming soon:
+        </font> Rewarding Scientific Discoveries
 
 <!-- My research focuses on the dynamics of information acquisition and experimentation. --> <!-- The questions I find most exciting are related to research and development, innovation, law, and organizations. -->
 
