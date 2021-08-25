@@ -79,20 +79,14 @@ News:
 
 
 {{% callout note %}}
-<font size="5"
+<font size="4"
           color="red">
-          New version:   
+          New version: 
         </font>  <b>Market-Based Mechanisms</b> (with Quitzé Valenzuela-Stookey)
-
-<font size="5"
-          color="red">
-          Draft coming soon:
-        </font> <b> Rewarding Scientific Discoveries </b>
-
 {{% /callout %}}
 
 {{% callout note %}}
-<font size="5"
+<font size="4"
           color="red">
           Draft coming soon:
         </font> <b> Rewarding Scientific Discoveries </b>
