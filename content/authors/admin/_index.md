@@ -77,8 +77,7 @@ I am a microeconomic theorist from Argentina trained at UdeSA and Northwestern U
 
 News:
 
-(New version!) Market-Based Mechanisms (with Quitzé Valenzuela-Stookey)
-
+(New version!) <b>Market-Based Mechanisms</b> (with Quitzé Valenzuela-Stookey)
 
 (Coming soon!) Rewarding Scientific Discoveries
 
