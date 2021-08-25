@@ -87,8 +87,8 @@ News:
 <font size="5"
           color="red">
           Draft coming soon:
-        </font> Rewarding Scientific Discoveries
-        
+        </font> <b> Rewarding Scientific Discoveries </b>
+
 {{% /callout %}}
 
 <!-- My research focuses on the dynamics of information acquisition and experimentation. --> <!-- The questions I find most exciting are related to research and development, innovation, law, and organizations. -->
