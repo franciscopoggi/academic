@@ -94,11 +94,15 @@ I am a microeconomic theorist from Argentina, trained at UdeSA and Northwestern 
 
 
 {{% callout note %}}
+<details>
+<summary>
 <font size="4"
           color="red">
           Draft coming soon:
         </font> <b> Rewarding Scientific Discoveries </b>
+</summary>
 
+</details>
 {{% /callout %}}
 <!-- My research focuses on the dynamics of information acquisition and experimentation. --> <!-- The questions I find most exciting are related to research and development, innovation, law, and organizations. -->
 
