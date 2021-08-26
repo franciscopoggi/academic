@@ -87,7 +87,7 @@ I am a microeconomic theorist from Argentina, trained at UdeSA and Northwestern 
           color="red">
           New version: 
         </font>  <b>Market-Based Mechanisms</b> (with Quitzé Valenzuela-Stookey)
-</summary>
+</summary></br>
 [PDF](https://franciscopoggi.com/files/mbm.pdf)
 </details>        
 {{% /callout %}}
