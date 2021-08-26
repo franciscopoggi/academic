@@ -79,17 +79,14 @@ I am a microeconomic theorist from Argentina, trained at UdeSA and Northwestern 
 
 
 <b>News:</b>
-<details>
-  <summary>
+
 {{% callout note %}}
 <font size="4"
           color="red">
           New version: 
         </font>  <b>Market-Based Mechanisms</b> (with Quitzé Valenzuela-Stookey)
 {{% /callout %}}
-</summary>
-something
-</details>
+
 
 {{% callout note %}}
 <font size="4"
