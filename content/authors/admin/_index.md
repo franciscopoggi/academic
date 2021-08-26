@@ -44,7 +44,7 @@ bio: Microeconomic theorist from Argentina. Prior to that, I completed a BA and 
 social:
 - icon: envelope
   icon_pack: fas
-  link: mailto:franciscopoggi@gmail.com  # For a direct email link, use "mailto:fpoggi@u.northwestern.edu".
+  link: mailto:poggi@uni-mannheim.de  # For a direct email link, use "mailto:fpoggi@u.northwestern.edu".
 # - icon: twitter
 #   icon_pack: fab
 #   link: https://twitter.com/franciscopoggi
@@ -87,8 +87,8 @@ I am a microeconomic theorist from Argentina, trained at UdeSA and Northwestern 
           color="red">
           New version: 
         </font>  <b>Market-Based Mechanisms</b> (with Quitzé Valenzuela-Stookey)
-</summary></br>
-[PDF](https://franciscopoggi.com/files/mbm.pdf)
+</summary>
+pdf [here](https://franciscopoggi.com/files/mbm.pdf)
 </details>        
 {{% /callout %}}
 
