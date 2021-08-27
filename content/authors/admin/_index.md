@@ -73,9 +73,7 @@ user_groups:
 - Visitors
 ---
 
-I am a microeconomic theorist working as an Assistant Professor (W1) at the University of Mannheim - Department of Economics. 
-<!-- I have broad interests but my research focuses mostly on studying incentives for information acquisition to Law and Economics, Research and Development.  -->
-I was trained at UdeSA and Northwestern University.
+I am a microeconomic theorist working as an Assistant Professor (W1) at the University of Mannheim - Department of Economics. I was trained at UdeSA and Northwestern University.
 
 
 
