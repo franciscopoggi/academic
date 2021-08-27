@@ -18,7 +18,7 @@ organizations:
   url: "https://www.uni-mannheim.de/en/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Microeconomic theorist from Argentina. Prior to that, I completed a BA and MA at [Universidad de San Andrés](https://www.udesa.edu.ar/departamento-de-economia) and received my Ph.D. from Northwestern University.
+ bio: #Microeconomic theorist from Argentina. Prior to that, I completed a BA and MA at [Universidad de San Andrés](https://www.udesa.edu.ar/departamento-de-economia) and received my Ph.D. from Northwestern University.
  
 # interests:
 # - Microeconomic Theory
@@ -73,7 +73,9 @@ user_groups:
 - Visitors
 ---
 
-I am a microeconomic theorist from Argentina, trained at UdeSA and Northwestern University.
+I am a microeconomic theorist working as an Assistant Professor (W1) at the University of Mannheim - Department of Economics. 
+<!-- I have broad interests but my research focuses mostly on studying incentives for information acquisition to Law and Economics, Research and Development.  -->
+I was trained at UdeSA and Northwestern University.
 
 
 
