@@ -18,7 +18,7 @@ organizations:
   url: "https://www.uni-mannheim.de/en/"
 
 # Short bio (displayed in user profile at end of posts)
- bio:  
+bio: bio.
 
 #Microeconomic theorist from Argentina. Prior to that, I completed a BA and MA at [Universidad de San Andrés](https://www.udesa.edu.ar/departamento-de-economia) and received my Ph.D. from Northwestern University.
  
