@@ -28,7 +28,12 @@ menu:
 
 ## Tort Law
 
+## Property Law
+
+### Intellectual Property
+
 ## Contract Law
 
-## 
+## Economics of Crime
+
 
