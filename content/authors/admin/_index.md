@@ -18,7 +18,9 @@ organizations:
   url: "https://www.uni-mannheim.de/en/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Microeconomic theorist from Argentina. Prior to that, I completed a BA and MA at [Universidad de San Andrés](https://www.udesa.edu.ar/departamento-de-economia) and received my Ph.D. from Northwestern University.
+bio: bio.
+
+#Microeconomic theorist from Argentina. Prior to that, I completed a BA and MA at [Universidad de San Andrés](https://www.udesa.edu.ar/departamento-de-economia) and received my Ph.D. from Northwestern University.
  
 # interests:
 # - Microeconomic Theory
@@ -44,7 +46,7 @@ bio: Microeconomic theorist from Argentina. Prior to that, I completed a BA and 
 social:
 - icon: envelope
   icon_pack: fas
-  link: mailto:franciscopoggi@gmail.com  # For a direct email link, use "mailto:fpoggi@u.northwestern.edu".
+  link: mailto:poggi@uni-mannheim.de  # For a direct email link, use "mailto:fpoggi@u.northwestern.edu".
 # - icon: twitter
 #   icon_pack: fab
 #   link: https://twitter.com/franciscopoggi
@@ -73,7 +75,7 @@ user_groups:
 - Visitors
 ---
 
-I am a microeconomic theorist from Argentina, trained at UdeSA and Northwestern University.
+I am a microeconomic theorist working as an Assistant Professor (W1) at the [University of Mannheim - Department of Economics](https://www.vwl.uni-mannheim.de/en/). I was trained at UdeSA and Northwestern University.
 
 
 
@@ -81,19 +83,28 @@ I am a microeconomic theorist from Argentina, trained at UdeSA and Northwestern 
 <b>News:</b>
 
 {{% callout note %}}
+<details>
+<summary>
 <font size="4"
           color="red">
           New version: 
         </font>  <b>Market-Based Mechanisms</b> (with Quitzé Valenzuela-Stookey)
+</summary>
+<a href="https://www.franciscopoggi.com/files/mbm.pdf" target="_blank">PDF here</a>
+</details>        
 {{% /callout %}}
 
 
 {{% callout note %}}
+<details>
+<summary>
 <font size="4"
           color="red">
           Draft coming soon:
         </font> <b> Rewarding Scientific Discoveries </b>
+</summary>
 
+</details>
 {{% /callout %}}
 <!-- My research focuses on the dynamics of information acquisition and experimentation. --> <!-- The questions I find most exciting are related to research and development, innovation, law, and organizations. -->
 
