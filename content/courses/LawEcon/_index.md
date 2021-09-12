@@ -23,8 +23,8 @@ menu:
 
 ## Introduction
 
-[Slides 1](/files/01_introduction.pdf)
-
+[Slides 1: Introduction](/files/01_introduction.pdf)
+[Slides 2: Review of Economic Concepts](/files/01_introduction.pdf)
 
 ## Tort Law
 
