@@ -14,4 +14,6 @@ menu:
 weight: 1
 ---
 
+> **First Set of Questions**: Deadline Sept 20.
+
 > **Midterm Exam Date**: Nov 3 (during class time).
