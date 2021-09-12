@@ -14,4 +14,4 @@ menu:
 weight: 1
 ---
 
-> Midterm Exam Date: Nov 3.
+> **Midterm Exam Date**: Nov 3.
