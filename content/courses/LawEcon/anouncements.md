@@ -14,10 +14,4 @@ menu:
 weight: 1
 ---
 
-<summary>
-<font size="4"
-          color="red">
-          Midterm Exam Date: Nov 3. 
-        </font>  <b></b> 
-</summary>
-</details>      
+> Midterm Exam Date: Nov 3.
