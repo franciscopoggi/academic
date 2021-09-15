@@ -29,7 +29,7 @@ menu:
 
 ## Tort Law
 
-[Slides 3: Unilateral Care (incomplete)](/files/03_unilateral.pdf)
+[Slides 3: Unilateral Care (updated version)](/files/03_unilateral.pdf)
 
 ## Property Law
 
