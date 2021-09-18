@@ -20,4 +20,4 @@ weight: 1
 - Feel free to use any source of information that you want, but I recommend that you first spend some time thinking about the question on your own. 
 - Try to convey your answer in a concise and clear way.
 
-[Set 1](/files/questions_1.pdf) (Deadline September 20)
+[Set 1](/files/LawEcon/questions_1.pdf) (Deadline September 20)
