@@ -14,6 +14,8 @@ menu:
 weight: 1
 ---
 
+> **First Problem Set**: Deadline Sept 27. [Link](https://www.franciscopoggi.com/courses/lawecon/problems/)
+
 > **First Set of Questions**: Deadline Sept 20. [Link](https://www.franciscopoggi.com/courses/lawecon/questions/)
 
 > **Midterm Exam Date**: Nov 3 (during class time).
