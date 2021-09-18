@@ -17,7 +17,7 @@ weight: 1
 **Instructions**: 
 
 - Please answer all questions in a clear and concise way.
-- Pay attention to your hand-writting.
+- Pay attention to your handwritting.
 - Questions and comments via email are welcomed (clarifying questions, typos, etc.).
 
 [Problem Set 1](/files/LawEcon/PS1.pdf) (Deadline September 27)
