@@ -29,7 +29,8 @@ menu:
 
 ## Tort Law
 
-[Slides 3: Unilateral Care (updated version)](/files/03_unilateral.pdf)
+[Slides 3: Unilateral Care (updated again)](/files/03_unilateral.pdf)
+[Slides 4: Bilateral Care](/files/04_bilateral.pdf)
 
 ## Property Law
 
