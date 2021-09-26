@@ -33,7 +33,7 @@ menu:
 
 [Slides 4: Bilateral Care (updated)](/files/04_bilateral.pdf)
 
-[Slides 5: Product Liability]
+[Slides 5: Product Liability](/files/05_product.pdf)
 
 ## Property Law
 
