@@ -31,9 +31,9 @@ menu:
 
 [Slides 3: Unilateral Care](/files/03_unilateral.pdf)
 
-[Slides 4: Bilateral Care (updated)](/files/04_bilateral.pdf)
+[Slides 4: Bilateral Care](/files/04_bilateral.pdf)
 
-[Slides 5: Products Liability](/files/05_products.pdf)
+[Slides 5: Products Liability (updated)](/files/05_products.pdf)
 
 ## Property Law
 
