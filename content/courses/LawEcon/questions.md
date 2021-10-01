@@ -18,6 +18,8 @@ weight: 1
 
 - For these questions there are no right or wrong answers. There are, however, better and worse arguments you can make. 
 - Feel free to use any source of information that you want, but I recommend that you first spend some time thinking about the question on your own. 
-- Try to convey your answer in a concise and clear way.
+- Try to convey your answer in a **concise** and **clear** way.
 
-[Set 1](/files/LawEcon/questions_1.pdf) (Deadline September 20)
+[Set 1](/files/LawEcon/questions_1.pdf) (Due: September 20)
+
+[Set 2](/files/LawEcon/questions_2.pdf) (Due: October 12)
