@@ -37,7 +37,7 @@ menu:
 
 ## Contract Law
 
-[Slides 6: Contract Law I]
+[Slides 6: Contract Law I (incomplete)]
 
 ## Property Law
 
