@@ -35,11 +35,13 @@ menu:
 
 [Slides 5: Products Liability (updated)](/files/05_products.pdf)
 
+## Contract Law
+
+[Slides 6: Contract Law I]
+
 ## Property Law
 
 <!-- ### Intellectual Property -->
-
-## Contract Law
 
 ## Economics of Crime
 
