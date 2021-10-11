@@ -33,11 +33,13 @@ menu:
 
 [Slides 4: Bilateral Care](/files/04_bilateral.pdf)
 
-[Slides 5: Products Liability (updated)](/files/05_products.pdf)
+[Slides 5: Products Liability](/files/05_products.pdf)
 
 ## Contract Law
 
-[Slides 6: Contract Law I (incomplete)](/files/06_contract.pdf)
+[Slides 6: Contract Law I (updated)](/files/06_contract.pdf)
+
+[Slides 7: Contract Law II](/files/07_contract_2.pdf)
 
 ## Property Law
 
