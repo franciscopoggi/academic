@@ -37,9 +37,9 @@ menu:
 
 ## Contract Law
 
-[Slides 6: Contract Law I (updated)](/files/06_contract.pdf)
+[Slides 6: Contract Law I](/files/06_contract.pdf)
 
-[Slides 7: Contract Law II](/files/07_contract_2.pdf)
+[Slides 7: Contract Law II (updated)](/files/07_contract_2.pdf)
 
 ## Property Law
 
