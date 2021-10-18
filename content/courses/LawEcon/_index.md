@@ -43,6 +43,8 @@ menu:
 
 ## Property Law
 
+[Slides 8: Property Law](/files/08_property.pdf)
+
 <!-- ### Intellectual Property -->
 
 ## Economics of Crime
