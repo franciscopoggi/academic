@@ -47,8 +47,6 @@ menu:
 
 [Slides 9: Intellectual Property Law](/files/09_intellectual_property.pdf)
 
-<!-- ### Intellectual Property -->
-
 ## Economics of Crime
 
 
