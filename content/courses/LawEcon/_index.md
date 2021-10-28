@@ -39,13 +39,13 @@ menu:
 
 [Slides 6: Contract Law I](/files/06_contract.pdf)
 
-[Slides 7: Contract Law II (updated)](/files/07_contract_2.pdf)
+[Slides 7: Contract Law II](/files/07_contract_2.pdf)
 
 ## Property Law
 
 [Slides 8: Property Law](/files/08_property.pdf)
 
-[Slides 9: Intellectual Property Law](/files/09_intellectual_property.pdf)
+[Slides 9: Intellectual Property Law (updated)](/files/09_intellectual_property.pdf)
 
 ## Economics of Crime
 
