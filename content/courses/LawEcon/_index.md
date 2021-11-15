@@ -49,4 +49,4 @@ menu:
 
 ## Economics of Crime
 
-
+[Slides 10: Economics of Crime](/files/10_crime.pdf)
