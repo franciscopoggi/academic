@@ -45,8 +45,8 @@ menu:
 
 [Slides 8: Property Law](/files/08_property.pdf)
 
-[Slides 9: Intellectual Property Law (updated)](/files/09_intellectual_property.pdf)
+[Slides 9: Intellectual Property Law](/files/09_intellectual_property.pdf)
 
 ## Economics of Crime
 
-
+[Slides 10: The Economics of Crime](/files/10_crime.pdf)
