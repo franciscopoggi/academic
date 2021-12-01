@@ -23,3 +23,5 @@ weight: 1
 - Questions and comments via email are welcomed (clarifying questions, typos, etc.).
 
 [Problem Set 1](/files/LawEcon/PS1.pdf) (Deadline September 27)
+
+[Problem Set 2](/files/LawEcon/PS2_v1.pdf) (Deadline December 10)

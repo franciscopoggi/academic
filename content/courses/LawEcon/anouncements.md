@@ -13,6 +13,8 @@ menu:
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 1
 ---
+> **Second Problem Set**: Deadline Dec 10. [Link](https://www.franciscopoggi.com/courses/lawecon/problems/)
+
 > **Second Set of Questions**: Deadline Oct 12. [Link](https://www.franciscopoggi.com/courses/lawecon/questions/)
 
 > **Lecture Cancelled**: Nov 8.

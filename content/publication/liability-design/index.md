@@ -25,7 +25,7 @@ abstract: ""
 summary: "with [Bruno Strulovici](https://faculty.wcas.northwestern.edu/~bhs675/)<br/>
 <br/>
 <details>
-  <summary>Abstract. [PDF](https://arxiv.org/pdf/2012.05066.pdf)</summary>
+  <summary>Abstract. [PDF](https://franciscopoggi.com/files/liability.pdf)</summary>
     How to guarantee that firms perform due diligence before launching potentially dangerous products? We study the design of liability rules when (i) limited liability prevents firms from internalizing the full damage they may cause, (ii) penalties are paid only if damage occurs, regardless of the product's inherent riskiness, (iii) firms have private information about their products' riskiness before performing due diligence. We show that (i) any liability mechanism can be implemented by a *tariff* that depends only on the evidence acquired by the firm if a damage occurs, not on any initial report by the firm about its private information, (ii) firms that assign a higher prior to product riskiness always perform more due diligence but less than is socially optimal, and (iii) under a simple and intuitive condition, any type-specific launch thresholds can be implemented by a monotonic tariff.
 </details>"
 tags: []
