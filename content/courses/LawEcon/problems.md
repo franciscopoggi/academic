@@ -24,4 +24,4 @@ weight: 1
 
 [Problem Set 1](/files/LawEcon/PS1.pdf) (Deadline September 27)
 
-[Problem Set 2](/files/LawEcon/PS2_v1.pdf) (Deadline December 10)
+[Problem Set 2](/files/LawEcon/PS2_v2.pdf) NEW VERSION! (Deadline December 10)
