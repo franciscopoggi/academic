@@ -25,8 +25,8 @@ abstract: ""
 summary: "
 <br/>
 <details>
-  <summary>Abstract. [PDF](https://www.franciscopoggi.com/files/jmp.pdf)</summary>
-  Socially-valuable technologies sometimes require complementary innovations. This paper studies the development of innovations that exhibit such complementarity. At each point in time, a unit of attention is allocated across different innovation projects. The projects are completed stochastically in the form of breakthroughs. The social value of the technology depends on the set of completed projects by the time the agent decides to stop the development stage. In some cases it is optimal to develop the innovations in sequence. In others, it is optimal to develop multiple innovations simultaneously. I provide conditions that determine the efficient timing of development: sequential development is efficient when costs are high and there is more uncertainty about the innovations' rate of success. I compare the efficient allocation to the equilibrium outcome with a decentralized industry in which many firms compete for the development of the innovations.
+  <summary>Abstract. [PDF](https://www.franciscopoggi.com/files/timing-innovations.pdf)</summary>
+    This paper studies the dynamic completion of complementary tasks or projects. At each point in time, resources are allocated to projects that are completed as breakthroughs. I solve the problem of efficient dynamic allocation of resources by showing that, for complements, the solution must satisfy a regret-free property. I apply these results to study the problem of innovation when there is uncertainty about the difficulty of innovations. In some cases, the solution involves completing the projects in sequence. In others, it is optimal to work on multiple projects simultaneously. I provide simple conditions that determine the efficient timing of development of innovations and analyze when is it possible to implement this efficient timing with decentralized incentives.
 </details>"
 
 tags: []
@@ -41,7 +41,7 @@ featured: true
 #   icon_pack: fab
 #   icon: twitter
 
-# url_pdf: https://www.franciscopoggi.com/files/jmp.pdf
+# url_pdf: https://www.franciscopoggi.com/files/timing-innovations.pdf
 url_code:
 url_dataset:
 url_poster:
