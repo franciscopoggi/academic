@@ -1,5 +1,5 @@
 ---
-title: Announcements
+title: mAnnouncements
 linktitle: Announcements
 toc: true
 type: docs
@@ -14,4 +14,4 @@ menu:
 weight: 1
 ---
 
- **Final Exam Date**: June 16.
+**Final Exam Date**: June 16.
