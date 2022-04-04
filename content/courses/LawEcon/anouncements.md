@@ -1,5 +1,5 @@
 ---
-title: Announcements
+title: mAnnouncements
 linktitle: Announcements
 toc: true
 type: docs
