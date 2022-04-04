@@ -17,7 +17,7 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu:
   example:
-    name: AMIII
+    name: Advanced Micro III
     weight: 1
 ---
 
