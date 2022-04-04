@@ -6,8 +6,8 @@ weight: 1
 
 # Page metadata.
 title: Advanced Microeoconomics III
-date: "2022-03-09T00:00:00Z"
-lastmod: "2022-03-09T00:00:00Z"
+date: "2018-09-09T00:00:00Z"
+lastmod: "2018-09-09T00:00:00Z"
 draft: false  # Is this a draft? true/false
 toc: false  # Show table of contents? true/false
 type: docs  # Do not modify.
