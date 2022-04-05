@@ -27,9 +27,7 @@ Final Exam: June 13.
 
 ## Class Material
 
-### Akerlof's Market for Lemons
-
-[Slides](../../files/microiii/Akerlof.pdf)
+### [Akerlof's Market for Lemons](../../files/microiii/Akerlof.pdf)
 
 ### Spence's Signaling Game
 
