@@ -27,4 +27,4 @@ menu:
 
 ## Akerlof's Market for Lemons
 
-Slides TBA soon.
+[Slides](../../files/microiii/Akerlof.pdf)
