@@ -20,17 +20,17 @@ menu:
     name: Advanced Micro III
     weight: 1
 ---
+# Announcements
 
-[Annoucements](./announcements)
+Final Exam: June 13.
 
-[Problem Sets](./problemsets)
 
-## Akerlof's Market for Lemons
+# Class Material
+
+### Akerlof's Market for Lemons
 
 [Slides](../../files/microiii/Akerlof.pdf)
 
-## Spence's Signaling Game
+### Spence's Signaling Game
 
-## Rothschild & Stiglitz Equilibrium in Competitive Insurance Markets
-
-##
+### Rothschild & Stiglitz Equilibrium in Competitive Insurance Markets
