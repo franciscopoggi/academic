@@ -27,8 +27,8 @@ Final Exam: June 13.
 
 ## Class Material
 
-### [Akerlof's Market for Lemons](../../files/microiii/Akerlof.pdf)
+#### [Akerlof's Market for Lemons](../../files/microiii/Akerlof.pdf)
 
-### Spence's Signaling Game
+#### Spence's Signaling Game
 
-### Rothschild & Stiglitz Equilibrium in Competitive Insurance Markets
+#### Rothschild & Stiglitz Equilibrium in Competitive Insurance Markets
