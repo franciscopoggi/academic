@@ -21,6 +21,8 @@ menu:
     weight: 1
 ---
 
+[Annoucements](./announcements)
+
 ## Akerlof's Market for Lemons
 
 Slides TBA soon.
