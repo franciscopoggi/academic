@@ -22,6 +22,7 @@ menu:
 ---
 
 [Annoucements](./announcements)
+[Problem Sets](./problemsets)
 
 ## Akerlof's Market for Lemons
 
