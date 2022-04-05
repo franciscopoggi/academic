@@ -20,12 +20,12 @@ menu:
     name: Advanced Micro III
     weight: 1
 ---
-# Announcements
+## Announcements
 
 Final Exam: June 13.
 
 
-# Class Material
+## Class Material
 
 ### Akerlof's Market for Lemons
 
