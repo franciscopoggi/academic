@@ -28,3 +28,9 @@ menu:
 ## Akerlof's Market for Lemons
 
 [Slides](../../files/microiii/Akerlof.pdf)
+
+## Spence's Signaling Game
+
+## Rothschild & Stiglitz Equilibrium in Competitive Insurance Markets
+
+##
