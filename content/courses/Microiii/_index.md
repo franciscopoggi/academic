@@ -39,7 +39,7 @@ menu:
 <ul>
 <li>The assignments are <b>individual</b>. However, you can discuss and collaborate in groups of at most three students.</li>
 <li> Each student must submit an answer key, indicating the collaboration group members.</li>
-<li> Please answer all questions in a <b>clear<b> and <b>concise</b> way.</li>
+<li> Please answer all questions in a <b>clear</b> and <b>concise</b> way.</li>
 <li> Typed and handwritten submissions are accepted.</li>
 <li> If it applies, pay attention to your handwriting.</li>
 <li> The preferred format is pdf via email. Physical submissions also accepted.</li>
