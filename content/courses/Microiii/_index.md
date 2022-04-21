@@ -37,14 +37,15 @@ Final Exam: June 13.
 ## Problem Sets
 
 ### Instructions
-
-- You can discuss and collaborate in groups of at most three students, however the assignment is individual.
-- Each student must submit an answer key, indicating group members.
+<details><summary></summary>
+- The assignment is individual. However, you can discuss and collaborate in groups of at most three students.
+- Each student must submit an answer key, indicating the collaboration group members.
 - Please answer all questions in a clear and concise way.
 - Typed and handwritten submissions are accepted.
 - If it applies, pay attention to your handwriting.
 - The preferred format is pdf via email. Physical submissions also accepted.
 - Questions and comments via email are welcomed (clarifying questions, typos, etc.).
+</details>
 
 #### [Problem Set 1](../../files/microiii/ProblemSet_1.pdf). Due date April 28.
 #### Problem Set 2. Due date May 5.
