@@ -32,3 +32,23 @@ Final Exam: June 13.
 #### 2. Spence's Signaling Game
 
 #### 3. Rothschild & Stiglitz Equilibrium in Competitive Insurance Markets
+
+
+## Problem Sets
+
+### Instructions
+
+- You can discuss and collaborate in groups of at most three students, however the assignment is individual.
+- Each student must submit an answer key, indicating group members.
+- Please answer all questions in a clear and concise way.
+- Typed and handwritten submissions are accepted.
+- If it applies, pay attention to your handwriting.
+- Preferred format is pdf via email. Physical submissions also accepted.
+- Questions and comments via email are welcomed (clarifying questions, typos, etc.).
+
+### [Problem Set 1](../../files/microiii/ProblemSet_1.pdf). Due date April 28.
+### Problem Set 2. Due date May 5.
+### Problem Set 3. Due date May 12.
+### Problem Set 4. Due date May 19.
+### Problem Set 5. Due date May 26.
+### Problem Set 6. Due date June 26.
