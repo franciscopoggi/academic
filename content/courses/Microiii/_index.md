@@ -33,7 +33,13 @@ menu:
 
 #### 3. [Competitive Screening](../../files/microiii/Screening.pdf).
 
+#### 4. Moral Hazard.
 
+#### 5. Bayesian Implementation/Envelope Theorem
+
+#### 6. Revenue Maximizing Auctions
+
+#### 7. Efficient Mechanisms
 
 ## Problem Sets
 <details><summary>Instructions</summary>
