@@ -23,36 +23,36 @@ menu:
 
 ## Introduction
 
-[Slides 1: Introduction](/files/01_introduction.pdf)
+Slides 1: Introduction
 
-[Slides 2: Review of Economic Concepts](/files/02_review.pdf)
+Slides 2: Review of Economic Concepts
 
 ## Tort Law
 
-[Slides 3: Unilateral Care](/files/03_unilateral.pdf)
+Slides 3: Unilateral Care
 
-[Slides 4: Bilateral Care](/files/04_bilateral.pdf)
+Slides 4: Bilateral Care
 
-[Slides 5: Products Liability](/files/05_products.pdf)
+Slides 5: Products Liability
 
 ## Contract Law
 
-[Slides 6: Contract Law I](/files/06_contract.pdf)
+Slides 6: Contract Law I
 
-[Slides 7: Contract Law II](/files/07_contract_2.pdf)
+Slides 7: Contract Law II
 
 ## Property Law
 
-[Slides 8: Property Law](/files/08_property.pdf)
+Slides 8: Property Law]
 
-[Slides 9: Intellectual Property Law](/files/09_intellectual_property.pdf)
+Slides 9: Intellectual Property Law]
 
 ## Economics of Crime
 
-[Slides 10: The Economics of Crime](/files/10_crime.pdf)
+Slides 10: The Economics of Crime
 
 ## Economics of Litigation
 
-[Slides 11: The Economics of Litigation](/files/11_litigation.pdf)
+Slides 11: The Economics of Litigation
 
-[Slides 12: The Economics of Litigation II](/files/12_litigation_2.pdf)
+Slides 12: The Economics of Litigation II
