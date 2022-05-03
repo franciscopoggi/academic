@@ -29,7 +29,7 @@ menu:
 
 #### 1. [Akerlof's Market for Lemons](../../files/microiii/Akerlof.pdf)
 
-#### 2. [Spence's Signaling Game](../../files/microiii/Spence.pdf).
+#### 2. [Spence's Signaling Game](../../files/microiii/Spence.pdf). (Errors fixed)
 
 #### 3. [Competitive Screening](../../files/microiii/Screening.pdf).
 
