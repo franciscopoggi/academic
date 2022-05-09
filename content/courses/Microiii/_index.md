@@ -33,7 +33,7 @@ menu:
 
 #### 3. [Competitive Screening](../../files/microiii/Screening.pdf).
 
-#### 4. Moral Hazard.
+#### 4. [Moral Hazard](../../files/microiii/MoralHazard.pdf).
 
 #### 5. Bayesian Implementation/Envelope Theorem
 
