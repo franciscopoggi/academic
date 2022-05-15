@@ -35,7 +35,7 @@ menu:
 
 #### 4. [Moral Hazard](../../files/microiii/MoralHazard.pdf). (Updated)
 
-#### 5. Bayesian Implementation/Envelope Theorem
+#### 5. [Envelope Theorem](../../files/microiii/Envelope.pdf).
 
 #### 6. Revenue Maximizing Auctions
 
