@@ -31,11 +31,11 @@ menu:
 
 #### 2. [Spence's Signaling Game](../../files/microiii/Spence.pdf).
 
-#### 3. [Competitive Screening](../../files/microiii/Screening.pdf). (Updated)
+#### 3. [Competitive Screening](../../files/microiii/Screening.pdf).
 
-#### 4. [Moral Hazard](../../files/microiii/MoralHazard.pdf). (Updated)
+#### 4. [Moral Hazard](../../files/microiii/MoralHazard.pdf).
 
-#### 5. [Envelope Theorem](../../files/microiii/Envelope.pdf).
+#### 5. [Envelope Theorem](../../files/microiii/Envelope.pdf).  (Updated)
 
 #### 6. Revenue Maximizing Auctions
 
