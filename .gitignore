@@ -4,3 +4,6 @@
 # Hugo
 /resources/
 public/
+.DS_Store
+static/.DS_Store
+static/files/.DS_Store
