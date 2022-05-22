@@ -37,7 +37,7 @@ menu:
 
 #### 5. [Envelope Theorem](../../files/microiii/Envelope.pdf).  (Updated)
 
-#### 6. Revenue Maximizing Auctions
+#### 6. [Revenue Maximizing Auctions](../../files/microiii/MechDesign.pdf)
 
 #### 7. Efficient Mechanisms
 
