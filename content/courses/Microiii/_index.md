@@ -22,7 +22,7 @@ menu:
 ---
 ## Announcements
 
-**Final Exam**: June 13.
+**Final Exam**: June 13. Closed book.
 
 
 ## Class Material
@@ -37,7 +37,7 @@ menu:
 
 #### 5. [Envelope Theorem](../../files/microiii/Envelope.pdf).  (Updated)
 
-#### 6. [Revenue Maximizing Auctions](../../files/microiii/MechDesign.pdf)
+#### 6. [Revenue Maximizing Auctions](../../files/microiii/MechDesign.pdf). (Updated May 24)
 
 #### 7. Efficient Mechanisms
 
