@@ -39,7 +39,7 @@ menu:
 
 #### 6. [Revenue Maximizing Auctions](../../files/microiii/MechDesign.pdf). (Updated May 24)
 
-#### 7. Efficient Mechanisms
+#### 7. [Efficient Mechanisms](../../files/microiii/MechDesign-2.pdf)
 
 ## Problem Sets
 <details><summary>Instructions</summary>
