@@ -39,7 +39,7 @@ menu:
 
 #### 6. [Revenue Maximizing Auctions](../../files/microiii/MechDesign.pdf). (Updated May 24)
 
-#### 7. [Efficient Mechanisms](../../files/microiii/MechDesign-2.pdf)
+#### 7. [Efficient Mechanisms](../../files/microiii/MechDesign-2.pdf) (I fixed some typos and updated proof that we covered in class on June 6)
 
 ## Problem Sets
 <details><summary>Instructions</summary>
@@ -58,5 +58,5 @@ menu:
 #### [Problem Set 2](../../files/microiii/ProblemSet_2.pdf). Due date May 5.
 #### [Problem Set 3](../../files/microiii/ProblemSet_3.pdf). Due date May 12.
 #### [Problem Set 4](../../files/microiii/ProblemSet_4.pdf). Due date May 19.
-#### [Problem Set 5](../../files/microiii/ProblemSet_5.pdf). Due date May 26. (I fixed some typos on May 21)
+#### [Problem Set 5](../../files/microiii/ProblemSet_5.pdf). Due date May 26.
 #### [Problem Set 6](../../files/microiii/ProblemSet_6.pdf). Due date June 4.
