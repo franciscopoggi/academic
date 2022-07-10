@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Disclosure in Patent Races"
+title: "Disclosing Technological Breakthroughs in Innovationo Races"
 authors: []
 date: 2020-12-08T15:06:45-06:00
 doi: ""
