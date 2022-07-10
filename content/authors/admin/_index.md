@@ -95,7 +95,7 @@ I am a microeconomic theorist working as an Assistant Professor (W1) at the [Uni
 {{% /callout %}} -->
 
 
-{{% callout note %}}
+<!-- {{% callout note %}}
 <details>
 <summary>
 <font size="4"
@@ -105,7 +105,7 @@ I am a microeconomic theorist working as an Assistant Professor (W1) at the [Uni
 </summary>
 This paper develops a normative theory of scientific compensation. A sequence of short-lived agents decide how to approach a process of scientific discovery. Agents can engage in applied research, that might produce something of intrinsic value, or basic research, that produces information about the world. Basic research is valuable because  guides the posterior allocation of resources in the applied research process. Considering a principal that provides incentives through monetary payments, I give conditions under which the agents can be induced to approach discovery efficiently, and in a way that is robust to agents' beliefs and lifespan. Moreover, I show that, in order to provide these incentives, positive findings (those who indicate that a certain research direction is promising) should be rewarded more handsomely than negative findings (that show that a certain research direction is futile).
 </details>
-{{% /callout %}}
+{{% /callout %}} -->
 <!-- My research focuses on the dynamics of information acquisition and experimentation. --> <!-- The questions I find most exciting are related to research and development, innovation, law, and organizations. -->
 
 <!-- {{% callout note %}}
