@@ -1,37 +1,32 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "The Timing of Complementary Innovations"
+title: "Disclosure Races"
 authors: []
-date: 2021-12-15T16:32:52-05:00
+date: 2022-07-11T00:09:29+02:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2020-01-15T16:32:52-05:00
+publishDate: 2022-07-11T00:09:29+02:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["0"]
 
 # Publication name and optional abbreviated publication name.
-publication: "The timing of complementary innovations"
+publication: ""
 publication_short: ""
 
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "
-<br/>
-<details>
-  <summary>Abstract. [PDF](https://www.franciscopoggi.com/files/timing-innovations.pdf)</summary>
-    This paper studies the dynamic completion of complementary tasks or projects. At each point in time, resources are allocated to projects that are completed as breakthroughs. I solve the problem of efficient dynamic allocation of resources by showing that, for complements, the solution must satisfy a regret-free property. I apply these results to study the problem of innovation when there is uncertainty about the difficulty of innovations. In some cases, the solution involves completing the projects in sequence. In others, it is optimal to work on multiple projects simultaneously. I provide simple conditions that determine the efficient timing of project completion.
-</details>"
+summary: ""
 
 tags: []
 categories: []
-featured: true
+featured: false
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
@@ -41,7 +36,7 @@ featured: true
 #   icon_pack: fab
 #   icon: twitter
 
-# url_pdf: https://www.franciscopoggi.com/files/timing-innovations.pdf
+url_pdf:
 url_code:
 url_dataset:
 url_poster:

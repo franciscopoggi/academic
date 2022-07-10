@@ -66,7 +66,7 @@ social:
 #  link: https://github.com/
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "franciscopoggi@gmail.com"
+email: "poggi@uni-mannheim.de"
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
@@ -75,14 +75,14 @@ user_groups:
 - Visitors
 ---
 
-I am a microeconomic theorist working as an Assistant Professor (W1) at the [University of Mannheim - Department of Economics](https://www.vwl.uni-mannheim.de/en/). I was trained at UdeSA and Northwestern University.
+I am a microeconomic theorist working as an Assistant Professor (W1) at the [University of Mannheim - Department of Economics](https://www.vwl.uni-mannheim.de/en/).
 
 
 
 
 <b>News:</b>
 
-{{% callout note %}}
+<!-- {{% callout note %}}
 <details>
 <summary>
 <font size="4"
@@ -92,7 +92,7 @@ I am a microeconomic theorist working as an Assistant Professor (W1) at the [Uni
 </summary>
 <a href="https://www.franciscopoggi.com/files/mbm.pdf" target="_blank">PDF here</a>
 </details>        
-{{% /callout %}}
+{{% /callout %}} -->
 
 
 {{% callout note %}}
