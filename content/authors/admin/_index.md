@@ -76,12 +76,9 @@ user_groups:
 ---
 
 I am a microeconomic theorist working as an Assistant Professor (W1) at the [University of Mannheim - Department of Economics](https://www.vwl.uni-mannheim.de/en/).
-
-
-
-
+<!-- 
 <b>News:</b>
-
+ -->
 <!-- {{% callout note %}}
 <details>
 <summary>
@@ -93,8 +90,6 @@ I am a microeconomic theorist working as an Assistant Professor (W1) at the [Uni
 <a href="https://www.franciscopoggi.com/files/mbm.pdf" target="_blank">PDF here</a>
 </details>        
 {{% /callout %}} -->
-
-
 <!-- {{% callout note %}}
 <details>
 <summary>
@@ -107,7 +102,6 @@ This paper develops a normative theory of scientific compensation. A sequence of
 </details>
 {{% /callout %}} -->
 <!-- My research focuses on the dynamics of information acquisition and experimentation. --> <!-- The questions I find most exciting are related to research and development, innovation, law, and organizations. -->
-
 <!-- {{% callout note %}}
 At some point in the summer, I will join <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">the University of Mannheim</a> as an Assistant Professor.
 {{% /callout %}} -->
