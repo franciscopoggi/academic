@@ -23,7 +23,7 @@ abstract: ""
 
 # Summary. An optional shortened abstract.
 summary: "with [Yonggyun (YG) Kim](https://sites.google.com/view/yonggyun-yg-kim/)<br/>
-<br/>
+<br/>"
 tags: []
 categories: []
 featured: false
