@@ -24,10 +24,6 @@ abstract: ""
 # Summary. An optional shortened abstract.
 summary: "with [Yonggyun (YG) Kim](https://sites.google.com/view/yonggyun-yg-kim/)<br/>
 <br/>
-<details>
-  <summary>Abstract.</summary>
-  TBA
-</details>"
 tags: []
 categories: []
 featured: false
