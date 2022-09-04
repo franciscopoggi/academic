@@ -23,7 +23,7 @@ menu:
 
 ## Introduction
 
-Slides 1: [Introduction](/files/LawEcon/01_introdution.pdf)
+[Slides 1: Introduction](/files/LawEcon/01_introduction.pdf)
 
 Slides 2: Review of Economic Concepts
 
