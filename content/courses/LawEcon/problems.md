@@ -22,6 +22,6 @@ weight: 1
 - Preferred format is pdf via email. Physical submissions also accepted.
 - Questions and comments via email are welcomed (clarifying questions, typos, etc.).
 
-[Problem Set 1](/files/LawEcon/PS1.pdf) (Deadline September 27)
+<!-- [Problem Set 1](/files/LawEcon/PS1.pdf) (Deadline September 27)
 
-[Problem Set 2](/files/LawEcon/PS2_v2.pdf) NEW VERSION! (Deadline December 10)
+[Problem Set 2](/files/LawEcon/PS2_v2.pdf) NEW VERSION! (Deadline December 10) -->

@@ -13,7 +13,8 @@ menu:
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 1
 ---
-> **Second Problem Set**: Deadline Dec 10. [Link](https://www.franciscopoggi.com/courses/lawecon/problems/)
+
+<!-- > **Second Problem Set**: Deadline Dec 10. [Link](https://www.franciscopoggi.com/courses/lawecon/problems/)
 
 > **Second Set of Questions**: Deadline Oct 12. [Link](https://www.franciscopoggi.com/courses/lawecon/questions/)
 
@@ -25,4 +26,4 @@ weight: 1
 
 > **Midterm Exam Date**: Nov 3 (during class time).
 
-> **Final Exam Solutions**: [Link](https://www.franciscopoggi.com/files/LawEcon/final_solutions.pdf).
+> **Final Exam Solutions**: [Link](https://www.franciscopoggi.com/files/LawEcon/final_solutions.pdf). -->
