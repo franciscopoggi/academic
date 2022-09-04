@@ -1,7 +1,7 @@
 ---
 # Course title, summary, and position.
 linktitle: Law and Economics
-summary: Fall 2021
+summary: Fall 2022
 weight: 1
 
 # Page metadata.
@@ -23,7 +23,7 @@ menu:
 
 ## Introduction
 
-Slides 1: Introduction
+Slides 1: [Introduction](/files/LawEcon/01_introdution.pdf)
 
 Slides 2: Review of Economic Concepts
 
@@ -43,9 +43,9 @@ Slides 7: Contract Law II
 
 ## Property Law
 
-Slides 8: Property Law]
+Slides 8: Property Law
 
-Slides 9: Intellectual Property Law]
+Slides 9: Intellectual Property Law
 
 ## Economics of Crime
 
