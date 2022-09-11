@@ -25,11 +25,11 @@ menu:
 
 [Slides 1: Introduction](/files/LawEcon/01_introduction.pdf)
 
-Slides 2: Review of Economic Concepts
+[Slides 2: Review of Economic Concepts](/files/LawEcon/02_review.pdf)
 
 ## Tort Law
 
-Slides 3: Unilateral Care
+[Slides 3: Unilateral Care](/files/LawEcon/03_unilateral.pdf)
 
 Slides 4: Bilateral Care
 
