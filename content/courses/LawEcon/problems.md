@@ -19,7 +19,7 @@ weight: 1
 - Please answer all questions in a clear and concise way.
 - Typed and handwritten submissions are accepted.
 - If it applies, pay attention to your handwritting.
-- Preferred format is pdf via email. Physical submissions also accepted.
+- Preferred format is pdf via email. Physical submissions are also accepted.
 - Questions and comments via email are welcomed (clarifying questions, typos, etc.).
 
 [Problem Set 1](/files/LawEcon/PS1.pdf) (Deadline September 25)
