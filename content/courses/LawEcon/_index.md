@@ -31,7 +31,7 @@ menu:
 
 [Slides 3: Unilateral Care](/files/LawEcon/03_unilateral.pdf)
 
-Slides 4: Bilateral Care
+[Slides 4: Bilateral Care](/files/LawEcon/04_bilateral.pdf)
 
 Slides 5: Products Liability
 
