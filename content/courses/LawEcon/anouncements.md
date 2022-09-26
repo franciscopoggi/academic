@@ -18,7 +18,7 @@ weight: 1
 
 **Midterm Exam Date:** October 19 (lecture hours).
 
-**Class Cancelled:** October 2.
+**Class Cancelled:** November 2.
 
 <!-- > **Second Problem Set**: Deadline Dec 10. [Link](https://www.franciscopoggi.com/courses/lawecon/problems/)
 
