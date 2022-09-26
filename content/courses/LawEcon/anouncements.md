@@ -16,6 +16,10 @@ weight: 1
 
 **First Set of Questions**: Deadline Sept 18. [Link](https://www.franciscopoggi.com/courses/lawecon/questions/)
 
+**Midterm Exam Date:** October 19 (lecture hours).
+
+**Class Cancelled:** October 2.
+
 <!-- > **Second Problem Set**: Deadline Dec 10. [Link](https://www.franciscopoggi.com/courses/lawecon/problems/)
 
 > **Second Set of Questions**: Deadline Oct 12. [Link](https://www.franciscopoggi.com/courses/lawecon/questions/)
