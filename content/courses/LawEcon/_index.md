@@ -33,7 +33,7 @@ menu:
 
 [Slides 4: Bilateral Care](/files/LawEcon/04_bilateral.pdf)
 
-Slides 5: Products Liability
+[Slides 5: Products Liability](/files/LawEcon/05_products.pdf)
 
 ## Contract Law
 
