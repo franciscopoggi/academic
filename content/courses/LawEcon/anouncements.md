@@ -17,6 +17,7 @@ weight: 1
 **First Set of Questions**: Deadline Sept 18. [Link](https://www.franciscopoggi.com/courses/lawecon/questions/)
 
 **Midterm Exam Date:** October 19 (lecture hours).
+[Practice Exam: Midterm 2021](https://www.franciscopoggi.com/files/LawEcon/midterm_2021.pdf)
 
 **Class Cancelled:** November 2.
 
