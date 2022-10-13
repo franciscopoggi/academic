@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Disclosing Technological Breakthroughs in Innovation Races"
+title: "Strategic Concealment in Innovation Races"
 authors: []
 date: 2020-12-08T15:06:45-06:00
 doi: ""
@@ -23,7 +23,11 @@ abstract: ""
 
 # Summary. An optional shortened abstract.
 summary: "with [Yonggyun (YG) Kim](https://sites.google.com/view/yonggyun-yg-kim/)<br/>
-<br/>"
+<br/> 
+<details>
+  <summary>Abstract. [PDF](https://www.dropbox.com/s/ct14h8o033hhjuv/SCIR_public.pdf?dl=0)</summary> 
+</details>
+  "
 tags: []
 categories: []
 featured: false
