@@ -43,7 +43,7 @@ menu:
 
 ## Property Law
 
-Slides 8: Property Law
+[Slides 8: Property Law](/files/LawEcon/08_property.pdf)
 
 Slides 9: Intellectual Property Law
 
