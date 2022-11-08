@@ -49,7 +49,7 @@ menu:
 
 ## Economics of Crime
 
-Slides 10: The Economics of Crime
+[Slides 10: The Economics of Crime](/files/LawEcon/10_crime.pdf)
 
 ## Economics of Litigation
 
