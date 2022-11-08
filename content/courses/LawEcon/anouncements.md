@@ -21,6 +21,8 @@ weight: 1
 
 **Class Cancelled:** November 2.
 
+**Second Set of Questions**: Deadline Nov 14. [Link](https://www.franciscopoggi.com/courses/lawecon/questions/)
+
 <!-- > **Second Problem Set**: Deadline Dec 10. [Link](https://www.franciscopoggi.com/courses/lawecon/problems/)
 
 > **Second Set of Questions**: Deadline Oct 12. [Link](https://www.franciscopoggi.com/courses/lawecon/questions/)

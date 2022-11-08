@@ -22,4 +22,4 @@ weight: 1
 
 [Set 1](/files/LawEcon/questions_1.pdf) (Due: September 18)
 
-<!-- [Set 2](/files/LawEcon/questions_2.pdf) (Due: October 12) -->
+[Set 2](/files/LawEcon/questions_2.pdf) (Due: November 14)
