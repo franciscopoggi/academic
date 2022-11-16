@@ -14,11 +14,9 @@ menu:
 weight: 1
 ---
 
-**Instructions**: 
-
-- For these questions there are no right or wrong answers. There are, however, better and worse arguments you can make. 
+**Instructions**: For these questions, there are no right or wrong answers. There are, however, better and worse arguments you can make. 
 - Feel free to use any source of information that you want, but I recommend that you first spend some time thinking about the question on your own. 
-- Try to convey your answer in a **concise** and **clear** way.
+- Try to convey your answer concisely and clearly.
 
 [Set 1](/files/LawEcon/questions_1.pdf) (Due: September 18)
 
