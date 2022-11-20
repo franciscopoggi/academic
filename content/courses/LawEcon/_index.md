@@ -53,6 +53,6 @@ menu:
 
 ## Economics of Litigation
 
-<!-- [Slides 11: The Economics of Litigation](/files/LawEcon/11_litigation.pdf) -->
+[Slides 11: The Economics of Litigation](/files/LawEcon/11_litigation.pdf)
 
 Slides 12: The Economics of Litigation II
