@@ -75,9 +75,9 @@ user_groups:
 - Visitors
 ---
 
-I am a microeconomic theorist. My research focuses on the incentives to acquire, elicit, disclose, and conceal information. I'm interested in industrial organization, law, and innovation.
+I am a microeconomic theorist. My research focuses on the incentives to acquire, elicit, disclose, and conceal information. I am interested in industrial organization, law, and innovation.
 
-I'm an Assistant Professor (W1) at the [University of Mannheim - Department of Economics](https://www.vwl.uni-mannheim.de/en/) and received my Ph.D. from Northwestern University (2021).
+I am an Assistant Professor (W1) at the [University of Mannheim - Department of Economics](https://www.vwl.uni-mannheim.de/en/) and received my Ph.D. from Northwestern University (2021).
 
 
 <font size="5"
@@ -90,27 +90,14 @@ I'm an Assistant Professor (W1) at the [University of Mannheim - Department of E
 <details>
 <summary>
 <font size="4"
-        color="red">
+        color="black">
         <b>CLEEN Conference.</b>
         </font>
         I'm co-organizing the <b><a href="http://www.zew.de/cleen2023" target="_blank">2023 annual conference of the Competition Law and Economics European Network (CLEEN</a></b>.
 </summary>
 The Mannheim Centre for Competition and Innovation (MaCCI), the Collaborative Research Center Transregio 224 EPoS at the universities of Bonn and Mannheim, and ZEW Mannheim are pleased to announce the 2023 annual conference of the Competition Law and Economics European Network (CLEEN).
 
-CLEEN is a joint effort of eight academic institutions in Europe:
-<ul>
-  <li>Amsterdam Center for Law & Economics (ACLE) at the University of Amsterdam</li>
-  <li>Bergen Center for Competition Law and Economics (BECCLE) at the Norwegian School of Economics and the University of Bergen</li>
-  <li>Centre for Competition Policy (CCP) at the University of East Anglia</li>
-  <li>Centre for Market and Public Organisation (CMPO) at the University of Bristol</li>
-  <li>Mannheim Centre for Competition and Innovation (MaCCI) at the University of Mannheim and ZEW Mannheim</li>
-  <li>Max Planck Institute for Research on Collective Goods, Bonn</li>
-  <li>Robert Schuman Centre for Advanced Studies at the European University Institute, Florence</li>
-  <li>Tilburg Law and Economic Center at Tilburg University</li>
-</ul>
-It has provided an interdisciplinary platform for researchers in the field of law and economics since its first research workshop in Bonn in 2007. CLEEN organizes an annual conference for Ph.D. students and postdoctoral researchers from economics and law to present their work on competition law, economics, and policy and receive feedback from senior faculty members.
-
-According to current planning, the 2023 CLEEN Conference will be held in person in Mannheim.
+CLEEN has provided an interdisciplinary platform for researchers in the field of law and economics since its first research workshop in Bonn in 2007. According to current planning, the 2023 CLEEN Conference will be held in person in Mannheim.
 </details>        
 {{% /callout %}}
 
