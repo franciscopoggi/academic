@@ -78,7 +78,10 @@ user_groups:
 I am a microeconomic theorist working as an Assistant Professor (W1) at the [University of Mannheim - Department of Economics](https://www.vwl.uni-mannheim.de/en/).
 
 
-<b>News:</b>
+<font size="5"
+          color="red">
+          <b>News: </b> 
+        </font> 
 
 
 {{% callout note %}}
