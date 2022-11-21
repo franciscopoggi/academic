@@ -86,8 +86,9 @@ I am a microeconomic theorist working as an Assistant Professor (W1) at the [Uni
 <summary>
 <font size="4"
         color="red">
-        <a href="http://www.zew.de/cleen2023" target="_blank">CLEEN Conference 2023.</a> <b>I'm co-organizing the 2023 annual conference of the Competition Law and Economics European Network (CLEEN).</b>
+        <a href="http://www.zew.de/cleen2023" target="_blank">CLEEN Conference 2023.</a>
         </font>
+        I'm co-organizing the 2023 annual conference of the Competition Law and Economics European Network (CLEEN).
 </summary>
 The Mannheim Centre for Competition and Innovation (MaCCI), the Collaborative Research Center Transregio 224 EPoS at the universities of Bonn and Mannheim, and ZEW Mannheim are pleased to announce the 2023 annual conference of the Competition Law and Economics European Network (CLEEN).
 
@@ -113,10 +114,11 @@ According to current planning, the 2023 CLEEN Conference will be held in person 
 <summary>
 <font size="4"
           color="red">
-          New draft: 
-        </font>  <b><a href="https://yonggyun-yg-kim.github.io/files/Research%20papers/SCIR_public.pdf" target="_blank"> Strategic Concealment in Innovation Races </a></b> (with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim </a>)
+          <b>New draft: </b> 
+        </font>  
+        <b><a href="https://yonggyun-yg-kim.github.io/files/Research%20papers/SCIR_public.pdf" target="_blank"> Strategic Concealment in Innovation Races </a></b> (with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim </a>)
 </summary>
-Abstract
+We investigate a firm's incentives to conceal an intermediate research discovery in order to influence its rival's choice of strategy in an innovation race. To study this, we introduce an innovation game where two firms dynamically allocate their resources between two distinct research and development (R&D) paths towards a final innovation: (i) developing it with the currently available but slower technology; (ii) conducting research to discover a faster new technology for developing it. We fully characterize the equilibrium behavior of the firms in the cases where their research progress is public and private information. Then, we extend the private information setting by allowing firms to conceal or license their intermediate discoveries. We show that when the reward of winning the race is high, firms sometimes conceal their interim discoveries, which inefficiently retards the pace of innovation. 
 </details>        
 {{% /callout %}}
 
