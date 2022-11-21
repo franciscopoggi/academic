@@ -86,7 +86,7 @@ I am an Assistant Professor (W1) at the [University of Mannheim - Department of 
         </font> 
 
 
-{{% callout note title="I want to Inform the User"%}}
+{{% callout note %}}
 <details>
 <summary style="list-style:none">
 <font size="4"
