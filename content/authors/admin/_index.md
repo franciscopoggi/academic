@@ -88,7 +88,7 @@ I am an Assistant Professor (W1) at the [University of Mannheim - Department of 
 
 {{% callout note %}}
 <details>
-<summary style="padding-left:0">
+<summary style="list-style:none">
 <font size="4"
         color="black">
         <b>CLEEN Conference.</b>
