@@ -75,11 +75,13 @@ user_groups:
 - Visitors
 ---
 
-I am a microeconomic theorist working as an Assistant Professor (W1) at the [University of Mannheim - Department of Economics](https://www.vwl.uni-mannheim.de/en/).
+I am a microeconomic theorist. My research focuses on the incentives to acquire, elicit, disclose, and conceal information. I'm interested in industrial organization, law, and innovation.
+
+I'm an Assistant Professor (W1) at the [University of Mannheim - Department of Economics](https://www.vwl.uni-mannheim.de/en/) and received my Ph.D. from Northwestern University (2021).
 
 
 <font size="5"
-          color="red">
+          color="black">
           <b>News: </b> 
         </font> 
 
@@ -91,7 +93,7 @@ I am a microeconomic theorist working as an Assistant Professor (W1) at the [Uni
         color="red">
         <b>CLEEN Conference.</b>
         </font>
-        I'm co-organizing the <a href="http://www.zew.de/cleen2023" target="_blank"> <b>2023 annual conference of the Competition Law and Economics European Network (CLEEN)</b></a>.
+        I'm co-organizing the <b><a href="http://www.zew.de/cleen2023" target="_blank">2023 annual conference of the Competition Law and Economics European Network (CLEEN</a></b>.
 </summary>
 The Mannheim Centre for Competition and Innovation (MaCCI), the Collaborative Research Center Transregio 224 EPoS at the universities of Bonn and Mannheim, and ZEW Mannheim are pleased to announce the 2023 annual conference of the Competition Law and Economics European Network (CLEEN).
 
