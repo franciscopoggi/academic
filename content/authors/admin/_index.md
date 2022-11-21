@@ -86,9 +86,9 @@ I am a microeconomic theorist working as an Assistant Professor (W1) at the [Uni
 <summary>
 <font size="4"
         color="red">
-        <a href="http://www.zew.de/cleen2023" target="_blank">CLEEN Conference 2023.</a>
+        <b>CLEEN Conference.</b>
         </font>
-        I'm co-organizing the 2023 annual conference of the Competition Law and Economics European Network (CLEEN).
+        I'm co-organizing the <a href="http://www.zew.de/cleen2023" target="_blank"> <b>2023 annual conference of the Competition Law and Economics European Network (CLEEN)</b></a>.
 </summary>
 The Mannheim Centre for Competition and Innovation (MaCCI), the Collaborative Research Center Transregio 224 EPoS at the universities of Bonn and Mannheim, and ZEW Mannheim are pleased to announce the 2023 annual conference of the Competition Law and Economics European Network (CLEEN).
 
