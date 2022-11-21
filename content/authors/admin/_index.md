@@ -86,7 +86,7 @@ I am an Assistant Professor (W1) at the [University of Mannheim - Department of 
         </font> 
 
 
-{{% callout note title="I want to Inform the User"%}}
+{{% callout note %}}
 <details>
 <summary style="list-style:none">
 <font size="4"
@@ -101,6 +101,10 @@ The Mannheim Centre for Competition and Innovation (MaCCI), the Collaborative Re
 CLEEN has provided an interdisciplinary platform for researchers in the field of law and economics since its first research workshop in Bonn in 2007. According to current planning, the 2023 CLEEN Conference will be held in person in Mannheim.
 </details>        
 {{% /callout %}}
+
+{{< div callout >}}
+Some content...
+{{< /div >}}
 
 {{% callout note %}}
 <details>
