@@ -88,7 +88,7 @@ I am an Assistant Professor (W1) at the [University of Mannheim - Department of 
 
 {{% callout note %}}
 <details>
-<summary>
+<summary> <summary style="padding-left:0;">
 <font size="4"
         color="black">
         <b>CLEEN Conference.</b>
@@ -105,7 +105,7 @@ CLEEN has provided an interdisciplinary platform for researchers in the field of
 <details>
 <summary>
 <font size="4"
-          color="red">
+          color="black">
           <b>New draft: </b> 
         </font>  
         <b><a href="https://yonggyun-yg-kim.github.io/files/Research%20papers/SCIR_public.pdf" target="_blank"> Strategic Concealment in Innovation Races </a></b> (with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim </a>)
