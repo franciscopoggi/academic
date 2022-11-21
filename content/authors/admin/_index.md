@@ -86,7 +86,7 @@ I am a microeconomic theorist working as an Assistant Professor (W1) at the [Uni
 <summary>
 <font size="4"
         color="red">
-        <a href="http://www.zew.de/cleen2023" target="_blank">CLEEN Conference 2023.</a>
+        <a href="http://www.zew.de/cleen2023" target="_blank">CLEEN Conference 2023.</a> <b>I'm co-organizing the 2023 annual conference of the Competition Law and Economics European Network (CLEEN).</b>
         </font>
 </summary>
 The Mannheim Centre for Competition and Innovation (MaCCI), the Collaborative Research Center Transregio 224 EPoS at the universities of Bonn and Mannheim, and ZEW Mannheim are pleased to announce the 2023 annual conference of the Competition Law and Economics European Network (CLEEN).
@@ -101,10 +101,22 @@ CLEEN is a joint effort of eight academic institutions in Europe:
   <li>Max Planck Institute for Research on Collective Goods, Bonn</li>
   <li>Robert Schuman Centre for Advanced Studies at the European University Institute, Florence</li>
   <li>Tilburg Law and Economic Center at Tilburg University</li>
-
+</ul>
 It has provided an interdisciplinary platform for researchers in the field of law and economics since its first research workshop in Bonn in 2007. CLEEN organizes an annual conference for Ph.D. students and postdoctoral researchers from economics and law to present their work on competition law, economics, and policy and receive feedback from senior faculty members.
 
 According to current planning, the 2023 CLEEN Conference will be held in person in Mannheim.
+</details>        
+{{% /callout %}}
+
+{{% callout note %}}
+<details>
+<summary>
+<font size="4"
+          color="red">
+          New draft: 
+        </font>  <b><a href="https://yonggyun-yg-kim.github.io/files/Research%20papers/SCIR_public.pdf" target="_blank"> Strategic Concealment in Innovation Races </a></b> (with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim </a>)
+</summary>
+Abstract
 </details>        
 {{% /callout %}}
 
