@@ -16,8 +16,10 @@ publishDate: 2020-01-15T16:32:52-05:00
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: "<a href="http://www.zew.de/cleen2023" target="_blank">The timing of complementary innovations </a>"
+publication: "[The timing of complementary innovations](http://www.zew.de/cleen2023)"
 publication_short: ""
+
+# <a href="http://www.zew.de/cleen2023" target="_blank">The timing of complementary innovations </a>
 
 abstract: ""
 
