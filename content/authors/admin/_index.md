@@ -97,7 +97,7 @@ I work at the [University of Mannheim - Department of Economics](https://www.vwl
         color="black">
         <b>CLEEN Conference.</b>
         </font>
-        I'm co-organizing the <b><a href="http://www.zew.de/cleen2023" target="_blank">2023 annual conference of the Competition Law and Economics European Network (CLEEN</a></b>.
+        I'm co-organizing the <b><a href="http://www.zew.de/cleen2023" target="_blank">2023 annual conference of the Competition Law and Economics European Network (CLEEN)</a></b>.
 </summary>
 <br>
 <p>The Mannheim Centre for Competition and Innovation (MaCCI), the Collaborative Research Center Transregio 224 EPoS at the universities of Bonn and Mannheim, and ZEW Mannheim are pleased to announce the 2023 annual conference of the Competition Law and Economics European Network (CLEEN).</p>
