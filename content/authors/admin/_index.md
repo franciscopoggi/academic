@@ -97,8 +97,8 @@ I am an Assistant Professor (W1) at the [University of Mannheim - Department of 
         I'm co-organizing the <b><a href="http://www.zew.de/cleen2023" target="_blank">2023 annual conference of the Competition Law and Economics European Network (CLEEN</a></b>.
 </summary>
 <br>
-The Mannheim Centre for Competition and Innovation (MaCCI), the Collaborative Research Center Transregio 224 EPoS at the universities of Bonn and Mannheim, and ZEW Mannheim are pleased to announce the 2023 annual conference of the Competition Law and Economics European Network (CLEEN).
-<br>
+The Mannheim Centre for Competition and Innovation (MaCCI), the Collaborative Research Center Transregio 224 EPoS at the universities of Bonn and Mannheim, and ZEW Mannheim are pleased to announce the 2023 annual conference of the Competition Law and Economics European Network (CLEEN).<br>
+
 CLEEN has provided an interdisciplinary platform for researchers in the field of law and economics since its first research workshop in Bonn in 2007. According to current planning, the 2023 CLEEN Conference will be held in person in Mannheim.
 </details>        
 {{% /callout %}}
