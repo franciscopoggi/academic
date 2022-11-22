@@ -76,9 +76,9 @@ user_groups:
 ---
 <br>
 
-<p> I am a microeconomic theorist. My research focuses on the incentives to acquire, elicit, disclose, and conceal information. I am interested in industrial organization, law, and innovation.</p>
+I am a microeconomic theorist. My research focuses on the incentives to acquire, elicit, disclose, and conceal information. I am interested in industrial organization, law, and innovation.
 
-<p> I am an Assistant Professor (W1) at the [University of Mannheim - Department of Economics](https://www.vwl.uni-mannheim.de/en/) and received my Ph.D. from Northwestern University (2021).</p>
+I am an Assistant Professor (W1) at the [University of Mannheim - Department of Economics](https://www.vwl.uni-mannheim.de/en/) and received my Ph.D. from Northwestern University (2021).
 
 <!-- {{< tweet 666616452582129664 >}} -->
 
