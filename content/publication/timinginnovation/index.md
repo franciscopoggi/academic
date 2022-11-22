@@ -3,7 +3,7 @@
 
 title: "The Timing of Complementary Innovations"
 authors: []
-date: 2021-12-15T16:32:52-05:00
+date: 2020-12-15T16:32:52-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).

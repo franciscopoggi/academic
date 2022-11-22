@@ -3,7 +3,7 @@
 
 title: "A Taxation Principle with Non-Contractible Events"
 authors: []
-date: 2020-11-12T14:58:39-06:00
+date: 2022-10-12T14:58:39-06:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
