@@ -22,8 +22,9 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "<details>
-  <summary> <b>with [Yonggyun (YG) Kim](https://sites.google.com/view/yonggyun-yg-kim/). Abstract. [PDF](https://www.dropbox.com/s/ct14h8o033hhjuv/SCIR_public.pdf?dl=0) </b></summary>
+summary: "with [Yonggyun (YG) Kim](https://sites.google.com/view/yonggyun-yg-kim/).
+<details>
+  <summary><b>Abstract. [PDF](https://www.dropbox.com/s/ct14h8o033hhjuv/SCIR_public.pdf?dl=0) </b></summary>
     <br>
     <p> We investigate a firm's incentives to conceal an intermediate research discovery in order to influence its rival's choice of strategy in an innovation race. To study this, we introduce an innovation game where two firms dynamically allocate their resources between two distinct research and development (R&D) paths towards a final innovation: (i) developing it with the currently available but slower technology; (ii) conducting research to discover a faster new technology for developing it. We fully characterize the equilibrium behavior of the firms in the cases where their research progress is public and private information. Then, we extend the private information setting by allowing firms to conceal or license their intermediate discoveries. We show that when the reward of winning the race is high, firms sometimes conceal their interim discoveries, which inefficiently retards the pace of innovation. </p>
 </details>
