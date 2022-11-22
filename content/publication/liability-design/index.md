@@ -22,8 +22,7 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "with [Bruno Strulovici](https://faculty.wcas.northwestern.edu/~bhs675/)<br/>
-<br/>
+summary: "with [Bruno Strulovici](https://faculty.wcas.northwestern.edu/~bhs675/)
 <details>
   <summary><b> Abstract. [PDF](https://www.franciscopoggi.com/files/liability.pdf)</b></summary>
     <br>

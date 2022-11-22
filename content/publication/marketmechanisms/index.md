@@ -22,8 +22,7 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "with [Quitzé Valenzuela-Stookey](http://www.quitzevalenzuelastookey.com)<br/>
-<br/>
+summary: "with [Quitzé Valenzuela-Stookey](http://www.quitzevalenzuelastookey.com)
 <details>
   <summary><b> Abstract. [PDF](https://northwestern.box.com/s/aveeon5flwvlzd4ij4m9zasgj8978mnq)</b></summary>
   <br>
