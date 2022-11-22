@@ -23,10 +23,10 @@ abstract: ""
 
 # Summary. An optional shortened abstract.
 summary: "<details>
-  <summary> <p> <span> Abstract </span>
-            <span> with Ludvig Sinander </span> </p>
-  </summary>
-  A principal owns a project, and recruits an agent to learn about its viability. The agent’s participation over time is observable and costly. Learning is private, allowing the agent to delay the (verifiable) disclosure of any discoveries. The principal incentivises the agent by promising a (history-dependent and possibly random) share of any revenue generated. What is the optimal contract? 
+  <summary> <span> Abstract</span>
+            <span> with Ludvig Sinander </span>
+</summary>
+A principal owns a project, and recruits an agent to learn about its viability. The agent’s participation over time is observable and costly. Learning is private, allowing the agent to delay the (verifiable) disclosure of any discoveries. The principal incentivises the agent by promising a (history-dependent and possibly random) share of any revenue generated. What is the optimal contract? 
 </details>"
 
 tags: []
