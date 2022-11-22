@@ -25,8 +25,9 @@ abstract: ""
 summary: "
 <br/>
 <details>
-  <summary>Abstract. New version coming soon. </summary>
-    This paper studies the dynamic completion of complementary tasks or projects. At each point in time, resources are allocated to projects that are completed as breakthroughs. I solve the problem of efficient dynamic allocation of resources by showing that, for complements, the solution must satisfy a regret-free property. I apply these results to study the problem of innovation when there is uncertainty about the difficulty of innovations. In some cases, the solution involves completing the projects in sequence. In others, it is optimal to work on multiple projects simultaneously. I provide simple conditions that determine the efficient timing of project completion.
+  <summary><b>Abstract.</b> New version coming soon. </summary>
+    <br>
+    <p> This paper studies the dynamic completion of complementary tasks or projects. At each point in time, resources are allocated to projects that are completed as breakthroughs. I solve the problem of efficient dynamic allocation of resources by showing that, for complements, the solution must satisfy a regret-free property. I apply these results to study the problem of innovation when there is uncertainty about the difficulty of innovations. In some cases, the solution involves completing the projects in sequence. In others, it is optimal to work on multiple projects simultaneously. I provide simple conditions that determine the efficient timing of project completion.</p>
 </details>"
 
 tags: []
