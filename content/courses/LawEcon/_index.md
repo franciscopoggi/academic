@@ -39,7 +39,7 @@ menu:
 
 [Slides 6: Contract Law I](/files/LawEcon/06_contract.pdf)
 
-[Slides 7: Contract Law II](/files/LawEcon/07_contract_2.pdf)
+[Slides 7: Contract Law II](/files/LawEcon/07_contract_2.pdf) Updated!
 
 ## Property Law
 
