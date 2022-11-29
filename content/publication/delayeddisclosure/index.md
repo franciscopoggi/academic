@@ -1,10 +1,11 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-# title: "Delayed Disclosure"
+title: "Delayed Disclosure"
 authors: []
 date: 2020-1-12T16:35:50-05:00
 doi: ""
+draft: true
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2020-1-12T16:35:50-05:00
