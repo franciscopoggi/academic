@@ -89,6 +89,19 @@ I work at the [University of Mannheim - Department of Economics](https://www.vwl
           <b>News: </b> 
         </font> 
 
+{{% callout note %}}
+<details>
+<summary>
+<font size="4"
+          color="black">
+          <b>New version: </b> 
+        </font>  
+        <b><a href="https://www.franciscopoggi.com/files/mbm.pdf" target="_blank"> Market-Based Mechanisms </a></b> (with <a href="http://www.quitzevalenzuelastookey.com" target="_blank"> Quitzé Valenzuela-Stookey </a>)
+</summary>
+<br>
+We study the problem of a principal who conditions their actions on the outcomes of a competitive market as a proxy for an unobserved payoff-relevant state. Agents in the market have private information about the state, and their choices reflect both their beliefs about the state and their expectations of the principal's actions. This introduces two-way feedback between policy and the market. In a general setting, we characterize the set of joint distributions of market outcomes, principal actions, and states that can be implemented in equilibrium by a principal with commitment power. We focus in particular on implementation under constraints imposed by concerns about manipulation and equilibrium multiplicity. Our characterization of the implementable set admits a tractable representation, and significantly simplifies the principal's design problem. We apply our results to study bailout policies. 
+</details>        
+{{% /callout %}}
 
 {{% callout note %}}
 <details>

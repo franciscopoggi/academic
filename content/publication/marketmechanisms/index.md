@@ -3,7 +3,7 @@
 
 title: "Market-Based Mechanisms"
 authors: []
-date: 2020-12-07T16:32:52-05:00
+date: 2022-12-09T16:32:52-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -22,9 +22,9 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "with [Quitzé Valenzuela-Stookey](http://www.quitzevalenzuelastookey.com)<details> <summary> <b> Abstract. [Paper](https://northwestern.box.com/s/aveeon5flwvlzd4ij4m9zasgj8978mnq)</b></summary>
+summary: "with [Quitzé Valenzuela-Stookey](http://www.quitzevalenzuelastookey.com)<details> <summary> <b> Abstract. [Paper](https://www.franciscopoggi.com/files/mbm.pdf)</b></summary>
   <br>
-  Decision makers frequently condition their actions on economic outcomes, e.g. asset prices, that they believe convey information about an unknown state. However the decision maker’s action, or expectations thereof, may also influence the outcome. In this paper we study the general problem of choosing decision rules mapping outcomes to actions in the presence of such feedback effects. We characterize the set of joint distributions of outcomes, actions, and states that can be implemented as the unique equilibrium by decision rules which satisfy a minimal notion of robustness to manipulation. Moreover, we show that all such equilibria are robust to model misspecification. This characterization of the feasible set greatly simplifies the problem of choosing decision rules. A simple graphical technique allows us to identify qualitative features of optimal policies. We illustrate the power of this approach with an application to corporate bailouts. The results are also useful for characterizing optimal decision rules when the requirement of unique implementation is relaxed.
+  We study the problem of a principal who conditions their actions on the outcomes of a competitive market as a proxy for an unobserved payoff-relevant state. Agents in the market have private information about the state, and their choices reflect both their beliefs about the state and their expectations of the principal's actions. This introduces two-way feedback between policy and the market. In a general setting, we characterize the set of joint distributions of market outcomes, principal actions, and states that can be implemented in equilibrium by a principal with commitment power. We focus in particular on implementation under constraints imposed by concerns about manipulation and equilibrium multiplicity. Our characterization of the implementable set admits a tractable representation and significantly simplifies the principal's design problem. We apply our results to study bailout policies.
   </details>"
 tags: []
 categories: []
