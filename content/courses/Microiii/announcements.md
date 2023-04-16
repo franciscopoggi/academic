@@ -14,4 +14,4 @@ menu:
 weight: 1
 ---
 
-**Final Exam Date**: June 13.
+**Final Exam Date**: June 5.
