@@ -22,10 +22,17 @@ menu:
 ---
 ## Announcements
 
-**Final Exam**: June 5. Closed book.
+**Final Exam**: June 5th. Closed book.
 
 
-## Class Material
+
+<details><summary>## Class Material</summary>
+  <ul>
+<li> You may collaborate on assignments in groups of up to three students.</li>
+<li> Each group must submit a single set of answers.</li>
+<li> Provide <b>clear</b> and <b>concise</b> answers to all questions.</li>
+</ul>
+</details>
 
 #### 1. [Akerlof's Market for Lemons](../../files/microiii/1_Akerlof.pdf)
 
