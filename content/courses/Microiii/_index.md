@@ -5,7 +5,7 @@ summary: Spring 2022
 weight: 1
 
 # Page metadata.
-title: Advanced Microeoconomics III (FSS 2013)
+title: Advanced Microeoconomics III
 date: "2018-09-09T00:00:00Z"
 lastmod: "2018-09-09T00:00:00Z"
 draft: false  # Is this a draft? true/false
@@ -20,6 +20,7 @@ menu:
     name: Advanced Micro III
     weight: 1
 ---
+# FSS 2013
 ## Announcements
 
 **Final Exam**: June 5th. Closed book.
