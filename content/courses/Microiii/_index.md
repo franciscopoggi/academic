@@ -26,13 +26,7 @@ menu:
 
 
 
-<details><summary>## Class Material</summary>
-  <ul>
-<li> You may collaborate on assignments in groups of up to three students.</li>
-<li> Each group must submit a single set of answers.</li>
-<li> Provide <b>clear</b> and <b>concise</b> answers to all questions.</li>
-</ul>
-</details>
+## Class Material
 
 #### 1. [Akerlof's Market for Lemons](../../files/microiii/1_Akerlof.pdf)
 
@@ -61,7 +55,7 @@ menu:
 <!-- #### 7. [Efficient Mechanisms](../../files/microiii/MechDesign-2.pdf) (I fixed some typos and updated proof that we covered in class on June 6) -->
 
 ## Problem Sets
-<details><summary>Instructions</summary>
+<details><summary><b>Instructions</b></summary>
 <ul>
 <li> You may collaborate on assignments in groups of up to three students.</li>
 <li> Each group must submit a single set of answers.</li>
