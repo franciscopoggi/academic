@@ -61,12 +61,12 @@ menu:
 <li> Provide <b>clear</b> and <b>concise</b> answers to all questions.</li>
 <li> Both typed and handwritten submissions are accepted.</li>
 <li> If submitting a handwritten assignment, ensure your handwriting is legible.</li>
-<li> The preferred submission format is a PDF sent via email, but physical submissions are also accepted.</li>
+<li> The preferred submission format is a PDF sent via email to the TA, but physical submissions are also accepted.</li>
 <li> Feel free to ask questions or provide comments via email (e.g. clarifying questions, reporting typos, etc.).</li>
 </ul>
 </details>
 
-#### Problem Set 1 (to be posted soon). Due date April 25.
+#### Problem Set 1 (to be posted soon). Due date April 24.
 <!-- #### [Problem Set 2](../../files/microiii/ProblemSet_2.pdf). Due date May 5. -->
 <!-- #### [Problem Set 3](../../files/microiii/ProblemSet_3.pdf). Due date May 12. -->
 <!-- #### [Problem Set 4](../../files/microiii/ProblemSet_4.pdf). Due date May 19. -->
