@@ -31,9 +31,9 @@ menu:
 
 #### 1. [Akerlof's Market for Lemons](../../files/microiii/1_Akerlof.pdf)
 
-#### 2. Spence's Signaling Game
+<!-- #### 2. Spence's Signaling Game -->
 
-<!-- #### 2. [Spence's Signaling Game](../../files/microiii/Spence.pdf). -->
+#### 2. [Spence's Signaling Game](../../files/microiii/2_Spence.pdf).
 
 #### 3. Competitive Screening
 
