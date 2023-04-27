@@ -70,7 +70,8 @@ menu:
 
 #### [Problem Set 1](../../files/microiii/ProblemSet_1.pdf). Due date April 24.
 
-<!-- #### [Problem Set 2](../../files/microiii/ProblemSet_2.pdf). Due date May 5. -->
+#### [Problem Set 2](../../files/microiii/ProblemSet_2.pdf). Due date May 1.
+
 <!-- #### [Problem Set 3](../../files/microiii/ProblemSet_3.pdf). Due date May 12. -->
 <!-- #### [Problem Set 4](../../files/microiii/ProblemSet_4.pdf). Due date May 19. -->
 <!-- #### [Problem Set 5](../../files/microiii/ProblemSet_5.pdf). Due date May 26. -->
