@@ -35,9 +35,9 @@ menu:
 
 #### 2. [Spence's Signaling Game](../../files/microiii/2_Spence.pdf).
 
-#### 3. Competitive Screening
+<!-- #### 3. Competitive Screening -->
 
-<!-- #### 3. [Competitive Screening](../../files/microiii/Screening.pdf). -->
+#### 3. [Competitive Screening](../../files/microiii/3_Screening.pdf).
 
 #### 4. Moral Hazard
 
