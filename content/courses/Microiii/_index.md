@@ -39,21 +39,21 @@ menu:
 
 #### 3. [Competitive Screening](../../files/microiii/3_Screening.pdf).
 
-#### 4. Moral Hazard
+<!-- #### 4. Envelope Theorem -->
+
+#### 4. [Envelope Theorem and MCS](../../files/microiii/4_MCS.pdf).
+
+#### 5. Revenue Maximizing Auctions
+
+<!-- #### 5. [Revenue Maximizing Auctions](../../files/microiii/MechDesign.pdf). (Updated May 24) -->
+
+#### 6. Efficient Mechanisms
+
+<!-- #### 6. [Efficient Mechanisms](../../files/microiii/MechDesign-2.pdf) (I fixed some typos and updated proof that we covered in class on June 6) -->
+
+#### 7. Moral Hazard (If time permits)
 
 <!-- #### 4. [Moral Hazard](../../files/microiii/MoralHazard.pdf). -->
-
-#### 5. Envelope Theorem
-
-<!-- #### 5. [Envelope Theorem](../../files/microiii/Envelope.pdf).  (Updated) -->
-
-#### 6. Revenue Maximizing Auctions
-
-<!-- #### 6. [Revenue Maximizing Auctions](../../files/microiii/MechDesign.pdf). (Updated May 24) -->
-
-#### 7. Efficient Mechanisms
-
-<!-- #### 7. [Efficient Mechanisms](../../files/microiii/MechDesign-2.pdf) (I fixed some typos and updated proof that we covered in class on June 6) -->
 
 ## Problem Sets
 <details><summary><b>Instructions</b></summary>
