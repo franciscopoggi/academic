@@ -43,9 +43,9 @@ menu:
 
 #### 4. [Envelope Theorem and MCS](../../files/microiii/4_MCS.pdf).
 
-#### 5. Revenue Maximizing Auctions
+<!-- #### 5. Implementation and Revenue Maximizing Auctions -->
 
-<!-- #### 5. [Revenue Maximizing Auctions](../../files/microiii/MechDesign.pdf). (Updated May 24) -->
+#### 5. [Implementation and Revenue Maximizing Auctions](../../files/microiii/5_MechDesign_1.pdf).
 
 #### 6. Efficient Mechanisms
 
