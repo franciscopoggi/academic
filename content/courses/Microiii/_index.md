@@ -47,9 +47,9 @@ menu:
 
 #### 5. [Implementation and Revenue Maximizing Auctions](../../files/microiii/5_MechDesign_1.pdf).
 
-#### 6. Efficient Mechanisms
+<!-- #### 6. Efficient Mechanisms -->
 
-<!-- #### 6. [Efficient Mechanisms](../../files/microiii/MechDesign-2.pdf) (I fixed some typos and updated proof that we covered in class on June 6) -->
+#### 6. [Efficient Mechanisms](../../files/microiii/6_MechDesign-2.pdf)
 
 #### 7. Moral Hazard (If time permits)
 
