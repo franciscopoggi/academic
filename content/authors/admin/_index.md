@@ -94,7 +94,7 @@ I work at the [University of Mannheim - Department of Economics](https://www.vwl
 <summary>
 <font size="4"
           color="black">
-          <b>New version: </b> 
+          <b>Updated draft: </b> 
         </font>  
         <b><a href="https://www.franciscopoggi.com/files/mbm.pdf" target="_blank"> Market-Based Mechanisms </a></b> (with <a href="http://www.quitzevalenzuelastookey.com" target="_blank"> Quitzé Valenzuela-Stookey </a>)
 </summary>
@@ -108,7 +108,7 @@ We study the problem of a principal who conditions their actions on the outcomes
 <summary>
 <font size="4"
           color="black">
-          <b>New draft: </b> 
+          <b>Updated draft: </b> 
         </font>  
         <b><a href="https://www.franciscopoggi.com/files/SCIR.pdf" target="_blank"> Strategic Concealment in Innovation Races </a></b> (with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim </a>)
 </summary>
