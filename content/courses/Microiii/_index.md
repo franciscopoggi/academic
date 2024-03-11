@@ -20,7 +20,7 @@ menu:
     name: Advanced Micro III
     weight: 1
 ---
-# FSS 2013
+# FSS 2023
 ## Announcements
 
 **Final Exam**: June 5th. Closed book.
