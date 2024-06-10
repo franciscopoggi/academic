@@ -89,7 +89,7 @@ I work at the [University of Mannheim - Department of Economics](https://www.vwl
           <b>News: </b> 
         </font> 
 
-{{% callout note %}}
+<!-- {{% callout note %}}
 <details>
 <summary>
 <font size="4"
@@ -101,9 +101,9 @@ I work at the [University of Mannheim - Department of Economics](https://www.vwl
 <br>
 We study the problem of a principal who conditions their actions on the outcomes of a competitive market as a proxy for an unobserved payoff-relevant state. Agents in the market have private information about the state, and their choices reflect both their beliefs about the state and their expectations of the principal's actions. This introduces two-way feedback between policy and the market. In a general setting, we characterize the set of joint distributions of market outcomes, principal actions, and states that can be implemented in equilibrium by a principal with commitment power. We focus in particular on implementation under constraints imposed by concerns about manipulation and equilibrium multiplicity. Our characterization of the implementable set admits a tractable representation, and significantly simplifies the principal's design problem. We apply our results to study bailout policies. 
 </details>        
-{{% /callout %}}
+{{% /callout %}} -->
 
-{{% callout note %}}
+{{% callout note<!--  %}}
 <details>
 <summary>
 <font size="4"
@@ -118,7 +118,7 @@ races. To study this, we introduce an innovation game where two racing firms
 dynamically allocate their resources between two distinct research and development
 (R&D) paths: (i) developing an innovative product with the currently available technology; (ii) conducting research to discover a faster technology for developing it. We fully characterize the equilibrium behavior of the firms in the cases where their research progress is public and private information. Then, we extend the model by allowing firms to conceal or license their intermediate discoveries. When the reward for winning the race is high, firms may conceal their interim discoveries, which slows down the pace of innovation.
 </details>        
-{{% /callout %}}
+{{% /callout %}} -->
 
 
 
