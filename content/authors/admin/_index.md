@@ -103,7 +103,7 @@ We study the problem of a principal who conditions their actions on the outcomes
 </details>        
 {{% /callout %}} -->
 
-{{% callout note<!--  %}}
+<!--{{% callout note  %}}
 <details>
 <summary>
 <font size="4"
