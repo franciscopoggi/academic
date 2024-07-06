@@ -89,7 +89,7 @@ I work at the [University of Mannheim - Department of Economics](https://www.vwl
 
 <details>
   <summary>
-  <b>Market-based Mechanisms.</b> with [Quitzé Valenzuela-Stookey](http://www.quitzevalenzuelastookey.com)
+  <b>Market-based Mechanisms.</b> with <a href="https://www.franciscopoggi.com/files/mbm.pdf" target="_blank"> Quitzé Valenzuela-Stookey</a>
   </summary>
   <br>
       Abstract.
