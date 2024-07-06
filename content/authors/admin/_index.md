@@ -89,7 +89,7 @@ I work at the [University of Mannheim - Department of Economics](https://www.vwl
 <!-- A Taxation Principle with Non-contractible Events -->
   <details>
     <summary>
-    <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank">A Taxation Principle with Non-contractible Events.</a>
+    <b><a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank">A Taxation Principle with Non-contractible Events.</a></b>
     with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
     </summary>
         Abstract.
