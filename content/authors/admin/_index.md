@@ -89,7 +89,7 @@ I work at the [University of Mannheim - Department of Economics](https://www.vwl
 <!-- A Taxation Principle with Non-contractible Events -->
   <details>
     <summary>
-    <b> A Taxation Principle with Non-contractible Events.</b>
+    <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank">A Taxation Principle with Non-contractible Events.</a>
     with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
     </summary>
         Abstract.
@@ -131,69 +131,7 @@ I work at the [University of Mannheim - Department of Economics](https://www.vwl
         Abstract.
   </details>
 
-<!-- <br>
 
-<font size="5"
-          color="black">
-          <b>News: </b> 
-        </font>  -->
-
-<!-- {{% callout note %}}
-<details>
-<summary>
-<font size="4"
-          color="black">
-          <b>Updated draft: </b> 
-        </font>  
-        <b> <a href="https://www.franciscopoggi.com/files/mbm.pdf" target="_blank"> Market-Based Mechanisms </a></b> (with <a href="http://www.quitzevalenzuelastookey.com" target="_blank"> Quitzé Valenzuela-Stookey </a>)
-</summary>
-<br>
-Abstract
-</details>        
-{{% /callout %}} -->
-
-<!--{{% callout note  %}}
-<details>
-<summary>
-<font size="4"
-          color="black">
-          <b>Updated draft: </b> 
-        </font>  
-        <b><a href="https://www.franciscopoggi.com/files/SCIR.pdf" target="_blank"> Strategic Concealment in Innovation Races </a></b> (with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim </a>)
-</summary>
-<br>
-We investigate firms’ incentives to conceal intermediate research discoveries in innovation
-races. To study this, we introduce an innovation game where two racing firms
-dynamically allocate their resources between two distinct research and development
-(R&D) paths: (i) developing an innovative product with the currently available technology; (ii) conducting research to discover a faster technology for developing it. We fully characterize the equilibrium behavior of the firms in the cases where their research progress is public and private information. Then, we extend the model by allowing firms to conceal or license their intermediate discoveries. When the reward for winning the race is high, firms may conceal their interim discoveries, which slows down the pace of innovation.
-</details>        
-{{% /callout %}} -->
-
-
-
-<!-- {{% callout note %}}
-<details>
-<summary>
-<font size="4"
-          color="red">
-          New version: 
-        </font>  <b>Market-Based Mechanisms</b> (with Quitzé Valenzuela-Stookey)
-</summary>
-<a href="https://www.franciscopoggi.com/files/mbm.pdf" target="_blank">PDF here</a>
-</details>        
-{{% /callout %}} -->
-<!-- {{% callout note %}}
-<details>
-<summary>
-<font size="4"
-          color="red">
-          Draft coming soon:
-        </font> <b> Rewarding Scientific Discoveries </b>
-</summary>
-This paper develops a normative theory of scientific compensation. A sequence of short-lived agents decide how to approach a process of scientific discovery. Agents can engage in applied research, that might produce something of intrinsic value, or basic research, that produces information about the world. Basic research is valuable because  guides the posterior allocation of resources in the applied research process. Considering a principal that provides incentives through monetary payments, I give conditions under which the agents can be induced to approach discovery efficiently, and in a way that is robust to agents' beliefs and lifespan. Moreover, I show that, in order to provide these incentives, positive findings (those who indicate that a certain research direction is promising) should be rewarded more handsomely than negative findings (that show that a certain research direction is futile).
-</details>
-{{% /callout %}} -->
-<!-- My research focuses on the dynamics of information acquisition and experimentation. --> <!-- The questions I find most exciting are related to research and development, innovation, law, and organizations. -->
 <!-- {{% callout note %}}
 At some point in the summer, I will join <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">the University of Mannheim</a> as an Assistant Professor.
 {{% /callout %}} -->
