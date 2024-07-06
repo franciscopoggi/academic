@@ -80,14 +80,27 @@ I am a microeconomic theorist. My research focuses on the incentives to acquire,
 
 I work at the [University of Mannheim - Department of Economics](https://www.vwl.uni-mannheim.de/en/) as an Assistant Professor (W1) and received my Ph.D. from Northwestern University (2021).
 
-<!-- {{< tweet 666616452582129664 >}} -->
-
 <br>
 
 <font size="5"
           color="black">
+          <b>Research: </b> 
+        </font>
+
+<details>
+  <summary>
+    <b>Abstract.</b> (New version coming soon.) 
+  </summary><br>
+    This paper studies the dynamic completion of complementary tasks or projects. At each point in time, resources are allocated to projects that are completed as breakthroughs. I solve the problem of efficient dynamic allocation of resources by showing that, for complements, the solution must satisfy a regret-free property. I apply these results to study the problem of innovation when there is uncertainty about the difficulty of innovations. In some cases, the solution involves completing the projects in sequence. In others, it is optimal to work on multiple projects simultaneously. I provide simple conditions that determine the efficient timing of project completion.
+</details>
+
+
+<!-- <br>
+
+<font size="5"
+          color="black">
           <b>News: </b> 
-        </font> 
+        </font>  -->
 
 <!-- {{% callout note %}}
 <details>
@@ -96,10 +109,10 @@ I work at the [University of Mannheim - Department of Economics](https://www.vwl
           color="black">
           <b>Updated draft: </b> 
         </font>  
-        <b><a href="https://www.franciscopoggi.com/files/mbm.pdf" target="_blank"> Market-Based Mechanisms </a></b> (with <a href="http://www.quitzevalenzuelastookey.com" target="_blank"> Quitzé Valenzuela-Stookey </a>)
+        <b> <a href="https://www.franciscopoggi.com/files/mbm.pdf" target="_blank"> Market-Based Mechanisms </a></b> (with <a href="http://www.quitzevalenzuelastookey.com" target="_blank"> Quitzé Valenzuela-Stookey </a>)
 </summary>
 <br>
-We study the problem of a principal who conditions their actions on the outcomes of a competitive market as a proxy for an unobserved payoff-relevant state. Agents in the market have private information about the state, and their choices reflect both their beliefs about the state and their expectations of the principal's actions. This introduces two-way feedback between policy and the market. In a general setting, we characterize the set of joint distributions of market outcomes, principal actions, and states that can be implemented in equilibrium by a principal with commitment power. We focus in particular on implementation under constraints imposed by concerns about manipulation and equilibrium multiplicity. Our characterization of the implementable set admits a tractable representation, and significantly simplifies the principal's design problem. We apply our results to study bailout policies. 
+Abstract
 </details>        
 {{% /callout %}} -->
 
