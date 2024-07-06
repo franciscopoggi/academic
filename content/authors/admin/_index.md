@@ -75,7 +75,6 @@ user_groups:
 - Visitors
 ---
 <br>
-
 I am a microeconomic theorist. My research focuses on the incentives to acquire, elicit, disclose, and conceal information. I am interested in industrial organization, law, and innovation.
 
 I work at the [University of Mannheim - Department of Economics](https://www.vwl.uni-mannheim.de/en/) as an Assistant Professor (W1) and received my Ph.D. from Northwestern University (2021).
@@ -84,25 +83,53 @@ I work at the [University of Mannheim - Department of Economics](https://www.vwl
 
 <font size="5"
           color="black">
-          <b>Research: </b> 
+          <b>Research:</b> 
         </font>
 
-<details>
-  <summary>
-  <b>Market-based Mechanisms.</b> with <a href="https://www.franciscopoggi.com/files/mbm.pdf" target="_blank"> Quitzé Valenzuela-Stookey</a>
-  </summary>
-  <br>
-      Abstract.
-</details>        
+<!-- A Taxation Principle with Non-contractible Events -->
+  <details>
+    <summary>
+    <b> A Taxation Principle with Non-contractible Events.</b>
+    with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
+    </summary>
+        Abstract.
+  </details>
 
-<details>
-  <summary>
-  <b>The Timing of Complementary Innovations.</b> 
-  </summary>
-  <br>
-      This paper studies the dynamic completion of complementary tasks or projects. At each point in time, resources are allocated to projects that are completed as breakthroughs. I solve the problem of efficient dynamic allocation of resources by showing that, for complements, the solution must satisfy a regret-free property. I apply these results to study the problem of innovation when there is uncertainty about the difficulty of innovations. In some cases, the solution involves completing the projects in sequence. In others, it is optimal to work on multiple projects simultaneously. I provide simple conditions that determine the efficient timing of project completion.
-</details>
+<!-- Strategic Concelament in Innovation Races -->
+  <details>
+    <summary>
+    <b>Strategic Concelament in Innovation Races.</b>
+    with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim</a>
+    </summary>
+        Abstract.
+  </details>
 
+<!-- Market-based Mechanisms. -->
+  <details> 
+    <summary>
+    <b>Market-based Mechanisms.</b> 
+    with <a href="http://www.quitzevalenzuelastookey.com" target="_blank"> Quitzé Valenzuela-Stookey</a>
+    </summary>
+        Abstract.
+  </details>        
+
+<!-- The Timing of Complementary Innovations. -->
+  <details>
+    <summary>
+    <b>The Timing of Complementary Innovations.</b> 
+    </summary>
+    <br>
+        This paper studies the dynamic completion of complementary tasks or projects. At each point in time, resources are allocated to projects that are completed as breakthroughs. I solve the problem of efficient dynamic allocation of resources by showing that, for complements, the solution must satisfy a regret-free property. I apply these results to study the problem of innovation when there is uncertainty about the difficulty of innovations. In some cases, the solution involves completing the projects in sequence. In others, it is optimal to work on multiple projects simultaneously. I provide simple conditions that determine the efficient timing of project completion.
+  </details>
+
+<!-- Liability Design with Information Acquisition -->
+  <details>
+    <summary>
+    <b> Liability Design with Information Acquisition.</b>
+    with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
+    </summary>
+        Abstract.
+  </details>
 
 <!-- <br>
 
