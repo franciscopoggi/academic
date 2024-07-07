@@ -108,7 +108,9 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
     <b><a href="https://www.franciscopoggi.com/files/MBM.pdf" target="_blank">Market-based Mechanisms.</a></b> 
     with <a href="http://www.quitzevalenzuelastookey.com" target="_blank"> Quitzé Valenzuela-Stookey</a>
     </summary>
-        Can policies use information contained in market outcomes when market participants care about the policy itself?
+    <ul>
+        <li> Can policies use information contained in market outcomes when market participants care about the policy itself? </li>
+    </ul>
   </details>        
 <br>
 
@@ -118,7 +120,9 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
     <b><a href="https://www.franciscopoggi.com/files/taxation.pdf" target="_blank">A Taxation Principle with Non-Contractible Events.</a></b>
     with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
     </summary>
-        Sometimes, eliciting private information becomes redundant.
+        <ul>
+          <li> Sometimes, eliciting private information becomes redundant. </li>
+        </ul>
   </details>
 <br>
 
@@ -127,7 +131,9 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
     <summary>
     <b><a href="https://www.franciscopoggi.com/files/TCI.pdf" target="_blank">The Timing of Complementary Innovations.</a></b> 
     </summary>
-        Breakthroughs always enhance incentives to work on complementary projects, but only when the timing is endogenous.
+        <ul>
+          <li> Breakthroughs always enhance incentives to work on complementary projects, but only when the timing is endogenous. </li>
+        </ul>
   </details>
 <br>
 
@@ -137,7 +143,9 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
     <b><a href="https://www.franciscopoggi.com/files/liability.pdf" target="_blank">Liability Design with Information Acquisition.</a></b>
     with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
     </summary>
-        How should liability be determined for an agent who acquires information about an unknown risk?
+        <ul>
+          <li> How should liability be determined for an agent who acquires information about an unknown risk? </li>
+        </ul>
   </details>
 <br>
 
