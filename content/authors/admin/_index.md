@@ -96,7 +96,7 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
     <b><a href="https://www.franciscopoggi.com/files/taxation.pdf" target="_blank">A Taxation Principle with Non-Contractible Events.</a></b>
     with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
     </summary>
-        Abstract.
+        Sometimes, eliciting private information is pointless.
   </details>
 
 <!-- Strategic Concelament in Innovation Races -->
@@ -105,7 +105,7 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
     <b><a href="https://www.franciscopoggi.com/files/SCIR.pdf" target="_blank">Strategic Concelament in Innovation Races.</a></b>
     with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim</a>
     </summary>
-        Abstract.
+        Firms might not patent intermediate innovations even when this would allow them to capture the whole instrumental social value of the innovation.
   </details>
 
 <!-- Market-based Mechanisms. -->
@@ -114,7 +114,7 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
     <b><a href="https://www.franciscopoggi.com/files/MBM.pdf" target="_blank">Market-based Mechanisms.</a></b> 
     with <a href="http://www.quitzevalenzuelastookey.com" target="_blank"> Quitzé Valenzuela-Stookey</a>
     </summary>
-        Abstract.
+        Can policies use the information contained in market outcomes, when market participants care about the implemented policy?
   </details>        
 
 <!-- The Timing of Complementary Innovations. -->
@@ -122,8 +122,10 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
     <summary>
     <b><a href="https://www.franciscopoggi.com/files/TCI.pdf" target="_blank">The Timing of Complementary Innovations.</a></b> 
     </summary>
-    <br>
-        This paper studies the dynamic completion of complementary tasks or projects. At each point in time, resources are allocated to projects that are completed as breakthroughs. I solve the problem of efficient dynamic allocation of resources by showing that, for complements, the solution must satisfy a regret-free property. I apply these results to study the problem of innovation when there is uncertainty about the difficulty of innovations. In some cases, the solution involves completing the projects in sequence. In others, it is optimal to work on multiple projects simultaneously. I provide simple conditions that determine the efficient timing of project completion.
+        Breakthroughs increase the incentives to work on complementary projects, even when the timing is endogenous.
+        <!-- This paper studies the dynamic completion of complementary tasks or projects. At each point in time, resources are allocated to projects that are completed as breakthroughs. I solve the problem of efficient dynamic allocation of resources by showing that, for complements, the solution must satisfy a regret-free property. I apply these results to study the problem of innovation when there is uncertainty about the difficulty of innovations. 
+
+        In some cases, the solution involves completing the projects in sequence. In others, it is optimal to work on multiple projects simultaneously. I provide simple conditions that determine the efficient timing of project completion. -->
   </details>
 
 <!-- Liability Design with Information Acquisition -->
@@ -132,7 +134,7 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
     <b><a href="https://www.franciscopoggi.com/files/liability.pdf" target="_blank">Liability Design with Information Acquisition.</a></b>
     with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
     </summary>
-        Abstract.
+        How should an agent who learns about risks be held liable for damages when risks are unknown?
   </details>
 
 
