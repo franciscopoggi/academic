@@ -96,7 +96,9 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
     <b><a href="https://www.franciscopoggi.com/files/SCIR.pdf" target="_blank">Strategic Concelament in Innovation Races.</a></b>
     with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim</a>
     </summary>
-        Firms might avoid patenting intermediate innovations, even when this would mean capturing the full social value of the innovation.
+      <ul>
+        <li>Firms might avoid patenting intermediate innovations, even when this would mean capturing the full social value of the innovation.</li>
+      </ul>
   </details>
 <br>
 
@@ -119,7 +121,6 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
         Sometimes, eliciting private information becomes redundant.
   </details>
 <br>
-
 
 <!-- The Timing of Complementary Innovations. -->
   <details>
