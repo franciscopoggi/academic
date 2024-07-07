@@ -90,6 +90,26 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
           <b>Research:</b> 
         </font>
 
+<!-- Strategic Concelament in Innovation Races -->
+  <details>
+    <summary>
+    <b><a href="https://www.franciscopoggi.com/files/SCIR.pdf" target="_blank">Strategic Concelament in Innovation Races.</a></b>
+    with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim</a>
+    </summary>
+        Firms might avoid patenting intermediate innovations, even when this would mean capturing the full social value of the innovation.
+  </details>
+<br>
+
+<!-- Market-based Mechanisms. -->
+  <details> 
+    <summary>
+    <b><a href="https://www.franciscopoggi.com/files/MBM.pdf" target="_blank">Market-based Mechanisms.</a></b> 
+    with <a href="http://www.quitzevalenzuelastookey.com" target="_blank"> Quitzé Valenzuela-Stookey</a>
+    </summary>
+        Can policies use information contained in market outcomes when market participants care about the policy itself?
+  </details>        
+<br>
+
 <!-- A Taxation Principle with Non-contractible Events -->
   <details>
     <summary>
@@ -100,25 +120,6 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
   </details>
 <br>
 
-<!-- Strategic Concelament in Innovation Races -->
-  <details>
-    <summary>
-    <b><a href="https://www.franciscopoggi.com/files/SCIR.pdf" target="_blank">Strategic Concelament in Innovation Races.</a></b>
-    with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim</a>
-    </summary>
-        Firms might avoid patenting intermediate innovations, even when this means capturing the full social value of the innovation.
-  </details>
-<br>
-
-<!-- Market-based Mechanisms. -->
-  <details> 
-    <summary>
-    <b><a href="https://www.franciscopoggi.com/files/MBM.pdf" target="_blank">Market-based Mechanisms.</a></b> 
-    with <a href="http://www.quitzevalenzuelastookey.com" target="_blank"> Quitzé Valenzuela-Stookey</a>
-    </summary>
-        Can policies use information contained in market outcomes, when market participants care about the policy itself?
-  </details>        
-<br>
 
 <!-- The Timing of Complementary Innovations. -->
   <details>
@@ -135,7 +136,7 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
     <b><a href="https://www.franciscopoggi.com/files/liability.pdf" target="_blank">Liability Design with Information Acquisition.</a></b>
     with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
     </summary>
-        How should liability be determined for an agent who acquired information about an unknown risk?
+        How should liability be determined for an agent who acquires information about an unknown risk?
   </details>
 <br>
 
