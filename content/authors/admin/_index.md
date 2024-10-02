@@ -129,7 +129,7 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
 <!-- The Timing of Complementary Innovations. -->
   <details>
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/TCI.pdf" target="_blank">The Timing of Complementary Innovations.</a></b> 
+    <b><a href="https://www.franciscopoggi.com/files/timing-innovations.pdf" target="_blank">The Timing of Complementary Innovations.</a></b> 
     </summary>
         <ul>
           <li> Breakthroughs always enhance incentives to work on complementary projects, but only when the timing is endogenous. </li>
