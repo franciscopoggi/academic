@@ -105,11 +105,11 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
 <!-- Market-based Mechanisms. -->
   <details> 
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/MBM.pdf" target="_blank">Market-based Mechanisms.</a></b> 
+    <b><a href="https://www.franciscopoggi.com/files/Market-based_mechanisms.pdf" target="_blank">Market-based Mechanisms.</a></b> 
     with <a href="http://www.quitzevalenzuelastookey.com" target="_blank"> Quitzé Valenzuela-Stookey</a>
     </summary>
     <ul>
-        <li> Can policies use information contained in market outcomes when market participants care about the policy itself? </li>
+        <li> How can policies use information contained in market outcomes when market participants care about the policy itself? </li>
     </ul>
   </details>        
 <br>
