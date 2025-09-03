@@ -95,6 +95,8 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
     <summary>
     <b><a href="https://www.franciscopoggi.com/files/SCIR.pdf" target="_blank">Strategic Concelament in Innovation Races.</a></b>
     with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim</a>
+    <br>
+        R&R at <i>AEJ:Micro</i>
     </summary>
       <ul>
         <li>Firms might avoid patenting intermediate innovations, even when this would mean capturing the full social value of the innovation.</li>
@@ -108,7 +110,7 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
     <b><a href="https://www.franciscopoggi.com/files/Market-based_mechanisms.pdf" target="_blank">Market-based Mechanisms.</a></b> 
     with <a href="http://www.quitzevalenzuelastookey.com" target="_blank"> Quitzé Valenzuela-Stookey</a>
     <br>
-        R&R at the <i>Journal of Political Economy.</i>
+        R&R at <i>Journal of Political Economy.</i>
     </summary>
     <ul>
         <li> How can policies use information contained in market outcomes when market participants care about the policy itself? </li>
