@@ -121,7 +121,7 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
 <!-- A Taxation Principle with Non-contractible Events -->
   <details>
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/taxation.pdf" target="_blank">A Taxation Principle with Non-Contractible Events.</a></b>
+    <b><a href="https://www.franciscopoggi.com/files/taxation.pdf" target="_blank">A Taxation Principle with Moral Hazard (New Draft Coming Soon!).</a></b>
     with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
     </summary>
         <ul>
