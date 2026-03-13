@@ -81,6 +81,10 @@ I am a microeconomic theorist exploring how incentives to acquire, elicit, discl
 
 I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">University of Mannheim</a> as an Assistant Professor (W1) after graduating from Northwestern University (2021).
 
+{{% callout note %}}
+I will be on sabbatical during the 2026-2027 academic year.
+{{% /callout %}}
+
 <br>
 
 <font size="5"
@@ -151,6 +155,4 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
   </details>
 <br>
 
-{{% callout note %}}
-I will be on sabbatical during the 2026-2027 academic year.
-{{% /callout %}}
+
