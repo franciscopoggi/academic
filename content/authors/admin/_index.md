@@ -75,7 +75,7 @@ user_groups:
 
 <br>
 
-I am a microeconomic theorist exploring how incentives to acquire, elicit, disclose, and conceal information shape economic interactions. I am interested in innovation, law, and industrial organization.
+My research uses economic theory and mechanism design to study how institutions shape the acquisition and strategic use of information—when agents choose to reveal, delay, or conceal what they know—in areas such as innovation, carbon emissions, and liability.
 
 <br>
 
