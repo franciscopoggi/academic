@@ -123,7 +123,7 @@ I received my Ph.D. from Northwestern University.
 <!-- A Taxation Principle with Non-contractible Events -->
   <details>
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/taxation.pdf" target="_blank">A Taxation Principle with Moral Hazard (New Draft Coming Soon!).</a></b>
+    <b><a href="https://www.franciscopoggi.com/files/taxation.pdf" target="_blank">A Taxation Principle with Moral Hazard.</a></b> (New Draft Coming Soon!)
     with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
     </summary>
         <ul>
@@ -155,4 +155,26 @@ I received my Ph.D. from Northwestern University.
   </details>
 <br>
 
+<!-- (Un)finished Products -->
+  <details>
+    <summary>
+    <b> (Un)finished products </b>
+    with <a href="" target="_blank"> Jorge Lemus</a>
+    </summary>
+        <ul>
+          <li>  </li>
+        </ul>
+  </details>
+<br>
+
+<!-- (Un)finished Products -->
+  <details>
+    <summary>
+    <b> Confessions </b>
+    </summary>
+        <ul>
+          <li>  </li>
+        </ul>
+  </details>
+<br>
 
