@@ -19,14 +19,12 @@ organizations:
 
 # Short bio (displayed in user profile at end of posts)
 bio: Assistant Professor at the University of Mannheim working on microeconomic theory, with a focus on how information disclosure and concealment shape innovation, liability, and markets.
-
-#Microeconomic theorist from Argentina. Prior to that, I completed a BA and MA at [Universidad de San Andrés](https://www.udesa.edu.ar/departamento-de-economia) and received my Ph.D. from Northwestern University.
  
-interests:
-- Microeconomic Theory
-- Information Economics
-- Industrial Organization
-- Law and Economics
+# interests:
+# - Microeconomic Theory
+# - Information Economics
+# - Industrial Organization
+# - Law and Economics
 # education:
 #   courses:
 #   - course: PhD in Economics
@@ -153,6 +151,6 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
   </details>
 <br>
 
-<!-- {{% callout note %}}
-At some point in the summer, I will join <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">the University of Mannheim</a> as an Assistant Professor.
-{{% /callout %}} -->
+{{% callout note %}}
+I will be on sabbatical during the 2026-2027 academic year.
+{{% /callout %}}
