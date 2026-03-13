@@ -18,15 +18,15 @@ organizations:
   url: "https://www.uni-mannheim.de/en/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: bio.
+bio: Assistant Professor at the University of Mannheim working on microeconomic theory, with a focus on how information disclosure and concealment shape innovation, liability, and markets.
 
 #Microeconomic theorist from Argentina. Prior to that, I completed a BA and MA at [Universidad de San Andrés](https://www.udesa.edu.ar/departamento-de-economia) and received my Ph.D. from Northwestern University.
  
-# interests:
-# - Microeconomic Theory
-# - Law and Economics
-# - Information Economics
-
+interests:
+- Microeconomic Theory
+- Information Economics
+- Industrial Organization
+- Law and Economics
 # education:
 #   courses:
 #   - course: PhD in Economics
@@ -93,7 +93,7 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
 <!-- Strategic Concelament in Innovation Races -->
   <details>
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/SCIR.pdf" target="_blank">Strategic Concelament in Innovation Races.</a></b>
+    <b><a href="https://www.franciscopoggi.com/files/SCIR.pdf" target="_blank">Strategic Concealment in Innovation Races.</a></b>
     with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim</a>
     <br>
         R&R at <i>AEJ:Micro</i>
