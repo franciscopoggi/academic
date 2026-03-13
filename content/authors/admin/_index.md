@@ -75,14 +75,14 @@ user_groups:
 
 <br>
 
-My research uses economic theory and mechanism design to study how institutions shape the acquisition and strategic use of information—when agents choose to reveal, delay, or conceal what they know—in areas such as innovation, carbon emissions, and liability.
+Welcome to my website. I'm an Assistant Professor of Economics at the University of Mannheim.
 
-<br>
+My research uses economic theory and mechanism design to study how institutions shape the acquisition and strategic use of information—when agents reveal, delay, or conceal what they know—in areas such as innovation, carbon emissions, and liability. 
 
-I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">University of Mannheim</a> as an Assistant Professor (W1) after graduating from Northwestern University (2021).
+I received my Ph.D. from Northwestern University.
 
 {{% callout note %}}
-I will be on sabbatical during the 2026-2027 academic year.
+**News:** I will be on sabbatical in the 2026-2027 academic year and plan to spend the Fall Semester in Chicago. 
 {{% /callout %}}
 
 <br>
