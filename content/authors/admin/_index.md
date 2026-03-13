@@ -75,7 +75,7 @@ user_groups:
 
 <br>
 
-Welcome to my website. I'm an Assistant Professor of Economics at the University of Mannheim.
+I'm an Assistant Professor of Economics at the University of Mannheim.
 
 My research uses economic theory and mechanism design to study how institutions shape the acquisition and strategic use of information—when agents reveal, delay, or conceal what they know—in areas such as innovation, carbon emissions, and liability. 
 
