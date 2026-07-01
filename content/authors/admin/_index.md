@@ -87,15 +87,12 @@ I received my Ph.D. from Northwestern University.
 
 <br>
 
-<font size="5"
-          color="black">
-          <b>Research:</b> 
-        </font>
+<h2 style="margin-bottom: 0.5rem;">Research</h2>
 
 <!-- Strategic Concelament in Innovation Races -->
   <details>
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/SCIR.pdf" target="_blank">Strategic Concealment in Innovation Races.</a></b>
+    <b><a href="/files/SCIR.pdf" target="_blank">Strategic Concealment in Innovation Races.</a></b>
     with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim</a>
     <br>
         R&R at <i>AEJ:Micro</i>
@@ -109,7 +106,7 @@ I received my Ph.D. from Northwestern University.
 <!-- Market-based Mechanisms. -->
   <details> 
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/Market-based_mechanisms.pdf" target="_blank">Market-based Mechanisms.</a></b> 
+    <b><a href="/files/Market-based_mechanisms.pdf" target="_blank">Market-based Mechanisms.</a></b> 
     with <a href="http://www.quitzevalenzuelastookey.com" target="_blank"> Quitzé Valenzuela-Stookey</a>
     <br>
         R&R at <i>Journal of Political Economy.</i>
@@ -123,7 +120,7 @@ I received my Ph.D. from Northwestern University.
 <!-- A Taxation Principle with Non-contractible Events -->
   <details>
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/taxation.pdf" target="_blank">A Taxation Principle with Moral Hazard.</a></b> (New Draft Coming Soon!)
+    <b><a href="/files/taxation.pdf" target="_blank">A Taxation Principle with Moral Hazard.</a></b>
     with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
     </summary>
         <ul>
@@ -135,7 +132,7 @@ I received my Ph.D. from Northwestern University.
 <!-- The Timing of Complementary Innovations. -->
   <details>
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/timing-innovations.pdf" target="_blank">The Timing of Complementary Innovations.</a></b> 
+    <b><a href="/files/timing-innovations.pdf" target="_blank">The Timing of Complementary Innovations.</a></b> 
     </summary>
         <ul>
           <li> Breakthroughs always enhance incentives to work on complementary projects, but only when the timing is endogenous. </li>
@@ -146,7 +143,7 @@ I received my Ph.D. from Northwestern University.
 <!-- Liability Design with Information Acquisition -->
   <details>
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/liability.pdf" target="_blank">Liability Design with Information Acquisition.</a></b>
+    <b><a href="/files/liability.pdf" target="_blank">Liability Design with Information Acquisition.</a></b>
     with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
     </summary>
         <ul>
@@ -161,11 +158,8 @@ I received my Ph.D. from Northwestern University.
     <b> (Un)finished products </b>
     with <a href="https://sites.google.com/site/jorgelemuswebsite/home" target="_blank"> Jorge Lemus</a>
     <br>
-    [<a href="https://www.franciscopoggi.com/files/slides/unfinished-products/" target="_blank">Slides</a>]
+    [<a href="/files/slides/unfinished-products/" target="_blank">Slides</a>]
     </summary>
-        <ul>
-          <li>  </li>
-        </ul>
   </details>
 <br>
 
@@ -174,9 +168,6 @@ I received my Ph.D. from Northwestern University.
     <summary>
     <b> Confessions </b>
     </summary>
-        <ul>
-          <li>  </li>
-        </ul>
   </details>
 <br>
 
