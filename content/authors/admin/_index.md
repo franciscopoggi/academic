@@ -160,6 +160,8 @@ I received my Ph.D. from Northwestern University.
     <summary>
     <b> (Un)finished products </b>
     with <a href="https://sites.google.com/site/jorgelemuswebsite/home" target="_blank"> Jorge Lemus</a>
+    <br>
+    [<a href="https://www.franciscopoggi.com/files/slides/unfinished-products/" target="_blank">Slides</a>]
     </summary>
         <ul>
           <li>  </li>
