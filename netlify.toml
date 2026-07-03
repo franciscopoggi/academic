@@ -5,16 +5,16 @@
   publish = "simple-site"
 
 # ---- Redirects from old Wowchemy/Hugo URLs ----
-# Old publication pages -> new research page
+# Old publication pages -> research tab
 [[redirects]]
   from = "/publication/*"
-  to = "/research.html"
+  to = "/#research"
   status = 301
 
-# Old talk pages -> research page
+# Old talk pages -> research tab
 [[redirects]]
   from = "/talk/*"
-  to = "/research.html"
+  to = "/#research"
   status = 301
 
 # Old course pages -> home (course PDFs still served under /files/microiii and /files/LawEcon)

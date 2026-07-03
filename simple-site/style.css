@@ -5,13 +5,13 @@
    ========================================================= */
 
 :root {
-  --accent:    #7a1f2b;   /* deep maroon — change to taste */
-  --text:      #22201f;
-  --muted:     #6b6660;
-  --rule:      #e7e3dd;
-  --bg:        #fdfcfa;   /* very soft off-white, warmer than pure white */
+  --accent:    #2d5873;   /* steel blue — same primary as the old wowchemy theme */
+  --text:      #212528;
+  --muted:     #64707a;
+  --rule:      #e1e7ec;
+  --bg:        #fbfcfd;   /* very soft off-white, cool-tinted */
   --serif:     Georgia, "Times New Roman", "Iowan Old Style", serif;
-  --max-width: 640px;
+  --max-width: 760px;
 }
 
 * { box-sizing: border-box; }
@@ -57,7 +57,7 @@ header.masthead img {
   border-radius: 50%;
   object-fit: cover;
   flex: none;
-  background: #efeae3;
+  background: #e8edf2;
 }
 header.masthead h1 {
   font-family: var(--serif);
@@ -100,8 +100,16 @@ nav.tabs a.active {
   border-bottom-color: var(--accent);
 }
 
+/* ---------- panels (tab content; JS toggles .visible) ---------- */
+.panel { display: none; }
+.panel.visible {
+  display: block;
+  /* softens the layout collapse when switching to a short panel */
+  min-height: 40vh;
+}
+
 /* ---------- body prose ---------- */
-.wrap > p {
+.panel > p {
   margin: 0 0 18px;
   max-width: 60ch;   /* keep the measure comfortable */
 }
@@ -109,7 +117,7 @@ nav.tabs a.active {
 /* ---------- news callout ---------- */
 .news {
   border-left: 3px solid var(--accent);
-  background: #f7eff0;
+  background: #edf2f6;
   padding: 13px 18px;
   margin: 28px 0;
   font-size: 15.5px;
@@ -153,7 +161,7 @@ h2 {
 .paper .abstract {
   margin: 8px 0 2px;
   padding-left: 16px;
-  color: #45403b;
+  color: #3d454c;
   font-size: 15.5px;
   line-height: 1.6;
   border-left: 2px solid var(--rule);

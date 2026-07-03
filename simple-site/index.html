@@ -11,14 +11,15 @@
   <meta property="og:url" content="https://www.franciscopoggi.com/">
   <meta property="og:image" content="https://www.franciscopoggi.com/files/avatar.jpg">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%237a1f2b'/%3E%3Ctext x='50' y='70' font-size='56' text-anchor='middle' fill='%23fdfcfa' font-family='Georgia,serif'%3EP%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%232d5873'/%3E%3Ctext x='50' y='70' font-size='56' text-anchor='middle' fill='%23fdfcfa' font-family='Georgia,serif'%3EP%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
+  <noscript><style>.panel { display: block !important; }</style></noscript>
 </head>
 <body>
 
   <div class="wrap">
 
-    <!-- ===== MASTHEAD (identical on every page) ===== -->
+    <!-- ================= MASTHEAD ================= -->
     <header class="masthead">
       <img src="files/avatar.jpg" alt="Francisco Poggi">
       <div class="masthead-info">
@@ -28,31 +29,162 @@
       </div>
     </header>
 
-    <!-- ===== TABS (identical on every page; move class="active" to the current page) ===== -->
+    <!-- ================= TABS =================
+         Tabs switch panels in place (no page reload). CV is a normal link. -->
     <nav class="tabs">
-      <a href="index.html" class="active">Home</a>
-      <a href="research.html">Research</a>
-      <a href="files/cv.pdf" target="_blank" rel="noopener">CV</a>
-      <a href="contact.html">Contact</a>
+      <a href="#home" data-panel="home" class="active">Home</a>
+      <a href="#research" data-panel="research">Research</a>
+      <a href="#cv" data-panel="cv">CV</a>
+      <a href="#contact" data-panel="contact">Contact</a>
     </nav>
 
-    <!-- ===== ABOUT ===== -->
-    <p>I'm an Assistant Professor of Economics at the University of Mannheim.</p>
+    <!-- ================= HOME ================= -->
+    <section class="panel visible" id="panel-home">
+      <p>I'm an Assistant Professor of Economics at the University of Mannheim.</p>
 
-    <p>My research uses economic theory and mechanism design to study how institutions
-      shape the acquisition and strategic use of information—when agents reveal, delay,
-      or conceal what they know—in areas such as innovation, carbon emissions, and liability.</p>
+      <p>My research uses economic theory and mechanism design to study how institutions
+        shape the acquisition and strategic use of information—when agents reveal, delay,
+        or conceal what they know—in areas such as innovation, carbon emissions, and liability.</p>
 
-    <p>I received my Ph.D. from Northwestern University.</p>
+      <p>I received my Ph.D. from Northwestern University.</p>
 
-    <div class="news">
-      <strong>News:</strong> I will be on sabbatical in the 2026&ndash;2027 academic year
-      and plan to spend the Fall Semester in Chicago.
-    </div>
+      <div class="news">
+        <strong>News:</strong> I will be on sabbatical in the 2026&ndash;2027 academic year
+        and plan to spend the Fall Semester in Chicago.
+      </div>
+    </section>
+
+    <!-- ================= RESEARCH =================
+         To add a paper, copy one .paper block and edit the title, link, coauthors,
+         status, and abstract. Delete the <span class="status"> line if not applicable. -->
+    <section class="panel" id="panel-research">
+
+      <div class="paper">
+        <p class="paper-head">
+          <span class="title"><a href="files/scir.pdf" target="_blank" rel="noopener">Strategic Concealment in Innovation Races</a></span>
+          <span class="meta">with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank" rel="noopener">Yonggyun Kim</a>
+            &middot; <span class="status">R&amp;R at AEJ: Micro</span></span>
+        </p>
+        <!-- <p class="abstract">Firms might avoid patenting intermediate innovations, even when this
+          would mean capturing the full social value of the innovation.</p> -->
+      </div>
+
+      <div class="paper">
+        <p class="paper-head">
+          <span class="title"><a href="files/market-based_mechanisms.pdf" target="_blank" rel="noopener">Market-based Mechanisms</a></span>
+          <span class="meta">with <a href="http://www.quitzevalenzuelastookey.com" target="_blank" rel="noopener">Quitz&eacute; Valenzuela-Stookey</a>
+            &middot; <span class="status">R&amp;R at JPE</span></span>
+        </p>
+        <!-- <p class="abstract">How can policies use information contained in market outcomes when
+          market participants care about the policy itself?</p> -->
+      </div>
+
+      <div class="paper">
+        <p class="paper-head">
+          <span class="title"><a href="files/taxation.pdf" target="_blank" rel="noopener">A Taxation Principle with Moral Hazard</a></span>
+          <span class="meta">with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank" rel="noopener">Bruno Strulovici</a></span>
+        </p>
+        <!-- <p class="abstract">Sometimes, eliciting private information becomes redundant.</p> -->
+      </div>
+
+      <div class="paper">
+        <p class="paper-head">
+          <span class="title"><a href="files/timing-innovations.pdf" target="_blank" rel="noopener">The Timing of Complementary Innovations</a></span>
+        </p>
+        <!-- <p class="abstract">Breakthroughs always enhance incentives to work on complementary
+          projects, but only when the timing is endogenous.</p> -->
+      </div>
+
+      <div class="paper">
+        <p class="paper-head">
+          <span class="title"><a href="files/liability.pdf" target="_blank" rel="noopener">Liability Design with Information Acquisition</a></span>
+          <span class="meta">with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank" rel="noopener">Bruno Strulovici</a></span>
+        </p>
+        <!-- <p class="abstract">How should liability be determined for an agent who acquires
+          information about an unknown risk?</p> -->
+      </div>
+
+      <div class="paper">
+        <p class="paper-head">
+          <span class="title">(Un)finished Products</span>
+          <span class="meta">with <a href="https://sites.google.com/site/jorgelemuswebsite/home" target="_blank" rel="noopener">Jorge Lemus</a>
+            &middot; <span class="status">Work in progress</span>
+            &middot; <a href="files/slides/unfinished-products/" target="_blank" rel="noopener">Slides</a></span>
+        </p>
+      </div>
+
+      <div class="paper">
+        <p class="paper-head">
+          <span class="title"><a href="files/confessions.pdf" target="_blank" rel="noopener">Confessions</a></span>
+          <span class="meta"><span class="status">Work in progress</span></span>
+        </p>
+      </div>
+
+    </section>
+
+    <!-- ================= CV ================= -->
+    <section class="panel" id="panel-cv">
+      <p><strong>Employment</strong><br>
+        Assistant Professor of Economics, University of Mannheim (2021&ndash;present)</p>
+
+      <p><strong>Education</strong><br>
+        Ph.D. in Economics, Northwestern University (2021)<br>
+        M.A. and B.A. in Economics, Universidad de San Andr&eacute;s</p>
+
+      <p><strong>Research interests</strong><br>
+        Microeconomic theory, information economics, industrial organization,
+        law and economics</p>
+
+      <p><a href="files/cv.pdf" target="_blank" rel="noopener">Full CV (PDF) &rarr;</a></p>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="panel" id="panel-contact">
+      <p>Email: <a href="mailto:poggi@uni-mannheim.de">poggi@uni-mannheim.de</a></p>
+
+      <p>Department of Economics<br>
+        University of Mannheim<br>
+        Germany</p>
+      <!-- Add your office / building address above when you want it public. -->
+    </section>
 
     <div class="spacer"></div>
     <footer>Last updated July 2026.</footer>
 
   </div>
+
+  <script>
+    // Tab switching without page reloads (keeps scroll position).
+    var tabs = document.querySelectorAll('nav.tabs a[data-panel]');
+
+    function showPanel(name) {
+      document.querySelectorAll('.panel').forEach(function (p) {
+        p.classList.toggle('visible', p.id === 'panel-' + name);
+      });
+      tabs.forEach(function (t) {
+        t.classList.toggle('active', t.dataset.panel === name);
+      });
+    }
+
+    function panelFromHash() {
+      var h = location.hash.replace('#', '');
+      return document.getElementById('panel-' + h) ? h : 'home';
+    }
+
+    tabs.forEach(function (t) {
+      t.addEventListener('click', function (e) {
+        e.preventDefault();                       // don't let the browser scroll/jump
+        history.pushState(null, '', t.getAttribute('href'));
+        showPanel(t.dataset.panel);
+        // if scrolled past the tab bar, align it to the top so the new
+        // panel starts in view; otherwise leave the scroll untouched
+        var navTop = document.querySelector('nav.tabs').offsetTop;
+        if (window.scrollY > navTop) window.scrollTo(0, navTop);
+      });
+    });
+
+    window.addEventListener('popstate', function () { showPanel(panelFromHash()); });
+    showPanel(panelFromHash());                   // honor #research / #contact on load
+  </script>
 </body>
 </html>
