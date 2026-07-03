@@ -1,5 +1,7 @@
 # Static site — no build step. Netlify serves the simple-site folder as-is.
+# (explicit no-op command overrides the old hugo command saved in the Netlify UI)
 [build]
+  command = "echo 'static site, no build'"
   publish = "simple-site"
 
 # ---- Redirects from old Wowchemy/Hugo URLs ----
