@@ -1,26 +1,33 @@
+# Static site — no build step. Netlify serves the simple-site folder as-is.
 [build]
-  command = "hugo --gc --minify -b $URL"
-  publish = "public"
+  publish = "simple-site"
 
-[build.environment]
-  HUGO_VERSION = "0.75.1"
-  HUGO_ENABLEGITINFO = "true"
+# ---- Redirects from old Wowchemy/Hugo URLs ----
+# Old publication pages -> new research page
+[[redirects]]
+  from = "/publication/*"
+  to = "/research.html"
+  status = 301
 
-[context.production.environment]
-  HUGO_ENV = "production"
+# Old talk pages -> research page
+[[redirects]]
+  from = "/talk/*"
+  to = "/research.html"
+  status = 301
 
-[context.deploy-preview]
-  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+# Old course pages -> home (course PDFs still served under /files/microiii and /files/LawEcon)
+[[redirects]]
+  from = "/courses/*"
+  to = "/"
+  status = 301
 
-[context.branch-deploy]
-  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+# Old blog posts and author pages -> home
+[[redirects]]
+  from = "/post/*"
+  to = "/"
+  status = 301
 
-[[headers]]
-  for = "*.webmanifest"
-  [headers.values]
-    Content-Type = "application/manifest+json; charset=UTF-8"
-
-[[headers]]
-  for = "index.xml"
-  [headers.values]
-    Content-Type = "application/rss+xml"
+[[redirects]]
+  from = "/author/*"
+  to = "/"
+  status = 301
