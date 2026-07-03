@@ -5,8 +5,9 @@ Edit the `.html` files directly and open them in a browser to preview.
 
 ## Files
 
-- `index.html` — home page (bio, news, link to research)
-- `research.html` — research page (paper list with inline abstracts)
+- `index.html` — home page (bio, news)
+- `research.html` — research page (paper list; abstracts commented out)
+- `contact.html` — contact page
 - `style.css` — all styling (colors live at the top under `:root`)
 - `files/` — PDFs, `avatar.jpg`, slides, and teaching materials
   (`microiii/`, `LawEcon/` are kept so old `/files/...` links keep working)
@@ -17,6 +18,9 @@ Edit the `.html` files directly and open them in a browser to preview.
   and change the title, link, coauthors, status, and abstract.
 - **Change the accent color:** edit `--accent` at the top of `style.css`.
 - **Update the footer date:** each page has a `<footer>Last updated …</footer>`.
+- **Masthead + tabs:** the header and `<nav class="tabs">` blocks are identical on
+  every page — if you edit one, copy it to the others, and keep `class="active"`
+  on the tab for the current page.
 
 ## Publishing
 

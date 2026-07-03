@@ -16,11 +16,25 @@
 </head>
 <body>
 
-  <div class="wrap wide">
+  <div class="wrap">
 
-    <p class="backlink"><a href="index.html">&larr; Home</a></p>
+    <!-- ===== MASTHEAD (identical on every page) ===== -->
+    <header class="masthead">
+      <img src="files/avatar.jpg" alt="Francisco Poggi">
+      <div class="masthead-info">
+        <h1>Francisco Poggi</h1>
+        <p class="role">Assistant Professor of Economics<br>
+          <a href="https://www.uni-mannheim.de/en/" target="_blank" rel="noopener">University of Mannheim</a></p>
+      </div>
+    </header>
 
-    <h2>Research</h2>
+    <!-- ===== TABS (identical on every page; move class="active" to the current page) ===== -->
+    <nav class="tabs">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="files/cv.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
     <!-- To add a paper, copy one .paper block and edit the title, link, coauthors,
          status, and abstract. Delete the <span class="status"> line if not applicable. -->
