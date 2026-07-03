@@ -22,6 +22,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  border-top: 5px solid var(--accent);   /* full-width accent band anchors the page */
   background: var(--bg);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -34,7 +35,7 @@ body {
   max-width: var(--max-width);
   width: 100%;
   margin: 0 auto;
-  padding: 0 24px 80px;
+  padding: 0 24px 48px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -49,7 +50,7 @@ header.masthead {
   display: flex;
   align-items: center;
   gap: 24px;
-  margin: 56px 0 26px;
+  margin: 30px 0 22px;
 }
 header.masthead img {
   width: 200px;
@@ -105,7 +106,7 @@ nav.tabs a.active {
 .panel.visible {
   display: block;
   /* softens the layout collapse when switching to a short panel */
-  min-height: 40vh;
+  min-height: 30vh;
 }
 
 /* ---------- body prose ---------- */
@@ -169,8 +170,8 @@ h2 {
 
 /* ---------- footer ---------- */
 footer {
-  margin-top: 56px;
-  padding-top: 18px;
+  margin-top: 40px;
+  padding-top: 16px;
   border-top: 1px solid var(--rule);
   color: var(--muted);
   font-size: 13.5px;
@@ -178,7 +179,7 @@ footer {
 
 /* ---------- responsive ---------- */
 @media (max-width: 520px) {
-  header.masthead { flex-direction: column; align-items: flex-start; gap: 16px; margin-top: 36px; }
+  header.masthead { flex-direction: column; align-items: flex-start; gap: 16px; margin-top: 22px; }
   header.masthead img { width: 150px; height: 150px; }
   header.masthead h1 { font-size: 28px; }
 }
