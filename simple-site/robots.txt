@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /publication/
+Disallow: /courses/
+Disallow: /courses/

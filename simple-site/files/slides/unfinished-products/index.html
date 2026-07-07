@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>(Un)finished Products · Di Tella 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<!-- KaTeX (rendering handled by deck.js on DOMContentLoaded) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<!-- external transition/layout code -->
+<link rel="stylesheet" href="style.css">
+<style>
+/* deck-local additions: interactive Weitzman worked-example (content-specific) */
+.pbx-boxes{position:relative;margin:14px 0 20px}
+.pbx-box{
+  position:absolute;top:0;left:0;
+  border:1.5px solid var(--line);background:#f5f7f7;border-radius:4px;
+  padding:13px 15px;opacity:.4;
+  transition:transform .6s cubic-bezier(.2,.8,.2,1),border-color .5s,background .5s,opacity .5s;
+}
+.pbx-box.live{opacity:1}
+.pbx-box.opened{background:#eef2f2;border-color:var(--muted)}
+.pbx-box.winner{border-color:var(--blue);background:#e9f1f8}
+.pbx-box .nm{font-weight:600;font-size:19px;color:var(--ink);margin-bottom:.35em;display:flex;justify-content:space-between;align-items:center}
+.pbx-box .nm .tag{font-size:.58em;font-weight:600;color:var(--blue);letter-spacing:.1em;text-transform:uppercase}
+.pbx-row{display:flex;justify-content:space-between;font-size:17px;padding:.16em 0}
+.pbx-row span:first-child{color:var(--muted)}
+.pbx-row i{font-style:italic}
+.pbx-row.rrow{font-weight:600;border-top:1px solid var(--line);margin-top:.28em;padding-top:.34em}
+.pbx-row.rrow span:last-child{color:var(--accent)}
+.pbx-row.val span:last-child{font-weight:600;color:var(--ink)}
+.pbx-row.dist span:last-child{font-weight:400;color:var(--muted)}
+.pbx-row.val.revealed span:last-child{display:inline-block;animation:pbxPop .5s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes pbxPop{0%{transform:scale(.4);opacity:0}60%{transform:scale(1.25);opacity:1}100%{transform:scale(1);opacity:1}}
+.pbx-narr{
+  background:#eef2f2;border-left:4px solid var(--accent);border-radius:4px;
+  padding:13px 18px;font-size:20px;line-height:1.45;min-height:3.1em;
+  display:flex;align-items:center
+}
+.pbx-narr b{color:var(--accent);font-weight:600}
+.pbx-narr i{font-style:italic}
+.pbx-narr .res{color:var(--accent);font-weight:600}
+.pbx-narr .win{color:var(--blue);font-weight:600}
+.pbx-narr sup{font-size:.7em;vertical-align:super}
+.pbx-bottom{margin-top:auto}
+.pbx-progress{display:flex;gap:7px;margin-top:16px}
+.pbx-pip{width:26px;height:4px;border-radius:2px;background:var(--line);transition:background .3s}
+.pbx-pip.on{background:var(--accent)}
+@media (prefers-reduced-motion:reduce){.pbx-box{transition:none}}
+.lblG{fill:#1f7a3d}
+.cv-green{stroke:#1f7a3d;stroke-width:2.5;fill:none}
+.legend{font-size:14px}
+</style>
+</head>
+<body>
+<div id="deck">
+
+<!-- 0. TITLE -->
+<section class="slide title-slide active">
+  <div class="t">(Un)finished <span class="paren">Products</span></div>
+  <div class="rule"></div>
+  <div class="au"><b>Francisco Poggi</b> &nbsp;·&nbsp; <b>Jorge Lemus</b></div>
+  <div class="af">University of Mannheim &nbsp;·&nbsp; UIUC</div>
+  <div class="ev">Universidad Torcuato Di Tella · 2026</div>
+</section>
+
+<!-- 1. MOTIVATION I -->
+<section class="slide">
+  <h1>Motivation: Biopharmaceutical industry</h1>
+  <div class="body top">
+    <p>A <b>biotech company</b> discovers an <b>early drug candidate</b><span class="muted">, e.g. a molecular-glue degrader hitting a disease-relevant protein.</span></p>
+    <p>Bringing it to market takes <b>many costly development steps</b> and the outcome is <b>uncertain</b>. The biotech won't go it alone: it will <b>sell or license</b> the asset to a pharmaceutical company. The choice is <b>when to sell</b>:</p>
+    <ul>
+      <li>sell the <b>raw candidate</b>, undeveloped, or</li>
+      <li><b>invest to develop it first</b>, and sell a developed asset.</li>
+    </ul>
+    <div class="block accent">
+      <div class="bt">Friction</div>
+      <div class="bb">Pharma has access to a <b>portfolio of alternative projects</b>, and may drop the candidate in favor of them.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. MOTIVATION II -->
+<section class="slide">
+  <h1>Motivation: Why timing matters</h1>
+  <div class="body top">
+    <p>Possible reasons why the <b>timing of sale</b> matters:</p>
+    <ul>
+      <li><b>Financial reasons:</b> the biotech is cash-constrained and sells early.</li>
+      <li><b>Cost advantage:</b> pharma can develop the asset more cheaply.</li>
+      <li><b>Risk allocation:</b> the party better able to bear risk should develop.</li>
+    </ul>
+    <p>We <b>shut all three down</b>: no development-cost advantage, risk-neutral parties, no financial frictions.</p>
+    <div class="block accent">
+      <div class="bt">A motive survives</div>
+      <div class="bb">Developing before sale changes how attractive the candidate looks <b>against the buyer's alternatives</b>. The seller may therefore <b>develop strategically</b>.</div>
+    </div>
+    <p style="text-align:center;color:var(--accent);font-weight:600;font-size:22px;margin-top:16px">What determines the timing of sale, and is it efficient?</p>
+  </div>
+</section>
+
+<!-- 3. WHAT WE DO -->
+<section class="slide">
+  <h1>What we do</h1>
+  <div class="body top">
+    <p>A framework with a <b>buyer</b> and a <b>seller</b>, where:</p>
+    <ul>
+      <li>the seller owns a project with <b>uncertain value</b> that requires <b>costly development</b>;</li>
+      <li><b>neither party has a development-cost advantage</b>;</li>
+      <li>the seller chooses <b>whether to develop before sale</b> and <b>the price</b>;</li>
+      <li>the buyer can explore <b>alternative projects</b>, before and after purchasing.</li>
+    </ul>
+    <p class="muted">We then:</p>
+    <ul>
+      <li>obtain a <b>tractable</b> formulation of the seller's problem and characterize the equilibrium;</li>
+      <li>conduct <b>welfare analysis</b>;</li>
+      <li>study comparative statics in <b>development cost</b> and the <b>set of alternatives</b>.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SECTION: MODEL -->
+<section class="slide section-slide">
+  <div class="sn">Part I</div>
+  <div class="st">Model</div>
+  <div class="rule"></div>
+</section>
+
+<!-- 4. MODEL: BOXES & PLAYERS -->
+<section class="slide">
+  <h1>Model: Boxes and players</h1>
+  <div class="body top">
+    <div class="block">
+      <div class="bt">A box $(F,c)$</div>
+      <div class="bb">A distribution $F$ of values and a fixed opening cost $c$. A box is <b>open</b> or <b>closed</b>; paying $c$ opens it and draws value $v\sim F$.</div>
+    </div>
+    <ul>
+      <li><b>Seller</b> owns one box $(F,c)$.</li>
+      <li><b>Buyer</b> owns a random collection of boxes $\{(F_i,c_i)\}_{i=1}^N$.
+        <ul>
+          <li>$\mathcal{B}$ is the set of collections; $\mu\in\Delta(\mathcal{B})$ its distribution.</li>
+        </ul>
+      </li>
+      <li>For simplicity, all boxes have support in $[0,\bar v]$.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 5. MODEL: TIMING & PAYOFFS -->
+<section class="slide">
+  <h1>Model: Timing and payoffs</h1>
+  <div class="body top">
+    <ul>
+      <li><b>$t=0$, Seller:</b> chooses to open ($d=0$) or leave closed ($d=1$), and sets a price $P$.</li>
+      <li><b>$t\ge 1$, Buyer:</b> observes its collection $B$ and sequentially decides to:
+        <ul>
+          <li>purchase the seller's box (add it to the collection),</li>
+          <li>open one of its closed boxes,</li>
+          <li>stop and adopt an opened box, or stop with nothing.</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="two">
+      <div class="block accent"><div class="bt">Seller payoff</div><div class="bb mathline">$t \;-\; c\cdot d$</div></div>
+      <div class="block accent"><div class="bt">Buyer payoff</div><div class="bb mathline">$v_i \;-\; \sum_{j\in O} c_j \;-\; t$</div></div>
+    </div>
+    <p class="muted" style="font-size:16px;margin-top:6px">$O$ = boxes opened by the buyer, $i$ = box adopted, $t$ = transfer.</p>
+  </div>
+</section>
+
+<!-- 6. MODEL: INFORMATION -->
+<section class="slide">
+  <h1>Model: Information</h1>
+  <div class="body">
+    <p>We consider two different information frameworks:</p>
+    <div class="block">
+      <div class="bt">Symmetric information</div>
+      <div class="bb">After the box is opened (and before the price is set), <b>both</b> buyer and seller observe $v$.<br>The seller can set a <b>different price for each realization</b> of $v$.</div>
+    </div>
+    <div class="block">
+      <div class="bt">Asymmetric information</div>
+      <div class="bb">When the seller offers an open box, <b>only the buyer</b> observes $v$.<br>The price <b>cannot depend</b> on the realization of $v$.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: EFFICIENT SEARCH -->
+<section class="slide section-slide">
+  <div class="sn">Part II</div>
+  <div class="st">Efficient search &amp; inefficiencies</div>
+  <div class="rule"></div>
+</section>
+
+<!-- 7. EFFICIENT SOLUTION -->
+<section class="slide">
+  <h1>Efficient sequential search (Weitzman)</h1>
+  <div class="body top">
+    <p>Reservation value $r$ uniquely solves</p>
+    <div class="mathline">$$\int_r^{\bar v}(v-r)\,dF(v)=c.$$</div>
+    <ul>
+      <li><b>Search:</b> open the closed box with the highest reservation value.</li>
+      <li><b>Stopping:</b> stop once the highest realized value exceeds all remaining reservation values.</li>
+      <li><b>Adoption:</b> adopt the open box with the highest realized value.</li>
+    </ul>
+    <p class="muted">The reservation value is well-defined for <b>every box</b>: each box $(F_i,c_i)$ has its own $r_i$, computed from its distribution and cost via the equation above.</p>
+  </div>
+</section>
+
+<!-- 8. WEITZMAN WORKED EXAMPLE (interactive) -->
+<section class="slide static" id="pandora">
+  <h1>Weitzman's rule: a worked example</h1>
+  <div class="body top">
+    <div class="pbx-boxes" id="pbx-boxes"></div>
+    <div class="pbx-bottom">
+      <div class="pbx-narr"><span id="pbx-narr"></span></div>
+      <div class="pbx-progress" id="pbx-progress"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. DEMAND: CLOSED BOX -->
+<section class="slide">
+  <h1>Demand for a closed box</h1>
+  <div class="body top">
+    <p>With a price $P$, the buyer treats the seller's box as a box with reservation $r(P)$ solving</p>
+    <div class="mathline">$$\int_{r(P)}^{\bar v}\big(v-r(P)\big)\,dF(v)=c+P.$$</div>
+    <p class="muted">The right-hand side grows with $P$, so the reservation value $r(P)$ is <b>decreasing</b> in $P$.</p>
+    <div class="fig">
+      <svg viewBox="0 0 760 120" width="780" height="120">
+        <line x1="40" y1="70" x2="720" y2="70" class="axis" marker-end="url(#arr2)"/>
+        <defs><marker id="arr2" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#23373b"/></marker></defs>
+        <text x="726" y="75" font-size="17">r</text>
+        <g font-size="16">
+          <line x1="120" y1="60" x2="120" y2="80" class="tick"/><text x="120" y="100" text-anchor="middle">r<tspan class="sub">4</tspan></text>
+          <line x1="240" y1="58" x2="240" y2="82" class="tick" stroke="#b5121b" stroke-width="3"/><text x="240" y="102" text-anchor="middle" fill="#b5121b">r(P)</text>
+          <line x1="300" y1="60" x2="300" y2="80" class="tick"/><text x="300" y="100" text-anchor="middle">r<tspan class="sub">3</tspan></text>
+          <line x1="420" y1="58" x2="420" y2="82" class="tick" stroke="#5b6b6e" stroke-width="3"/><text x="420" y="102" text-anchor="middle" fill="#5b6b6e">r(0)</text>
+          <line x1="540" y1="60" x2="540" y2="80" class="tick"/><text x="540" y="100" text-anchor="middle">r<tspan class="sub">2</tspan></text>
+          <line x1="660" y1="60" x2="660" y2="80" class="tick"/><text x="660" y="100" text-anchor="middle">r<tspan class="sub">1</tspan></text>
+        </g>
+      </svg>
+    </div>
+    <div class="block def">
+      <div class="bt">Inefficiencies</div>
+      <div class="bb"><b>Inefficient order:</b> box 0 is opened too late.<br><b>Inefficient stopping:</b> box 0 is opened too infrequently.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. DEMAND: OPEN BOX -->
+<section class="slide">
+  <h1>Demand for an open box</h1>
+  <div class="body top">
+    <p>Now $v$ is the realized value of box 0; the buyer compares $v-P$ against the alternatives.</p>
+    <div class="fig">
+      <svg viewBox="0 0 760 130" width="780" height="130">
+        <line x1="40" y1="80" x2="720" y2="80" class="axis" marker-end="url(#arr3)"/>
+        <defs><marker id="arr3" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#23373b"/></marker></defs>
+        <text x="726" y="85" font-size="17">r</text>
+        <g font-size="16">
+          <line x1="120" y1="70" x2="120" y2="90" class="tick"/><text x="120" y="110" text-anchor="middle">r<tspan class="sub">4</tspan></text>
+          <line x1="300" y1="70" x2="300" y2="90" class="tick"/><text x="300" y="110" text-anchor="middle">r<tspan class="sub">3</tspan></text>
+          <line x1="420" y1="68" x2="420" y2="92" class="tick" stroke="#b5121b" stroke-width="3"/><text x="420" y="110" text-anchor="middle" fill="#b5121b">r(0)</text>
+          <line x1="540" y1="70" x2="540" y2="90" class="tick"/><text x="540" y="110" text-anchor="middle">r<tspan class="sub">2</tspan></text>
+          <line x1="660" y1="70" x2="660" y2="90" class="tick"/><text x="660" y="110" text-anchor="middle">r<tspan class="sub">1</tspan></text>
+          <line x1="360" y1="70" x2="360" y2="90" class="tick" stroke="#1f4e79" stroke-width="2.5"/><text x="360" y="58" text-anchor="middle" fill="#1f4e79">v−P</text>
+          <line x1="600" y1="70" x2="600" y2="90" class="tick" stroke="#1f4e79" stroke-width="2.5"/><text x="600" y="58" text-anchor="middle" fill="#1f4e79">v</text>
+        </g>
+      </svg>
+    </div>
+    <div class="block def">
+      <div class="bt">Inefficiencies</div>
+      <div class="bb"><b>Order:</b> box 0 opened too early.<br><b>Stopping:</b> too many boxes opened.<br><b>Adoption:</b> box 0 adopted too infrequently.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. BENCHMARK: EMPTY COLLECTION -->
+<section class="slide">
+  <h1>Benchmark: an empty collection</h1>
+  <div class="body top">
+    <p>Suppose the buyer has <b>no other boxes</b>, $\mathcal{B}=\{\emptyset\}$, so the seller's box is the only option.</p>
+    <div class="block accent">
+      <div class="bt">Proposition</div>
+      <div class="bb">With an empty collection, under <b>symmetric</b> information the seller is <b>indifferent</b> between open and closed; under <b>asymmetric</b> information the seller <b>strictly prefers closed</b>.</div>
+    </div>
+    <ul>
+      <li><b>Closed:</b> price $E[v]-c$, sells with probability 1 $\Rightarrow$ revenue $E[v]-c$.</li>
+      <li><b>Open, symmetric:</b> set price $=v$ for each realization $\Rightarrow$ expected revenue $E[v]-c$. <b>Indifferent.</b></li>
+      <li><b>Open, asymmetric:</b> a single price $P$ gives $P\,[1-F(P)]-c\le E[v]-c$. <b>Closed strictly better.</b></li>
+    </ul>
+    <p class="muted">Without alternatives, conditioning the price on $v$ is exactly what an open box cannot do, so the asymmetry strictly hurts.</p>
+  </div>
+</section>
+
+<!-- 12. DEMAND: SUFFICIENT STATISTIC -->
+<section class="slide">
+  <h1>Demand: a single sufficient statistic</h1>
+  <div class="body">
+    <p>Consider the general model with $\mathcal{B}\ne\{\emptyset\}$. What is the probability the buyer purchases the seller's box?</p>
+    <div class="block accent">
+      <div class="bt">Lemma</div>
+      <div class="bb">There is an increasing $Q:\mathbb{R}\to[0,1]$ with $Q(r)=0$ for $r&lt;0$, such that:
+        <ul style="margin-top:6px">
+          <li>a <b>closed</b> box at price $P$ sells with probability $Q(r(P))$;</li>
+          <li>an <b>open</b> box of value $v$ at price $P$ sells with probability $Q(v-P)$.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="muted">All the uncertainty about the buyer's alternatives collapses into $Q$, the cdf of a stochastic outside option. Keeping the box structure (rather than assuming $Q$) buys richer inefficiencies, welfare, comparative statics, and extensions.</p>
+  </div>
+</section>
+
+<!-- 13. DEMAND: PROOF -->
+<section class="slide">
+  <h1>Demand: proof</h1>
+  <div class="body top">
+    <p>The buyer will <b>not</b> buy the closed box iff there is an alternative box $i$ with $r_i&gt;r(P)$ <b>and</b> $v_i&gt;r(P)$.</p>
+    <div class="fig">
+      <svg viewBox="0 0 760 130" width="780" height="130">
+        <line x1="40" y1="80" x2="720" y2="80" class="axis" marker-end="url(#arrp)"/>
+        <defs><marker id="arrp" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#23373b"/></marker></defs>
+        <text x="726" y="85" font-size="17">r</text>
+        <g font-size="16">
+          <line x1="330" y1="68" x2="330" y2="92" class="tick" stroke="#b5121b" stroke-width="3"/><text x="330" y="110" text-anchor="middle" fill="#b5121b">r(P)</text>
+          <line x1="470" y1="70" x2="470" y2="90" class="tick" stroke="#1f4e79" stroke-width="2.5"/><text x="470" y="58" text-anchor="middle" fill="#1f4e79">v<tspan class="sub">i</tspan></text>
+          <line x1="590" y1="70" x2="590" y2="90" class="tick" stroke="#1f4e79" stroke-width="2.5"/><text x="590" y="58" text-anchor="middle" fill="#1f4e79">r<tspan class="sub">i</tspan></text>
+        </g>
+      </svg>
+    </div>
+    <ul>
+      <li>Fixing $B$, let $z_i=\min\{r_i,v_i\}$ and $z_B=\max_i\{z_i\}$.</li>
+      <li>Let $\displaystyle Q(r)=\int \Pr(z_B&lt;r)\,d\mu$.</li>
+      <li>A <b>closed</b> box sells at price $P$ iff $z_i&lt;r(P)$ for all $i$, with probability $Q(r(P))$.</li>
+      <li>An <b>open</b> box of value $v$ sells iff $z_i&lt;v-P$ for all $i$, with probability $Q(v-P)$.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SECTION: OPEN vs CLOSED -->
+<section class="slide section-slide">
+  <div class="sn">Part III</div>
+  <div class="st">Open vs. closed: the cost threshold</div>
+  <div class="rule"></div>
+</section>
+
+<!-- 14. SYMMETRIC INFO -->
+<section class="slide">
+  <h1>Symmetric information</h1>
+  <div class="body top">
+    <div class="block accent">
+      <div class="bt">Proposition</div>
+      <div class="bb">There is $\bar c\in[0,E[v]]$ such that the seller offers an <b>open</b> box if $c&lt;\bar c$ and a <b>closed</b> box if $c>\bar c$.</div>
+    </div>
+    <p>Compare the value of selling open vs. closed:</p>
+    <div class="mathline">$\displaystyle V_0(c)=\int_0^{\bar v}\!\Big\{\max_P\,Q(v-P)\,P\Big\}dF(v)-c,\qquad V_1(c)=\max_P\,Q(r(P))\,P$</div>
+    <p><b>Proof sketch.</b> The threshold structure follows from a single-crossing property plus two boundary checks:</p>
+    <ul>
+      <li><b>Single crossing:</b> $V_0$ is steeper in $c$ than $V_1$, so the two values cross at most once.</li>
+      <li><b>Boundary check $\bar c\ge 0$:</b> open is (weakly) better at $c=0$.</li>
+      <li><b>Boundary check $\bar c\le E[v]$:</b> closed is (weakly) better at $c=E[v]$.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 14b. SYMMETRIC INFO: CHANGE OF VARIABLES -->
+<section class="slide">
+  <h1>Symmetric information: change of variables</h1>
+  <div class="body top">
+    <p><b>Change of variables.</b> Optimize over the reservation $r$ instead of the price $P$. Since $$P=\int_r^{\bar v}(v-r)\,dF(v)-c$$,</p>
+    <div class="mathline">$\displaystyle V_1(c)=\max_r\,Q(r)\Big[\int_r^{\bar v}(v-r)\,dF(v)-c\Big]$</div>
+    <p><b>Single crossing.</b> Comparing the slopes in $c$:</p>
+    <ul>
+      <li>$V_0'(c)=-1$: an open-box seller <b>fully absorbs</b> cost increases.</li>
+      <li>By the envelope theorem, $V_1'(c)=-Q(r^*(c))\ge -1$ $\Rightarrow$ $V_1$ is <b>flatter</b>.</li>
+      <li>$V_0$ steeper than $V_1$ $\Rightarrow$ the two values cross at most once: <b>single crossing</b>.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 15. SYMMETRIC INFO FIGURE -->
+<section class="slide">
+  <h1>Symmetric information: single crossing</h1>
+  <div class="body">
+    <div class="fig">
+      <svg viewBox="0 0 620 360" width="600" height="360">
+        <line x1="70" y1="300" x2="560" y2="300" class="axis" marker-end="url(#a4)"/>
+        <line x1="70" y1="300" x2="70" y2="40" class="axis" marker-end="url(#a4b)"/>
+        <defs>
+          <marker id="a4" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#23373b"/></marker>
+          <marker id="a4b" markerWidth="10" markerHeight="10" refX="3" refY="6" orient="auto"><path d="M0,6 L3,0 L6,6 Z" fill="#23373b"/></marker>
+        </defs>
+        <text x="566" y="305" font-size="18">c</text>
+        <text x="58" y="40" font-size="18">V</text>
+        <line x1="70" y1="90" x2="490" y2="330" class="cv-blue"/>
+        <text x="495" y="332" font-size="17" class="lblB">V<tspan class="sub">0</tspan>(c)</text>
+        <line x1="70" y1="180" x2="490" y2="250" class="cv-red"/>
+        <text x="495" y="250" font-size="17" class="lblR">V<tspan class="sub">1</tspan>(c)</text>
+        <line x1="292" y1="217" x2="292" y2="300" class="dash"/>
+        <circle cx="292" cy="217" r="3.5" fill="#23373b"/>
+        <text x="286" y="320" font-size="17">c̄</text>
+      </svg>
+    </div>
+    <p class="muted" style="text-align:center">Open dominates for low $c$ (steeper $V_0$ starts higher); closed dominates once cost is high.</p>
+  </div>
+</section>
+
+<!-- 16. BOUNDARY: cbar >= 0 -->
+<section class="slide">
+  <h1>Boundary check: $\bar c\ge 0$</h1>
+  <div class="body top">
+    <p>It suffices to show $V_0(0)\ge V_1(0)$. Let $r^*$ be the optimal reservation for the closed box at $c=0$,</p>
+    <div class="mathline">$\displaystyle \hat P(v)=\begin{cases} v-r^* & v>r^*\\ 2\bar v & v&lt;r^*\end{cases}$</div>
+    <p>The high price $2\bar v$ never sells, so the box sells only when $v>r^*$. Then</p>
+    <div class="mathline">$\displaystyle V_0(0)\ \ge\ \int_0^{\bar v} Q\big(v-\hat P(v)\big)\,\hat P(v)\,dF(v)=\int_{r^*}^{\bar v} Q(r^*)\,(v-r^*)\,dF(v)$</div>
+    <div class="mathline">$\displaystyle =\ Q(r^*)\!\int_{r^*}^{\bar v}(v-r^*)\,dF(v)\ =\ V_1(0)$</div>
+    <p class="muted">The open seller can always replicate the closed allocation, so $V_0(0)\ge V_1(0)$, hence $\bar c\ge 0$.</p>
+  </div>
+</section>
+
+<!-- 17. BOUNDARY: cbar <= E[v] -->
+<section class="slide">
+  <h1>Boundary check: $\bar c\le E[v]$</h1>
+  <div class="body top">
+    <p>At $c=E[v]$ the seller cannot make a positive profit by opening the box:</p>
+    <div class="mathline">$\displaystyle V_0(E[v])=\int_0^{\bar v}\Big\{\max_P\ \underbrace{Q(v-P)\,P}_{\le\,v}\Big\}\,dF(v)-E[v]\ \le\ 0.$</div>
+    <p>By charging a price of $0$, a closed-box seller can always guarantee a zero profit:</p>
+    <div class="mathline">$\displaystyle V_1(E[v])\ \ge\ Q(0)\big(E[v]-E[v]\big)=0.$</div>
+    <p class="muted">So $V_1(E[v])\ge V_0(E[v])$: closed is (weakly) better at $c=E[v]$, hence $\bar c\le E[v]$.</p>
+  </div>
+</section>
+
+<!-- 18. ASYMMETRIC INFO -->
+<section class="slide">
+  <h1>Asymmetric information</h1>
+  <div class="body top">
+    <p>The seller can no longer tailor the price to $v$:</p>
+    <div class="mathline">$\displaystyle \tilde V_0(c)=\max_P\int_0^{\bar v}Q(v-P)\,P\,dF(v)-c$</div>
+    <ul>
+      <li>$\tilde V_0$ is <b>parallel to $V_0$</b> but at a lower level.</li>
+      <li>The closed-box value $V_1$ is <b>unchanged</b>.</li>
+    </ul>
+    <div class="block accent">
+      <div class="bt">Proposition</div>
+      <div class="bb">There is a threshold $\underline c\le\bar c$ such that the seller offers an <b>open</b> box if $c&lt;\underline c$ and a <b>closed</b> box if $c>\underline c$.</div>
+    </div>
+    <p class="muted">Being unable to condition the price on $v$ shrinks the returns to opening: the open region shrinks ($\underline c\le\bar c$), and possibly $\underline c&lt;0$.</p>
+  </div>
+</section>
+
+<!-- 19. ASYMMETRIC INFO FIGURE -->
+<section class="slide">
+  <h1>Asymmetric information: shrinking the open region</h1>
+  <div class="body">
+    <div class="fig">
+      <svg viewBox="0 0 620 360" width="600" height="360">
+        <line x1="70" y1="300" x2="560" y2="300" class="axis" marker-end="url(#a5)"/>
+        <line x1="70" y1="300" x2="70" y2="40" class="axis" marker-end="url(#a5b)"/>
+        <defs>
+          <marker id="a5" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#23373b"/></marker>
+          <marker id="a5b" markerWidth="10" markerHeight="10" refX="3" refY="6" orient="auto"><path d="M0,6 L3,0 L6,6 Z" fill="#23373b"/></marker>
+        </defs>
+        <text x="566" y="305" font-size="18">c</text>
+        <text x="58" y="40" font-size="18">V</text>
+        <line x1="70" y1="90" x2="490" y2="330" class="cv-blue"/>
+        <text x="495" y="332" font-size="16" class="lblB">V<tspan class="sub">0</tspan>(c)</text>
+        <line x1="70" y1="140" x2="350" y2="300" class="cv-blue" stroke-dasharray="6 4"/>
+        <text x="356" y="306" font-size="16" class="lblB">Ṽ<tspan class="sub">0</tspan>(c)</text>
+        <line x1="70" y1="180" x2="490" y2="250" class="cv-red"/>
+        <text x="495" y="250" font-size="16" class="lblR">V<tspan class="sub">1</tspan>(c)</text>
+        <line x1="169" y1="196" x2="169" y2="300" class="dash"/>
+        <circle cx="169" cy="196" r="3.2" fill="#23373b"/>
+        <text x="159" y="320" font-size="16">c̲</text>
+        <line x1="292" y1="217" x2="292" y2="300" class="dash"/>
+        <circle cx="292" cy="217" r="3.2" fill="#23373b"/>
+        <text x="284" y="320" font-size="16">c̄</text>
+      </svg>
+    </div>
+    <p class="muted" style="text-align:center">$\tilde V_0$ drops below $V_0$; its crossing with $V_1$ moves left, so $\underline c\le\bar c$.</p>
+  </div>
+</section>
+
+<!-- SECTION: OTHER RESULTS -->
+<section class="slide section-slide">
+  <div class="sn">Part IV</div>
+  <div class="st">Other results</div>
+  <div class="rule"></div>
+</section>
+
+<!-- 20. WHEN IS OPEN STRICTLY OPTIMAL -->
+<section class="slide">
+  <h1>When is open strictly optimal under asymmetric info?</h1>
+  <div class="body top">
+    <p>We could have $\underline c&lt;0$. When instead is $\underline c&gt;0$? Set $c=0$ and ask when opening is <b>strictly</b> optimal:</p>
+    <div class="mathline">$\displaystyle \max_{x}\int_x^{\bar v} Q(v-x)\,x\,dF(v)\ >\ \max_{x}\int_x^{\bar v} Q(x)\,(v-x)\,dF(v)$</div>
+    <p class="muted" style="font-size:17px">Open: price $x$, sells w.p. $Q(v-x)$. &nbsp;·&nbsp; Closed: reservation $x$, price $\int (v-x)\,dF(v)$, sells w.p. $Q(x)$.</p>
+    <p>The two sides differ only in <b>where $Q$ is evaluated</b>: at the buyer's net value $v-x$ (open) versus at the reservation $x$ (closed).</p>
+  </div>
+</section>
+
+<!-- 21. FAIL-OR-ADOPT: DEFINITION + PROP -->
+<section class="slide">
+  <h1>Fail-or-adopt boxes</h1>
+  <div class="body top">
+    <div class="block def">
+      <div class="bt">Definition</div>
+      <div class="bb">A box is <b>fail-or-adopt</b> if its support is $\{0\}\cup I$ with $r&lt;\inf(I)$: it <b>fails</b> ($v=0$) with probability $q$, and otherwise is <b>immediately adopted</b>.</div>
+    </div>
+    <p class="muted">Convenient because $z_i=\min\{r_i,v_i\}\in\{0,r_i\}$: if such a box does not fail, an optimally-searching buyer adopts it at once.</p>
+    <div class="block accent">
+      <div class="bt">Proposition</div>
+      <div class="bb">With a single fail-or-adopt alternative (failure prob. $q$, reservation $r$), there are $q_L\le q_H$ such that the seller <b>strictly prefers an open box iff $q\in(q_L,q_H)$</b> (intermediate failure risk).</div>
+    </div>
+  </div>
+</section>
+
+<!-- 22. FAIL-OR-ADOPT: FIGURE -->
+<section class="slide">
+  <h1>Fail-or-adopt boxes: intuition</h1>
+  <div class="body">
+    <div class="fig">
+      <svg viewBox="0 0 360 230" width="560" height="358">
+        <line x1="40" y1="190" x2="330" y2="190" class="axis" marker-end="url(#a6)"/>
+        <line x1="40" y1="190" x2="40" y2="30" class="axis" marker-end="url(#a6b)"/>
+        <defs>
+          <marker id="a6" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#23373b"/></marker>
+          <marker id="a6b" markerWidth="9" markerHeight="9" refX="3" refY="6" orient="auto"><path d="M0,6 L3,0 L6,6 Z" fill="#23373b"/></marker>
+        </defs>
+        <text x="335" y="195" font-size="15">q</text>
+        <line x1="40" y1="110" x2="320" y2="110" class="cv-blue"/>
+        <text x="150" y="100" font-size="13" class="lblB">∫(v−r)<tspan class="sup">+</tspan>dF</text>
+        <line x1="40" y1="190" x2="300" y2="55" class="cv-red"/>
+        <text x="270" y="50" font-size="13" class="lblR">qE[v]</text>
+        <line x1="40" y1="135" x2="315" y2="50" class="cv-green" stroke-dasharray="2 4"/>
+        <text x="120" y="78" font-size="13" class="lblG">Ṽ<tspan class="sub">0</tspan>(q)</text>
+        <circle cx="194" cy="110" r="3" fill="#23373b"/>
+        <line x1="194" y1="110" x2="194" y2="190" class="dash"/>
+        <text x="187" y="207" font-size="14">q*</text>
+      </svg>
+    </div>
+    <div class="fignote" style="text-align:center;margin-top:10px">
+      $\displaystyle\tilde V_1(q)=\max\Big\{q\,E[v],\ \int_r^{\bar v}(v-r)\,dF(v)\Big\}$
+      <p class="muted" style="font-size:16px">An open seller's value $\tilde V_0(q)$ rises smoothly in $q$; it can sit strictly above the closed-box envelope $\tilde V_1$ over a middle range.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 23. FAIL-OR-ADOPT: PROOF SKETCH -->
+<section class="slide">
+  <h1>Fail-or-adopt boxes: proof sketch</h1>
+  <div class="body top">
+    <p>An open box of value $v$ at price $P$ is purchased with</p>
+    <ul>
+      <li>probability $0$ if $v&lt;P$;</li>
+      <li>probability $1$ if $v-P&gt;r$;</li>
+      <li>probability $q$ if $v-P\in[0,r)$.</li>
+    </ul>
+    <p>So the open-box seller's problem is</p>
+    <div class="mathline">$\displaystyle \tilde V_0(q)=\max_P\ P\big[\,1-(1-q)F(r+P)-q\,F(P)\,\big].$</div>
+    <p>Hence, by the envelope theorem,</p>
+    <div class="mathline">$\displaystyle \tilde V_0'(q)=\big[F(r+P^*(q))-F(P^*(q))\big]\,P^*(q)\ \in\ [0,E[v]].$</div>
+    <p class="muted">$\tilde V_0$ rises with slope in $[0,E[v]]$, so it crosses the closed envelope from below then above, giving the interval $(q_L,q_H)$.</p>
+  </div>
+</section>
+
+<!-- 24. UNIFORM OUTSIDE OPTION: SETUP -->
+<section class="slide">
+  <h1>Uniform outside option</h1>
+  <div class="body top">
+    <p>Suppose the buyer has a single box, with <b>zero cost</b> and <b>uniform value in $[0,1]$</b>. Then</p>
+    <div class="mathline">$Q(x)=x\quad\text{for all }x\in[0,1].$</div>
+    <div class="block accent">
+      <div class="bt">Proposition</div>
+      <div class="bb">For any distribution $F$ with support in $[0,1]$: the threshold is $\underline c=0$, and at $c=0$ the optimal price for the open box is higher, $P^*_{\text{open}}(0)>P^*_{\text{closed}}(0)$.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 25. UNIFORM: PIVOT PRICE FIGURE -->
+<section class="slide">
+  <h1>Uniform outside option: the pivot price</h1>
+  <div class="body">
+    <div class="fig">
+      <svg viewBox="0 0 600 340" width="600" height="340">
+        <line x1="70" y1="300" x2="560" y2="300" class="axis" marker-end="url(#a8)"/>
+        <line x1="70" y1="300" x2="70" y2="40" class="axis" marker-end="url(#a8b)"/>
+        <defs>
+          <marker id="a8" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#23373b"/></marker>
+          <marker id="a8b" markerWidth="10" markerHeight="10" refX="3" refY="6" orient="auto"><path d="M0,6 L3,0 L6,6 Z" fill="#23373b"/></marker>
+        </defs>
+        <text x="566" y="305" font-size="17">x</text>
+        <!-- y=x line -->
+        <line x1="70" y1="300" x2="520" y2="60" class="cv-gray"/>
+        <text x="500" y="52" font-size="15" class="muted">y = x</text>
+        <!-- surplus curve (1-x)^2/2 -->
+        <path d="M70,180 L115,202.8 L160,223.2 L205,241.2 L250,256.8 L295,270 L340,280.8 L385,289.2 L430,295.2 L475,298.8 L520,300" class="cv-blue"/>
+        <text x="360" y="255" font-size="15" class="lblB">∫(v−x)dF(v)</text>
+        <!-- E[v]=0.5 tick -->
+        <line x1="63" y1="180" x2="77" y2="180" class="tick"/><text x="34" y="185" font-size="15">E[v]</text>
+        <!-- p* pivot at x=0.268 -->
+        <line x1="190.6" y1="300" x2="190.6" y2="235.7" class="dash"/>
+        <circle cx="190.6" cy="235.7" r="3.2" fill="#23373b"/>
+        <text x="188" y="320" font-size="15">p⋆</text>
+      </svg>
+    </div>
+    <p class="muted" style="text-align:center">The <b>pivot price</b> $p^\star$ is where expected surplus $\int_x^{\bar v}(v-x)\,dF(v)$ meets the 45° line (its exact value depends on $F$). For a price $p>p^\star$, surplus falls below the 45° line, so the induced reservation value $r(p)$ is <b>lower than $p$</b>.</p>
+  </div>
+</section>
+
+<!-- 26. UNIFORM: PROOF -->
+<section class="slide">
+  <h1>Uniform outside option: proof</h1>
+  <div class="body top">
+    <p>With $Q(x)=x$, the two problems coincide at $c=0$:</p>
+    <div class="mathline">$\displaystyle V_1(0)=V_0(0)=\max_{x\in[0,1]}\int_x^{1} x\,(v-x)\,dF(v)$</div>
+    <ul>
+      <li>for an <b>open</b> box, $x$ is the <b>price</b>;</li>
+      <li>for a <b>closed</b> box, $x$ is the <b>reservation value</b>.</li>
+    </ul>
+    <p>The maximizer $x^*=\arg\max_{x}\int_x^1 x\,(v-x)\,dF(v)$ satisfies the FOC</p>
+    <div class="mathline">$\displaystyle \int_{x^*}^{1}(v-2x^*)\,dF(v)=0.$</div>
+  </div>
+</section>
+
+<!-- 27. UNIFORM: MARGINAL VALUE FIGURE -->
+<section class="slide">
+  <h1>Uniform outside option: marginal value</h1>
+  <div class="body">
+    <div class="fig">
+      <svg viewBox="0 0 600 350" width="600" height="350">
+        <line x1="70" y1="276.7" x2="560" y2="276.7" class="axis" marker-end="url(#a9)"/>
+        <line x1="70" y1="320" x2="70" y2="40" class="axis" marker-end="url(#a9b)"/>
+        <defs>
+          <marker id="a9" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#23373b"/></marker>
+          <marker id="a9b" markerWidth="10" markerHeight="10" refX="3" refY="6" orient="auto"><path d="M0,6 L3,0 L6,6 Z" fill="#23373b"/></marker>
+        </defs>
+        <text x="566" y="281" font-size="17">x</text>
+        <!-- y=x line -->
+        <line x1="70" y1="276.7" x2="520" y2="60" class="cv-gray"/>
+        <!-- surplus (1-x)^2/2 -->
+        <path d="M70,168.35 L115,188.9 L160,207.4 L205,223.6 L250,237.7 L295,249.6 L340,259.4 L385,266.95 L430,272.4 L475,275.6 L520,276.7" class="cv-blue"/>
+        <text x="352" y="235" font-size="15" class="lblB">∫(v−x)dF(v)</text>
+        <!-- marginal (1-x)(1-3x)/2 dashed red -->
+        <path d="M70,168.35 L115,208.4 L160,242 L220,276.7 L250,289.7 L295,303.8 L340,311.4 L385,312.5 L430,307 L475,295.1 L520,276.7" class="cv-red" stroke-dasharray="6 4"/>
+        <text x="335" y="330" font-size="15" class="lblR">∫(v−2x)dF(v)</text>
+        <!-- pivot p* (blue meets 45°) and solution x* (marginal hits zero) -->
+        <line x1="190.6" y1="218.5" x2="190.6" y2="276.7" class="dash"/>
+        <text x="183" y="293" font-size="14">p⋆</text>
+        <line x1="220" y1="228.5" x2="220" y2="276.7" class="dash"/>
+        <text x="214" y="293" font-size="14">x*</text>
+      </svg>
+    </div>
+    <p class="muted" style="text-align:center">The FOC $\int_{x}^1(v-2x)\,dF(v)=0$ pins down $x^*$ where the marginal curve hits zero.</p>
+  </div>
+</section>
+
+<!-- 28. UNIFORM: SOLUTION vs PIVOT + EXAMPLE -->
+<section class="slide">
+  <h1>Uniform outside option: solution vs pivot</h1>
+  <div class="body top">
+    <p><b>Claim:</b> $x^*\ge p^\star$. From the FOC,</p>
+    <div class="mathline">$\displaystyle \int_{x^*}^{\bar v}(v-x^*)\,dF(v)=x^*\big(1-F(x^*)\big)\le x^*,$</div>
+    <p>so $x^*$ lies weakly above the pivot. The optimal <b>closed-box</b> price sets $r(P)=x^*$, which requires $P&lt;p^\star$: the closed price is <b>lower</b>.</p>
+    <div class="block def">
+      <div class="bt">Example: $v$ also uniform on $[0,1]$</div>
+      <div class="bb">$x^*=P^*_{\text{open}}=\tfrac13$, &nbsp; $P^*_{\text{closed}}=\tfrac29$, &nbsp; $p^\star=2-\sqrt3\approx0.27$.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 29. UNIFORM: WELFARE (I): price jump -->
+<section class="slide">
+  <h1>Uniform outside option: welfare</h1>
+  <div class="body">
+    <div class="fig">
+      <svg viewBox="0 0 420 250" width="620" height="369">
+        <line x1="40" y1="200" x2="400" y2="200" class="axis" marker-end="url(#a10)"/>
+        <line x1="210" y1="210" x2="210" y2="40" class="axis" marker-end="url(#a10b)"/>
+        <defs>
+          <marker id="a10" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#23373b"/></marker>
+          <marker id="a10b" markerWidth="9" markerHeight="9" refX="3" refY="6" orient="auto"><path d="M0,6 L3,0 L6,6 Z" fill="#23373b"/></marker>
+        </defs>
+        <text x="405" y="205" font-size="15">c</text>
+        <text x="214" y="52" font-size="14" class="muted">P*</text>
+        <line x1="60" y1="60" x2="210" y2="60" class="cv-blue"/>
+        <line x1="210" y1="116" x2="360" y2="137" class="cv-blue"/>
+        <circle cx="210" cy="60" r="3.4" fill="none" stroke="#1f4e79" stroke-width="2"/>
+        <circle cx="210" cy="116" r="3.4" fill="#1f4e79"/>
+        <text x="90" y="48" font-size="14">Open box</text>
+        <text x="285" y="160" font-size="14">Closed box</text>
+        <text x="205" y="217" font-size="14">0</text>
+      </svg>
+      <figcaption>Optimal price jumps down at $c=0$: open sells at a higher price.</figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- 29b. UNIFORM: WELFARE (II): buyer payoff -->
+<section class="slide">
+  <h1>Uniform outside option: welfare (cont.)</h1>
+  <div class="body">
+    <div class="fig">
+      <svg viewBox="0 0 280 280" width="330" height="330">
+        <rect x="50" y="50" width="120" height="200" fill="#1f4e79" opacity="0.10"/>
+        <line x1="50" y1="250" x2="270" y2="250" class="axis" marker-end="url(#a11)"/>
+        <line x1="50" y1="250" x2="50" y2="40" class="axis" marker-end="url(#a11b)"/>
+        <defs>
+          <marker id="a11" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#23373b"/></marker>
+          <marker id="a11b" markerWidth="9" markerHeight="9" refX="3" refY="6" orient="auto"><path d="M0,6 L3,0 L6,6 Z" fill="#23373b"/></marker>
+        </defs>
+        <text x="262" y="266" font-size="14">v<tspan class="sub">1</tspan></text>
+        <text x="34" y="46" font-size="14">v</text>
+        <line x1="50" y1="250" x2="250" y2="50" class="cv-blue"/>
+        <line x1="50" y1="130" x2="130" y2="50" class="cv-red" stroke-dasharray="6 4"/>
+        <line x1="170" y1="250" x2="170" y2="50" class="dash"/>
+        <text x="150" y="266" font-size="13">r(P)</text>
+        <line x1="43" y1="130" x2="57" y2="130" class="tick"/><text x="6" y="134" font-size="12">P*<tspan class="sub">open</tspan></text>
+      </svg>
+      <figcaption>Buyer-payoff comparison over the region $v_1&lt;r(P)$.</figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- 30. COMPARATIVE STATICS -->
+<section class="slide">
+  <h1>Comparative statics: adding a box to the buyer</h1>
+  <div class="body top">
+    <div class="block accent">
+      <div class="bt">Proposition</div>
+      <div class="bb">Add an alternative $(F_k,c_k)$ to the buyer's portfolio. If $c_k$ is <b>sufficiently large</b>, the effect favors offering a <b>closed</b> box: it raises $\underline c$.</div>
+    </div>
+    <div class="two">
+      <div class="fig">
+        <svg viewBox="0 0 360 250" width="360" height="250">
+          <line x1="40" y1="200" x2="330" y2="200" class="axis" marker-end="url(#a7)"/>
+          <line x1="40" y1="200" x2="40" y2="30" class="axis" marker-end="url(#a7b)"/>
+          <defs>
+            <marker id="a7" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#23373b"/></marker>
+            <marker id="a7b" markerWidth="9" markerHeight="9" refX="3" refY="6" orient="auto"><path d="M0,6 L3,0 L6,6 Z" fill="#23373b"/></marker>
+          </defs>
+          <text x="333" y="205" font-size="15">r</text>
+          <text x="20" y="40" font-size="15">Q(r)</text>
+          <path d="M40,200 L120,200 L255,70 L290,55 L320,55" class="cv-black"/>
+          <line x1="270" y1="55" x2="270" y2="200" class="dash"/>
+          <text x="250" y="218" font-size="13">r(P*)</text>
+          <path d="M120,200 C160,192 200,168 235,130" class="cv-red"/>
+          <line x1="235" y1="130" x2="235" y2="200" class="dash"/>
+          <text x="222" y="218" font-size="13" class="lblR">r<tspan class="sub">k</tspan></text>
+        </svg>
+      </div>
+      <div class="fignote">
+        <p>A high-cost box has $r_k&lt;r(P^*)$: it doesn't change demand for the closed box at $P^*$, but it <b>lowers</b> demand for an open box at low values, tilting the seller toward closed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 31. MULTIPLE SELLERS -->
+<section class="slide">
+  <h1>Multiple sellers</h1>
+  <div class="body top">
+    <p>Two sellers, each with a box; $v_1,v_2\sim F$ and $c_1,c_2$ on $[0,1]$. Sellers simultaneously choose open/closed and a price; the buyer searches sequentially.</p>
+    <p class="muted"><b>Efficient benchmark:</b> open the cheapest box first (if its cost $&lt;\tfrac12$); open the second only if
+      $\displaystyle\int_{v_1}^{\bar v}(v-v_1)\,dF(v)\ge c_2.$</p>
+    <div class="block accent">
+      <div class="bt">Symmetric equilibrium</div>
+      <div class="bb">By our threshold result, there is $\bar c\in[0,\tfrac12]$ such that each seller offers the box <b>closed if $c_i>\bar c$</b> and <b>open otherwise</b>: the open/closed logic survives competition.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 32. RELATED LITERATURE -->
+<section class="slide">
+  <h1>Related literature</h1>
+  <div class="body top">
+    <ul>
+      <li><b>Sequential search &amp; Pandora's rule:</b> Weitzman; Doval (2018) on buying without inspecting; Chen (2021) and Pan (2023) on search deterrence.</li>
+      <li><b>Advertising &amp; disclosure:</b> Anderson &amp; Renault (2006), Wang &amp; Sarvary (2017), Dogan &amp; Hu (2022): firms reveal product value to shape search.
+        <ul><li>In contrast, here the <b>buyer</b> invests in its own outside option, not the seller's product.</li></ul>
+      </li>
+      <li><b>Contingent pricing:</b> Armstrong &amp; Zhou (2016), Taylor (2018): exploding offers and search-dependent prices.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 33. CONCLUSION -->
+<section class="slide">
+  <h1>Conclusion</h1>
+  <div class="body">
+    <ul>
+      <li>A <b>tractable model</b> of inefficiencies when selling boxes to buyers with alternative options.</li>
+      <li>Even with <b>identical costs</b>, sellers may strictly prefer to <b>open</b> the box at low cost and offer it <b>closed</b> at high cost.</li>
+      <li>Inability to <b>condition the price on $v$</b> reduces the returns to opening, shrinking the open region from $\bar c$ to $\underline c$.</li>
+      <li>Still, opening can be strictly optimal even at a fixed price: for fail-or-adopt alternatives, at <b>intermediate</b> failure probability.</li>
+    </ul>
+    <div class="spacer"></div>
+    <p style="text-align:center;color:var(--accent);font-weight:600;font-size:24px">Thank you!</p>
+  </div>
+</section>
+
+</div>
+
+<div id="bar"></div>
+<div id="sec"></div>
+<div id="foot"></div>
+
+<!-- external navigation + KaTeX rendering -->
+<script src="deck.js"></script>
+
+<!-- content-specific: interactive Weitzman worked example -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const slide = document.getElementById('pandora');
+  if(!slide) return;
+  const boxesEl = slide.querySelector('#pbx-boxes');
+  const narrEl  = slide.querySelector('#pbx-narr');
+  const progEl  = slide.querySelector('#pbx-progress');
+
+  const DATA = [
+    {name:"A", c:4, ev:15, r:20, v:8},
+    {name:"B", c:9, ev:30, r:18, v:25},
+    {name:"C", c:2, ev:6,  r:12, v:5},
+    {name:"D", c:6, ev:22, r:14, v:11}
+  ];
+  const ORD  = ["A","B","C","D"];
+  const RORD = ["A","B","D","C"];
+
+  const STEPS = [
+    { narr:'Four closed boxes. Each costs <b>c</b> to open and hides a random value <i>v</i>&thinsp;~&thinsp;<i>F</i>. Open in any order, stop anytime, keep your best value.',
+      show:{c:true,ev:true,r:false,v:false}, order:ORD, live:[0,1,2,3], opened:[], winner:null },
+    { narr:'Give each box its <span class="res">reservation value <i>r</i></span>, the value at which opening just breaks even: <b>E[(v&minus;r)<sup>+</sup>] = c</b>.',
+      show:{c:true,ev:true,r:true,v:false}, order:ORD, live:[0,1,2,3], opened:[], winner:null },
+    { narr:'<span class="res">Sort by <i>r</i></span>, highest first: A (20) &rarr; B (18) &rarr; D (14) &rarr; C (12). <b>Weitzman&rsquo;s rule:</b> open the closed box with the highest reservation value.',
+      show:{c:true,ev:true,r:true,v:false}, order:RORD, live:[0,1,2,3], opened:[], winner:null },
+    { narr:'Open <b>A</b> (<i>r</i> = 20). Realized value is only 8, below B&rsquo;s reservation of 18, so keep searching.',
+      show:{c:true,ev:false,r:true,v:true}, order:RORD, live:[0,1,2,3], opened:[0], winner:null },
+    { narr:'Open <b>B</b> (<i>r</i> = 18). Value is <span class="win">25</span>: the best value in hand now exceeds every remaining reservation value (14, 12).',
+      show:{c:true,ev:false,r:true,v:true}, order:RORD, live:[0,1,2,3], opened:[0,1], winner:null },
+    { narr:'<b>Stop.</b> Once the best value in hand beats every remaining <i>r</i>, no box can help in expectation. Adopt <span class="win">B = 25</span>; D and C are never opened.',
+      show:{c:true,ev:false,r:true,v:true}, order:RORD, live:[0,1,2,3], opened:[0,1], winner:1 }
+  ];
+
+  function row(label,val,cls){
+    return '<div class="pbx-row '+(cls||'')+'"><span>'+label+'</span><span>'+val+'</span></div>';
+  }
+
+  const nodes = {};
+  DATA.forEach(b=>{ const el=document.createElement("div"); el.className="pbx-box"; boxesEl.appendChild(el); nodes[b.name]=el; });
+  STEPS.forEach(()=>{ const p=document.createElement("div"); p.className="pbx-pip"; progEl.appendChild(p); });
+
+  const GAP=18, COLS=4;
+  function layout(){
+    const w = boxesEl.clientWidth;
+    if(!w) return 0;
+    const colW = (w - GAP*(COLS-1)) / COLS;
+    let maxH = 0;
+    DATA.forEach(b=>{ nodes[b.name].style.width = colW + "px"; });
+    DATA.forEach(b=> maxH = Math.max(maxH, nodes[b.name].offsetHeight));
+    boxesEl.style.height = maxH + "px";
+    return colW;
+  }
+
+  const animated = new Set();
+  let lastStep = -1;
+
+  function render(step, instant){
+    const s = STEPS[step];
+    const ref = (instant || lastStep < 0) ? step : Math.min(lastStep, step);
+    animated.clear();
+    STEPS[ref].opened.forEach(idx => animated.add(DATA[idx].name));
+
+    DATA.forEach((b,idx)=>{
+      const el = nodes[b.name];
+      const opened = s.opened.includes(idx);
+      const winner = s.winner === idx;
+      const live = s.live.includes(idx);
+      el.className = "pbx-box"+(live?" live":"")+(opened?" opened":"")+(winner?" winner":"");
+      let inner = '<div class="nm">Box '+b.name+(winner?'<span class="tag">adopted</span>':'')+'</div>';
+      if(s.show.c)  inner += row("<i>c</i><sub>"+b.name+"</sub>", b.c);
+      if(s.show.ev || s.show.v){
+        if(opened){
+          const fresh = !animated.has(b.name);
+          if(fresh) animated.add(b.name);
+          inner += row("<i>v</i><sub>"+b.name+"</sub>", b.v, "val"+(fresh?" revealed":""));
+        } else inner += row("<i>v</i><sub>"+b.name+"</sub>", "~&thinsp;<i>F</i><sub>"+b.name+"</sub>", "val dist");
+      }
+      if(s.show.r) inner += row("<i>r</i><sub>"+b.name+"</sub>", b.r, "rrow");
+      el.innerHTML = inner;
+    });
+
+    const colW = layout();
+    s.order.forEach((name, slot)=>{
+      const idx = DATA.findIndex(d=>d.name===name);
+      const x = slot * (colW + GAP);
+      let extra = "";
+      if(s.winner!==null && DATA[s.winner].name===name) extra = " translateY(-10px) scale(1.04)";
+      else if(s.opened.includes(idx)) extra = " translateY(-6px)";
+      nodes[name].style.transform = 'translateX('+x+'px)' + extra;
+    });
+    narrEl.innerHTML = s.narr;
+    progEl.querySelectorAll(".pbx-pip").forEach((p,k)=>p.classList.toggle("on", k<=step));
+    lastStep = step;
+  }
+
+  const PBX = { count: STEPS.length, step: 0, render: render };
+
+  // ---- Navigation glue: coexist with deck.js via capture-phase interception ----
+  let lastDir = 1;
+  const FWD = ['ArrowRight','ArrowDown',' ','PageDown'];
+  const BWD = ['ArrowLeft','ArrowUp','PageUp'];
+
+  document.addEventListener('keydown', function(e){
+    if(FWD.includes(e.key)) lastDir = 1;
+    else if(BWD.includes(e.key)) lastDir = -1;
+    if(!slide.classList.contains('active')) return;   // deck.js handles other slides
+    if(FWD.includes(e.key)){
+      if(PBX.step < PBX.count - 1){ e.preventDefault(); e.stopImmediatePropagation(); PBX.step++; render(PBX.step); }
+      // otherwise: let deck.js advance to the next slide
+    } else if(BWD.includes(e.key)){
+      if(PBX.step > 0){ e.preventDefault(); e.stopImmediatePropagation(); PBX.step--; render(PBX.step); }
+    }
+  }, true);
+
+  document.addEventListener('click', function(e){
+    if(e.target.closest('a')) return;
+    const back = e.clientX < window.innerWidth*0.28;
+    lastDir = back ? -1 : 1;
+    if(!slide.classList.contains('active')) return;
+    if(!back){
+      if(PBX.step < PBX.count - 1){ e.stopImmediatePropagation(); PBX.step++; render(PBX.step); }
+    } else {
+      if(PBX.step > 0){ e.stopImmediatePropagation(); PBX.step--; render(PBX.step); }
+    }
+  }, true);
+
+  // Render at the right step whenever the slide becomes active.
+  const obs = new MutationObserver(function(){
+    if(slide.classList.contains('active')){
+      PBX.step = lastDir > 0 ? 0 : PBX.count - 1;
+      render(PBX.step, true);
+      requestAnimationFrame(function(){ render(PBX.step, true); });
+    }
+  });
+  obs.observe(slide, {attributes:true, attributeFilter:['class']});
+
+  window.addEventListener('resize', function(){ if(slide.classList.contains('active')) render(PBX.step, true); });
+
+  // Prime an initial (hidden) render so measurements are ready.
+  render(0, true);
+});
+</script>
+</body>
+</html>

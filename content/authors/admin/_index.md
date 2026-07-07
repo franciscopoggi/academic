@@ -18,15 +18,13 @@ organizations:
   url: "https://www.uni-mannheim.de/en/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: bio.
-
-#Microeconomic theorist from Argentina. Prior to that, I completed a BA and MA at [Universidad de San Andrés](https://www.udesa.edu.ar/departamento-de-economia) and received my Ph.D. from Northwestern University.
+bio: Assistant Professor at the University of Mannheim working on microeconomic theory, with a focus on how information disclosure and concealment shape innovation, liability, and markets.
  
 # interests:
 # - Microeconomic Theory
-# - Law and Economics
 # - Information Economics
-
+# - Industrial Organization
+# - Law and Economics
 # education:
 #   courses:
 #   - course: PhD in Economics
@@ -77,23 +75,24 @@ user_groups:
 
 <br>
 
-I am a microeconomic theorist exploring how incentives to acquire, elicit, disclose, and conceal information shape economic interactions. I am interested in innovation, law, and industrial organization.
+I'm an Assistant Professor of Economics at the University of Mannheim.
+
+My research uses economic theory and mechanism design to study how institutions shape the acquisition and strategic use of information—when agents reveal, delay, or conceal what they know—in areas such as innovation, carbon emissions, and liability. 
+
+I received my Ph.D. from Northwestern University.
+
+{{% callout note %}}
+**News:** I will be on sabbatical in the 2026-2027 academic year and plan to spend the Fall Semester in Chicago. 
+{{% /callout %}}
 
 <br>
 
-I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">University of Mannheim</a> as an Assistant Professor (W1) after graduating from Northwestern University (2021).
-
-<br>
-
-<font size="5"
-          color="black">
-          <b>Research:</b> 
-        </font>
+<h2 style="margin-bottom: 0.5rem;">Research</h2>
 
 <!-- Strategic Concelament in Innovation Races -->
   <details>
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/SCIR.pdf" target="_blank">Strategic Concelament in Innovation Races.</a></b>
+    <b><a href="/files/SCIR.pdf" target="_blank">Strategic Concealment in Innovation Races.</a></b>
     with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank"> Yonggyun Kim</a>
     <br>
         R&R at <i>AEJ:Micro</i>
@@ -107,7 +106,7 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
 <!-- Market-based Mechanisms. -->
   <details> 
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/Market-based_mechanisms.pdf" target="_blank">Market-based Mechanisms.</a></b> 
+    <b><a href="/files/Market-based_mechanisms.pdf" target="_blank">Market-based Mechanisms.</a></b> 
     with <a href="http://www.quitzevalenzuelastookey.com" target="_blank"> Quitzé Valenzuela-Stookey</a>
     <br>
         R&R at <i>Journal of Political Economy.</i>
@@ -121,7 +120,7 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
 <!-- A Taxation Principle with Non-contractible Events -->
   <details>
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/taxation.pdf" target="_blank">A Taxation Principle with Moral Hazard (New Draft Coming Soon!).</a></b>
+    <b><a href="/files/taxation.pdf" target="_blank">A Taxation Principle with Moral Hazard.</a></b>
     with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
     </summary>
         <ul>
@@ -133,7 +132,7 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
 <!-- The Timing of Complementary Innovations. -->
   <details>
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/timing-innovations.pdf" target="_blank">The Timing of Complementary Innovations.</a></b> 
+    <b><a href="/files/timing-innovations.pdf" target="_blank">The Timing of Complementary Innovations.</a></b> 
     </summary>
         <ul>
           <li> Breakthroughs always enhance incentives to work on complementary projects, but only when the timing is endogenous. </li>
@@ -144,7 +143,7 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
 <!-- Liability Design with Information Acquisition -->
   <details>
     <summary>
-    <b><a href="https://www.franciscopoggi.com/files/liability.pdf" target="_blank">Liability Design with Information Acquisition.</a></b>
+    <b><a href="/files/liability.pdf" target="_blank">Liability Design with Information Acquisition.</a></b>
     with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank"> Bruno Strulovici</a>
     </summary>
         <ul>
@@ -153,6 +152,22 @@ I joined the <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">Unive
   </details>
 <br>
 
-<!-- {{% callout note %}}
-At some point in the summer, I will join <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank">the University of Mannheim</a> as an Assistant Professor.
-{{% /callout %}} -->
+<!-- (Un)finished Products -->
+  <details>
+    <summary>
+    <b> (Un)finished products </b>
+    with <a href="https://sites.google.com/site/jorgelemuswebsite/home" target="_blank"> Jorge Lemus</a>
+    <br>
+    [<a href="/files/slides/unfinished-products/" target="_blank">Slides</a>]
+    </summary>
+  </details>
+<br>
+
+<!-- (Un)finished Products -->
+  <details>
+    <summary>
+    <b> Confessions </b>
+    </summary>
+  </details>
+<br>
+

@@ -48,7 +48,7 @@ local_business_type = ""
 org_name = ""
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = ""
+description = "Francisco Poggi is an Assistant Professor of Economics at the University of Mannheim working on microeconomic theory and mechanism design, studying how institutions shape the strategic acquisition, disclosure, and concealment of information in innovation, liability, and markets."
 
 ############################
 ## Site Features
@@ -93,11 +93,11 @@ phone = ""
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "2211 Campus Drive", city = "Evanston", region = "IL", postcode = "60208", country = "United States", country_code = "US"}
+address = {street = "L 7, 3-5", city = "Mannheim", region = "", postcode = "68161", country = "Germany", country_code = "DE"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "42.057342", longitude = "-87.672137"}
+coordinates = {latitude = "49.4838", longitude = "8.4629"}
 
 # Directions for visitors to locate you.
 directions = ""
@@ -140,7 +140,7 @@ date_format = "Jan 2, 2006"
 time_format = "3:04 PM"
 
 # Address format (choose from the [address_formats] list below or add you own to the list).
-address_format = "en-us"
+address_format = "de"
 
 ############################
 ## Advanced
@@ -284,7 +284,7 @@ plugins_js  = []
 ## Marketing
 ############################
 [marketing]
-  google_analytics = "UA-179404341-1"
+  google_analytics = ""
   google_tag_manager = ""
 
 ############################
