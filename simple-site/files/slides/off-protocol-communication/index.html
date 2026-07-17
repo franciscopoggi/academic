@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Off-Protocol Communication — SAET 2026</title>
+
+<!-- Fonts + math (CDN). Styling lives in style.css, behaviour in deck.js. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="style.css">
+<script defer src="deck.js"></script>
+</head>
+<body>
+
+<!--
+═══════════════════════════════════════════════════════════════════
+  SLIDE CONTENT — edit only below. No styling code here.
+═══════════════════════════════════════════════════════════════════
+  • Each slide is a <section class="slide"> inside #deck.
+  • Content inside .body reveals one child at a time on advance
+    (a <ul> expands into its <li>s). Add class "static" to show all at once.
+  • Math: $inline$ and $$display$$.
+
+  Slide types:
+    <section class="slide title-slide">    title page (dark)
+    <section class="slide section-slide">  part divider (dark)
+    <section class="slide">                normal content slide
+
+  Components: <h1> title · .block / .block.accent / .block.def boxes ·
+  .two two-column grid · .fig figure · .mathline centered math ·
+  .muted gray text · .spacer vertical gap.
+═══════════════════════════════════════════════════════════════════
+-->
+<div id="deck">
+
+<!-- ───────────────────────── TITLE ───────────────────────── -->
+<section class="slide title-slide active">
+  <div class="t">Off-Protocol <span class="paren">Communication</span></div>
+  <div class="rule"></div>
+  <div class="au"><b>Francisco Poggi</b></div>
+  <div class="af">University of Mannheim</div>
+  <div class="ev">SAET · Rio de Janeiro · 2026</div>
+</section>
+
+<!-- ───────────────────────── 1. MOTIVATION ───────────────────────── -->
+<section class="slide">
+  <h1>Motivation</h1>
+  <div class="body">
+    <ul>
+      <li>Communication is sometimes organized around some <b>protocol</b>: who speaks, when, what messages are allowed.
+        <ul>
+          <li>E.g., peer review, court procedure.</li>
+          <li>Organizations in general: internal reports, expert advice.</li>
+        </ul>
+      </li>
+      <li>Designing these protocols can be a powerful tool to shape outcomes.</li>
+      <li>However, participants can sometimes talk <b>off protocol</b>, potentially undermining the mechanism.</li>
+    </ul>
+    <div class="block accent">
+      <div class="bt">Question</div>
+      <div class="bb">When does off-protocol communication undermine the mechanism, and how can we design protocols that are <i>robust</i> to off-protocol communication?</div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 2. ROADMAP ───────────────────────── -->
+<section class="slide">
+  <h1>Roadmap</h1>
+  <div class="body">
+    <ul>
+      <li><b>Application:</b> Experts with career concerns.
+        <ul>
+          <li>Results: robust organizations must promote experts more often and/or produce less informed recommendations.</li>
+        </ul>
+      </li>
+      <li><b>General model</b></li>
+      <li><b>General results</b>
+        <ul>
+          <li>Revelation Principle;</li>
+          <li>Equivalence.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═════════════════════════ PART I: APPLICATION ═════════════════════════ -->
+<section class="slide section-slide">
+  <div class="sn">Part I</div>
+  <div class="st">Application: Experts with Career Concerns</div>
+  <div class="rule"></div>
+</section>
+
+<!-- ───────────────────────── 3. EXPERTS WITH CAREER CONCERNS ───────────────────────── -->
+<section class="slide">
+  <h1>Experts with Career Concerns</h1>
+  <div class="body">
+    <ul>
+      <li><b>Players:</b> 2 senders ($i=1,2$), 1 receiver.</li>
+      <li>One sender is an <b>expert</b> (E), the other is a <b><i>quack</i></b> (Q).</li>
+      <li>State $\omega\in\{L,R\}$. Uniform prior.</li>
+      <li>Each sender observes a conditionally independent binary signal $s_i\in \{l,r\}$, with precisions $p_E$ and $p_Q$. <span class="muted">For exposition: $p_Q=1/2$ (quack is completely uninformed).</span></li>
+      <li>The receiver must
+        <ul>
+          <li>choose an action $a\in \{L,R\}$;</li>
+          <li>choose a promotion $\pi \in \{1,2\}$.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────────────────────── PAYOFFS ───────────────────────── -->
+<section class="slide">
+  <h1>Payoffs</h1>
+  <div class="body">
+    <ul>
+      <li>Everyone receives $1$ if $a=\omega$.</li>
+      <li>Sender $i$ receives an additional bonus $B>0$ iff promoted ($\pi=i$).</li>
+      <li>Receiver receives a bonus $D>0$ if the expert is promoted ($\pi=E$).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────────────────────── 4. DIRECT MECHANISMS ───────────────────────── -->
+<section class="slide">
+  <h1>Direct Mechanisms</h1>
+  <div class="body">
+    <p>A <b>Direct Mechanism</b> asks each sender to report:</p>
+    <ul>
+      <li>whether they are the expert,</li>
+      <li>their signal realization,</li>
+    </ul>
+    <p>and gives the receiver an action recommendation $(\hat{a},\hat{\pi})$.</p>
+    <p>We focus on a symmetric family of DM parametrized by:</p>
+    <div class="mathline">$$x= \text{Pr}(\hat{a}=\omega\mid \text{truthful reports}) \qquad y= \text{Pr}(\hat{\pi}=E\mid\text{truthful reports})$$</div>
+    <p class="muted">When reports are inconsistent (either both senders claim to be the expert or none), the mechanism draws $(\hat{a},\hat{\pi})$ uniformly at random.</p>
+  </div>
+</section>
+
+<!-- ───────────────────────── 5. FEASIBILITY, EXPERT TRUTHFULNESS, OBEDIENCE ───────────────────────── -->
+<section class="slide">
+  <h1>Feasibility, Expert Truthfulness, and Obedience</h1>
+  <div class="body">
+    <ul>
+      <li><b>Feasibility:</b> $x\leq p_E$. The recommendation cannot be more precise than the expert's signal.</li>
+      <li><b>Obedience:</b> the receiver follows recommendations if $x\geq 1/2$, $y\geq 1/2$.</li>
+      <li><b>Truthfulness — Expert.</b> Given that the quack reports truthfully,
+        $$x+yB \;\geq\; \max\left\{\frac{1}{2}+\frac{B}{2}\,,\; (1-x)+yB\right\}$$
+        <ul>
+          <li>Slack under obedience.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────────────────────── 6. QUACK TRUTHFULNESS ───────────────────────── -->
+<section class="slide">
+  <h1>Quack Truthfulness</h1>
+  <div class="body">
+    <p><b>Truthfulness — Quack.</b> Given that the expert reports truthfully,</p>
+    <div class="mathline">$$x+(1-y)B \;\geq\; \frac{1}{2} + \frac{B}{2}$$</div>
+    <p>Cases where it is satisfied, given $x\geq 1/2$:</p>
+    <ul>
+      <li>$B=0$: no rents from promotion;</li>
+      <li>$y=1/2$: promotion is independent of expertise.</li>
+    </ul>
+    <div class="block accent">
+      <div class="bt">Takeaway</div>
+      <div class="bb">Quack lies when $B$ is large and $y$ is close to $1$.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 7. IC DIRECT MECHANISMS ───────────────────────── -->
+<section class="slide static">
+  <h1>IC Direct Mechanisms</h1>
+  <div class="body">
+    <div class="fig">
+      <svg viewBox="0 0 660 570" style="width:100%;max-width:600px">
+        <defs><marker id="axA" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#23373b"/></marker></defs>
+        <!-- IC region: v <= u/B, u <= 2pE-1  (u=2x-1, v=2y-1; pE=0.8, B=0.5) -->
+        <polygon points="60,500 444,500 444,20 300,20" class="region"/>
+        <!-- unit square boundary -->
+        <path d="M540,500 L540,20 L60,20" class="dash"/>
+        <!-- feasibility line at 2pE-1 -->
+        <line x1="444" y1="500" x2="444" y2="20" stroke="#1f4e79" stroke-width="2.2" stroke-dasharray="7 5"/>
+        <!-- quack IC boundary: v = u/B -->
+        <line x1="60" y1="500" x2="300" y2="20" class="cv-red"/>
+        <!-- axes -->
+        <line x1="60" y1="500" x2="612" y2="500" class="axis" marker-end="url(#axA)"/>
+        <line x1="60" y1="500" x2="60" y2="10" class="axis" marker-end="url(#axA)"/>
+        <line x1="540" y1="495" x2="540" y2="505" class="tick"/>
+        <line x1="55" y1="20" x2="65" y2="20" class="tick"/>
+        <text x="628" y="532" text-anchor="middle" font-size="21" fill="#23373b">2x&#8722;1</text>
+        <text x="48" y="14" text-anchor="end" font-size="21" fill="#23373b">2y&#8722;1</text>
+        <text x="540" y="528" text-anchor="middle" font-size="16" fill="#23373b">1</text>
+        <text x="48" y="26" text-anchor="end" font-size="16" fill="#23373b">1</text>
+        <text x="48" y="528" text-anchor="end" font-size="16" fill="#23373b">0</text>
+        <text x="444" y="528" text-anchor="middle" font-size="18" fill="#1f4e79">2p<tspan class="sub">E</tspan>&#8722;1</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 8. OFF-PROTOCOL COMMUNICATION ───────────────────────── -->
+<section class="slide">
+  <h1>Off-Protocol Communication</h1>
+  <div class="body">
+    <p><b>Timing.</b></p>
+    <p style="text-align:center;font-size:22px">Reports $(e,\hat{s})$ &nbsp;$\rightarrow$&nbsp; Recommendation $(\hat{a},\hat{\pi})$ &nbsp;$\rightarrow$&nbsp; <b style="color:var(--accent)">Confession</b> &nbsp;$\rightarrow$&nbsp; Actions $(a,\pi)$</p>
+    <div class="spacer"></div>
+    <p><b>Confession stage:</b></p>
+    <ul>
+      <li>Senders can send a cheap-talk message to the receiver.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────────────────────── EXPERT MIGHT SABOTAGE ───────────────────────── -->
+<section class="slide">
+  <h1>Expert Might Sabotage the Mechanism</h1>
+  <div class="body">
+    <p>Fix a Direct Mechanism with $y<1$.</p>
+    <p>Consider the following <b>double deviation</b> by the expert:</p>
+    <ul>
+      <li><b>Sabotage:</b> swap the report signal ($l \leftrightarrow r$).</li>
+      <li><b>Confess</b> to the receiver:</li>
+    </ul>
+    <div class="block accent">
+      <div class="bt">Confession</div>
+      <div class="bb"><i>"I am the expert, and I lied in my report. Flip the recommended action. A quack would never benefit from asking you to flip, so you can trust me and promote me."</i></div>
+    </div>
+    <p>Is this confession <i>credible</i>? Apply a concept close to Cho &amp; Kreps (1987) intuitive criterion and Farrell (1993) neologism-proofness.</p>
+  </div>
+</section>
+
+<!-- ───────────────────────── 9. DOES IT WORK? ───────────────────────── -->
+<section class="slide">
+  <h1>Does It Work?</h1>
+  <div class="body">
+    <p>If the receiver believes the confession, the expert's payoff is</p>
+    <div class="mathline">$$x + B \qquad \text{instead of} \qquad x + y B$$</div>
+    <ul>
+      <li>It's always profitable (since $y<1$). The claim <i>a quack would not benefit</i> is what remains to verify.</li>
+      <li>If the receiver were to believe the confession, the quack maximizes his payoff by claiming to be the expert in the mechanism and lying in the confession. Beneficial iff:</li>
+    </ul>
+    <div class="mathline">$$\frac{1}{2}+B \;\geq\; x +(1-y)B$$</div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 10. ROBUST MECHANISMS ───────────────────────── -->
+<section class="slide static">
+  <h1>Mechanisms Robust to Off-Protocol Communication</h1>
+  <div class="body">
+    <div class="fig">
+      <svg viewBox="0 0 660 570" style="width:100%;max-width:600px">
+        <defs><marker id="axB" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#23373b"/></marker></defs>
+        <!-- IC region (as before) -->
+        <polygon points="60,500 444,500 444,20 300,20" class="region"/>
+        <!-- non-robust region: v < u/B - 1 (credible confession) -->
+        <polygon points="300,500 444,500 444,212" fill="#b5121b" opacity="0.13"/>
+        <!-- unit square boundary -->
+        <path d="M540,500 L540,20 L60,20" class="dash"/>
+        <!-- feasibility line at 2pE-1 -->
+        <line x1="444" y1="500" x2="444" y2="20" stroke="#1f4e79" stroke-width="2.2" stroke-dasharray="7 5"/>
+        <!-- quack IC boundary: v = u/B -->
+        <line x1="60" y1="500" x2="300" y2="20" class="cv-red"/>
+        <!-- credibility boundary: v = u/B - 1 -->
+        <line x1="300" y1="500" x2="444" y2="212" class="cv-red"/>
+        <!-- axes -->
+        <line x1="60" y1="500" x2="612" y2="500" class="axis" marker-end="url(#axB)"/>
+        <line x1="60" y1="500" x2="60" y2="10" class="axis" marker-end="url(#axB)"/>
+        <line x1="540" y1="495" x2="540" y2="505" class="tick"/>
+        <line x1="55" y1="20" x2="65" y2="20" class="tick"/>
+        <text x="628" y="532" text-anchor="middle" font-size="21" fill="#23373b">2x&#8722;1</text>
+        <text x="48" y="14" text-anchor="end" font-size="21" fill="#23373b">2y&#8722;1</text>
+        <text x="540" y="528" text-anchor="middle" font-size="16" fill="#23373b">1</text>
+        <text x="48" y="26" text-anchor="end" font-size="16" fill="#23373b">1</text>
+        <text x="48" y="528" text-anchor="end" font-size="16" fill="#23373b">0</text>
+        <text x="444" y="528" text-anchor="middle" font-size="18" fill="#1f4e79">2p<tspan class="sub">E</tspan>&#8722;1</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 11. INTUITION ───────────────────────── -->
+<section class="slide">
+  <h1>Intuition</h1>
+  <div class="body">
+    <p>Consider the mechanism with maximal action accuracy ($x=p_E$) and lowest promotion of the expert ($y=1/2$).</p>
+    <ul>
+      <li>This may be optimal for some designer's objectives.</li>
+      <li>IC is slack: quack gets promoted half of the time, so no gains from mimicking the expert.</li>
+      <li>But this mechanism is <b>not robust</b> to off-protocol communication: the expert's confession is maximally credible.</li>
+      <li>So to obtain a mechanism that survives off-protocol communication, we need some <b>distortion</b>, either:
+        <ul>
+          <li>raise $y$: make promotion informative, so that the quack is tempted to sabotage — this kills credibility;</li>
+          <li>lower $x$: reduce the accuracy cost the quack pays for sabotaging, again killing credibility.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═════════════════════════ PART II: GENERAL MODEL ═════════════════════════ -->
+<section class="slide section-slide">
+  <div class="sn">Part II</div>
+  <div class="st">General Model</div>
+  <div class="rule"></div>
+</section>
+
+<!-- ───────────────────────── 12. GENERAL MODEL ───────────────────────── -->
+<section class="slide">
+  <h1>General Model</h1>
+  <div class="body">
+    <ul>
+      <li>$n+1$ players: Receiver ($i=0$) and $n$ Senders ($i=1,\dots,n$).</li>
+      <li>Senders have private types $\theta_i\in \Theta_i$
+        <ul>
+          <li>$\theta=(\theta_1,\dots,\theta_n)$ drawn from $\mu\in \Delta(\Theta)$.</li>
+        </ul>
+      </li>
+      <li>Receiver chooses action $a\in A$.</li>
+      <li>For every player, final payoff given by $u_i:A\times \Theta \rightarrow \mathbb{R}$.</li>
+      <li><b>Timing:</b>
+        <ul>
+          <li>Senders observe their private information;</li>
+          <li><b>Communication</b>: protocol + off-protocol;</li>
+          <li>Receiver takes action;</li>
+          <li>Payoffs are realized.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────────────────────── 13. PROTOCOLS ───────────────────────── -->
+<section class="slide">
+  <h1>Protocols</h1>
+  <div class="body">
+    <div class="block def">
+      <div class="bt">Communication Protocol</div>
+      <div class="bb">$(\{M_i\}_{i=1}^n,\tau)$ consisting of a set of messages $M_i$ for each sender and a function $\tau:M_1\times\dots\times M_n \rightarrow \Delta(M_0)$.</div>
+    </div>
+    <p class="muted">Interpretation: senders simultaneously submit a message $m_i\in M_i$ to a black box that produces a message for the receiver.</p>
+    <p><b>Strategies:</b> $\sigma_i: \Theta_i \rightarrow \Delta(M_i)$ and $\sigma_0:M_0 \rightarrow \Delta(A)$.</p>
+    <p><b>Equilibrium:</b></p>
+    <ul>
+      <li>every action in the support is a best-response given the player's information.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═════════════════════════ PART III: GENERAL RESULTS ═════════════════════════ -->
+<section class="slide section-slide">
+  <div class="sn">Part III</div>
+  <div class="st">General Results</div>
+  <div class="rule"></div>
+</section>
+
+<!-- ───────────────────────── 14. REVELATION PRINCIPLE ───────────────────────── -->
+<section class="slide">
+  <h1>Revelation Principle</h1>
+  <div class="body">
+    <div class="block def">
+      <div class="bt">Direct revelation protocol</div>
+      <div class="bb">Communication protocol where $M_i=\Theta_i$ for all $i$ and $M_0=A$. We use $\Gamma: \Theta \rightarrow \Delta(A)$ to denote DRPs.</div>
+    </div>
+    <p>Following Myerson (1982) we define obedience and truthfulness:</p>
+    <ul>
+      <li>DRP is <b>obedient</b> if the receiver finds it optimal to follow the recommended action, assuming truthful reporting;</li>
+      <li>DRP is <b>truthful</b> if reporting truthfully is a BNE, assuming obedience.</li>
+    </ul>
+    <p class="muted">We call a DRP <b>IC</b> if it is truthful and obedient.</p>
+    <div class="block accent">
+      <div class="bt">Revelation Principle — Myerson (1982)</div>
+      <div class="bb">WLOG to focus on truthful and obedient DRPs.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 15. CONFESSIONS ───────────────────────── -->
+<section class="slide">
+  <h1>Confessions</h1>
+  <div class="body">
+    <p>Fix a protocol $(\{M_i\},\tau)$. Let $P_i:= \Theta_i \times M_i$.</p>
+    <div class="block def">
+      <div class="bt">Confession</div>
+      <div class="bb">A <i>confession</i> for sender $i$ is a tuple $(T,\hat{\sigma}_0)$, where $T\subseteq P_i$ and $\hat{\sigma}_0:M_0\rightarrow \Delta(A)$ is a suggested action rule.</div>
+    </div>
+    <p>Fix an equilibrium $\sigma$; a confession by sender $i$ is <b>credible</b> iff:</p>
+    <ul>
+      <li>switching $\sigma_0 \rightarrow \hat{\sigma}_0$ is only profitable for type-message combinations of $i$ in $T$;</li>
+      <li>$\hat{\sigma}_0$ is a best-response of the receiver, conditional on every element of $T$.</li>
+    </ul>
+    <div class="block accent">
+      <div class="bt">Confession-proofness</div>
+      <div class="bb">A protocol–equilibrium pair is <i>confession-proof</i> if there's no credible confession.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 16. CONFESSION-PROOF REVELATION PRINCIPLE ───────────────────────── -->
+<section class="slide">
+  <h1>A Confession-Proof Revelation Principle</h1>
+  <div class="body">
+    <div class="block accent">
+      <div class="bt">Revelation Principle</div>
+      <div class="bb">For every protocol and equilibrium that is confession-proof, there is an IC Direct Revelation Protocol that is confession-proof and has the same outcomes.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── 17. SINGLE SENDER RESULT ───────────────────────── -->
+<section class="slide">
+  <h1>Single Sender Result</h1>
+  <div class="body">
+    <p>Suppose $n=1$.</p>
+    <p>An IC DRP is <i>neologism-proof</i> if there is no type set $T\subseteq \Theta$ and action $\alpha\in \Delta(A)$ such that:</p>
+    <ul>
+      <li>$\alpha$ is a best-response for the receiver conditional on $T$;</li>
+      <li>$\alpha$ is preferred to $\Gamma(\theta)$ by sender $\theta$ if and only if $\theta\in T$.</li>
+    </ul>
+    <div class="block accent">
+      <div class="bt">Proposition</div>
+      <div class="bb">For $n=1$, the set of neologism-proof DRPs coincides with the set of confession-proof DRPs.</div>
+    </div>
+    <ul>
+      <li>For $n>1$ the equivalence does <b>not</b> hold!</li>
+      <li><span class="muted">Intuition: for $n=1$, the sender can pin down, given the protocol, what distribution of messages the receiver observes.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────────────────────── 18. CONCLUSION ───────────────────────── -->
+<section class="slide">
+  <h1>Conclusion</h1>
+  <div class="body">
+    <ul>
+      <li>When designing communication protocols, it's important to account for off-protocol communication.
+        <ul>
+          <li>A minimal robustness notion is accounting for incentives to confess deviations.</li>
+        </ul>
+      </li>
+      <li>We study the problem of designing communication protocols to elicit experts' information when:
+        <ul>
+          <li>experts have career concerns;</li>
+          <li>experts can communicate outside the protocol.</li>
+        </ul>
+      </li>
+      <li>We find that:
+        <ul>
+          <li>when career concerns are large, protocols that produce very informed recommendations cannot promote the expert too often, to avoid quack misreporting;</li>
+          <li>when career concerns are small, a protocol that produces very informed recommendations must promote the expert sufficiently often.</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="spacer"></div>
+    <p style="text-align:center;color:var(--accent);font-weight:600;font-size:24px">Thank you!</p>
+  </div>
+</section>
+
+<!-- ───────────────────────── 19. LITERATURE ───────────────────────── -->
+<section class="slide static">
+  <h1>Literature</h1>
+  <div class="body">
+    <p style="margin:12px 0 2px"><b>Expert advice with career concerns.</b> Reputational incentives distort advice and aggregation: Scharfstein &amp; Stein (1990), Prendergast &amp; Stole (1996), Ottaviani &amp; S&oslash;rensen (2001, 2006).</p>
+    <p class="muted" style="text-align:right;font-size:17px;margin:0 0 12px"><i>We design the protocol given these incentives.</i></p>
+    <p style="margin:12px 0 2px"><b>Mechanism design for expert information.</b> Wolinsky (2002), Gerardi, McLean &amp; Postlewaite (2009); reputation-concerned experts: Gamp, Habibi &amp; Meisner (WP); mediated communication: Myerson (1986), Forges (1986).</p>
+    <p class="muted" style="text-align:right;font-size:17px;margin:0 0 12px"><i>We allow participants to speak outside the mechanism.</i></p>
+    <p style="margin:12px 0 2px"><b>Robust and credible mechanisms.</b> Bergemann &amp; Morris (2005); credible auctions: Akbarpour &amp; Li (2020); renegotiation-proofness: Maskin &amp; Moore (1999).</p>
+    <p class="muted" style="text-align:right;font-size:17px;margin:0 0 12px"><i>Robustness to what participants may <b>say</b>, not to their beliefs.</i></p>
+    <p style="margin:12px 0 2px"><b>Credibility of off-path messages.</b> Intuitive criterion: Cho &amp; Kreps (1987); credible beliefs: Grossman &amp; Perry (1986); neologism-proofness: Farrell (1993).</p>
+    <p class="muted" style="text-align:right;font-size:17px;margin:0"><i>Confession test is in this tradition.</i></p>
+  </div>
+</section>
+
+</div>
+
+<div id="bar"></div>
+<div id="sec"></div>
+<div id="foot"></div>
+
+</body>
+</html>
