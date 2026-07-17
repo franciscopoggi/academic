@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown to Aug 8</title>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: #0f1115;
+    color: #e8e8e8;
+  }
+  .label { font-size: 1rem; color: #9aa0a8; letter-spacing: 0.08em; text-transform: uppercase; }
+  #countdown { font-size: 3.5rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .block { text-align: center; }
+  .bar-wrap { width: min(480px, 80vw); height: 14px; background: #262a31; border-radius: 7px; overflow: hidden; margin: 0.75rem auto 0; }
+  .bar { height: 100%; background: linear-gradient(90deg, #4a90d9, #7bc47f); border-radius: 7px; width: 0%; transition: width 0.5s; }
+  #percent { font-size: 2rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+
+<div class="block">
+  <div class="label">Countdown to Aug 8, 14:05 CET</div>
+  <div id="countdown">–</div>
+</div>
+
+<div class="block">
+  <div class="label">Time elapsed since May 25, 15:55 CET</div>
+  <div id="percent">–</div>
+  <div class="bar-wrap"><div class="bar" id="bar"></div></div>
+</div>
+
+<script>
+// Central European time in summer is UTC+2 (CEST)
+const start  = Date.UTC(2026, 4, 25, 13, 55, 0); // May 25, 15:55 CEST
+const target = Date.UTC(2026, 7,  8, 12,  5, 0); // Aug 8, 14:05 CEST
+
+function pad(n) { return String(n).padStart(2, "0"); }
+
+function update() {
+  const now = Date.now();
+  const diff = target - now;
+
+  if (diff <= 0) {
+    document.getElementById("countdown").textContent = "Time's up!";
+  } else {
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor(diff / 3600000) % 24;
+    const m = Math.floor(diff / 60000) % 60;
+    const s = Math.floor(diff / 1000) % 60;
+    document.getElementById("countdown").textContent =
+      d + "d " + pad(h) + ":" + pad(m) + ":" + pad(s);
+  }
+
+  const pct = Math.min(100, Math.max(0, (now - start) / (target - start) * 100));
+  document.getElementById("percent").textContent = pct.toFixed(4) + "%";
+  document.getElementById("bar").style.width = pct + "%";
+}
+
+update();
+setInterval(update, 1000);
+</script>
+
+</body>
+</html>
