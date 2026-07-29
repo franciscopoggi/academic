@@ -23,6 +23,22 @@
   to = "/"
   status = 301
 
+# ---- Friendly shortcuts ----
+[[redirects]]
+  from = "/publications/*"
+  to = "/#research"
+  status = 301
+
+[[redirects]]
+  from = "/research/*"
+  to = "/#research"
+  status = 301
+
+[[redirects]]
+  from = "/cv/*"
+  to = "/files/cv.pdf"
+  status = 301
+
 # Old blog posts and author pages -> home
 [[redirects]]
   from = "/post/*"
