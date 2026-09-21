@@ -10,6 +10,7 @@ Edit the `.html` files directly and open them in a browser to preview.
   URLs are `/#research` and `/#contact`.
 - `research.html`, `contact.html` — redirect stubs so old links land on the right tab
 - `papers.js` — the paper list (plain data at the top; a small script renders it)
+- `news.js` — the News box on the Home tab, same idea
 - `style.css` — all styling (colors live at the top under `:root`)
 - `files/` — PDFs, `avatar.jpg`, slides, and teaching materials
   (`microiii/`, `LawEcon/` are kept so old `/files/...` links keep working)
@@ -19,6 +20,7 @@ Edit the `.html` files directly and open them in a browser to preview.
 - **Add a paper:** add an entry to the `papers` list at the top of `papers.js`
   (title, pdf, with, status, abstract — all but the title are optional).
   Papers appear in the order listed.
+- **Add a news item:** add an entry (`date` optional, `text`) to the `news` list in `news.js`.
 - **Add a tab:** add a `<section class="panel" id="panel-NAME">`, then a
   `<a href="#NAME" data-panel="NAME">` in the nav — the script handles the rest.
 - **Change the accent color:** edit `--accent` at the top of `style.css`.

@@ -56,16 +56,8 @@
 
       <p>I received my Ph.D. from Northwestern University.</p>
 
-      <div class="news">
-        <strong>News</strong>
-        <ul>
-          <li><a href="files/scir.pdf" target="_blank" rel="noopener">Strategic Concealment in Innovation Races</a>
-            has been conditionally accepted at <em>AEJ: Microeconomics</em>.</li>
-          <li>New version of <a href="files/Market-based_Policies.pdf" target="_blank" rel="noopener">Market-based Policies</a>.</li>
-          <li>I am on sabbatical for the 2026&ndash;2027 academic year
-            and will spend the Fall Quarter at the University of Chicago.</li>
-        </ul>
-      </div>
+      <!-- News items live in news.js — edit that file to add or change them. -->
+      <div class="news" id="news"></div>
     </section>
 
     <!-- ================= RESEARCH =================
@@ -111,6 +103,7 @@
   </div>
 
   <script src="papers.js"></script>
+  <script src="news.js"></script>
   <script>
     // Tab switching without page reloads (keeps scroll position).
     var tabs = document.querySelectorAll('nav.tabs a[data-panel]');

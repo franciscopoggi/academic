@@ -129,6 +129,14 @@ nav.tabs a.active {
 .news strong { color: var(--accent); }
 .news ul { margin: 4px 0 0; padding-left: 18px; }
 .news li { margin: 3px 0; }
+.news .date {                 /* month label before a news item */
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 2px;
+}
 
 /* ---------- section heading ---------- */
 h2 {
