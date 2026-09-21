@@ -63,71 +63,12 @@
     </section>
 
     <!-- ================= RESEARCH =================
-         To add a paper, copy one .paper block and edit the title, link, coauthors,
-         status, and abstract. Delete the <span class="status"> tag if not applicable. -->
+         The paper list lives in papers.js — edit that file to add or change papers.
+         The script fills #paper-list on load. -->
     <section class="panel" id="panel-research">
-
-      <div class="paper">
-        <p class="paper-head">
-          <span class="title"><a href="files/scir.pdf" target="_blank" rel="noopener">Strategic Concealment in Innovation Races</a></span>
-          <span class="meta">with <a href="https://sites.google.com/view/yonggyun-yg-kim/" target="_blank" rel="noopener">Yonggyun Kim</a>
-            <span class="status">Conditionally accepted at AEJ: Micro</span></span>
-        </p>
-        <!-- <p class="abstract">Firms might avoid patenting intermediate innovations, even when this
-          would mean capturing the full social value of the innovation.</p> -->
-      </div>
-
-      <div class="paper">
-        <p class="paper-head">
-          <span class="title"><a href="files/market-based_mechanisms.pdf" target="_blank" rel="noopener">Market-based Policies</a></span>
-          <span class="meta">with <a href="http://www.quitzevalenzuelastookey.com" target="_blank" rel="noopener">Quitz&eacute; Valenzuela-Stookey</a>
-            <span class="status">R&amp;R at JPE</span></span>
-        </p>
-        <!-- <p class="abstract">How can policies use information contained in market outcomes when
-          market participants care about the policy itself?</p> -->
-      </div>
-
-      <div class="paper">
-        <p class="paper-head">
-          <span class="title"><a href="files/taxation.pdf" target="_blank" rel="noopener">A Taxation Principle with Moral Hazard</a></span>
-          <span class="meta">with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank" rel="noopener">Bruno Strulovici</a></span>
-        </p>
-        <!-- <p class="abstract">Sometimes, eliciting private information becomes redundant.</p> -->
-      </div>
-
-      <div class="paper">
-        <p class="paper-head">
-          <span class="title"><a href="files/timing-innovations.pdf" target="_blank" rel="noopener">The Timing of Complementary Innovations</a></span>
-        </p>
-        <!-- <p class="abstract">Breakthroughs always enhance incentives to work on complementary
-          projects, but only when the timing is endogenous.</p> -->
-      </div>
-
-      <div class="paper">
-        <p class="paper-head">
-          <span class="title"><a href="files/liability.pdf" target="_blank" rel="noopener">Liability Design with Information Acquisition</a></span>
-          <span class="meta">with <a href="https://faculty.wcas.northwestern.edu/bhs675/" target="_blank" rel="noopener">Bruno Strulovici</a></span>
-        </p>
-        <!-- <p class="abstract">How should liability be determined for an agent who acquires
-          information about an unknown risk?</p> -->
-      </div>
-
-      <div class="paper">
-        <p class="paper-head">
-          <span class="title">(Un)finished Products</span>
-          <span class="meta">with <a href="https://sites.google.com/site/jorgelemuswebsite/home" target="_blank" rel="noopener">Jorge Lemus</a>
-            <span class="status">Work in progress</span>
-          </span>
-        </p>
-      </div>
-
-      <div class="paper">
-        <p class="paper-head">
-          <span class="title">Off-protocol Communication</span>
-          <span class="meta"><span class="status">Work in progress</span></span>
-        </p>
-      </div>
-
+      <div id="paper-list"></div>
+      <noscript><p>Enable JavaScript to see the list of papers, or see the
+        <a href="files/cv.pdf" target="_blank" rel="noopener">CV</a>.</p></noscript>
     </section>
 
     <!-- ================= CV ================= -->
@@ -159,10 +100,11 @@
     </section>
 
     <div class="spacer"></div>
-    <footer>Last updated July 2026.</footer>
+    <footer>Last updated September 2026.</footer>
 
   </div>
 
+  <script src="papers.js"></script>
   <script>
     // Tab switching without page reloads (keeps scroll position).
     var tabs = document.querySelectorAll('nav.tabs a[data-panel]');

@@ -9,14 +9,16 @@ Edit the `.html` files directly and open them in a browser to preview.
   Tabs switch panels in place via a small script — no page reload, no scroll jump.
   URLs are `/#research` and `/#contact`.
 - `research.html`, `contact.html` — redirect stubs so old links land on the right tab
+- `papers.js` — the paper list (plain data at the top; a small script renders it)
 - `style.css` — all styling (colors live at the top under `:root`)
 - `files/` — PDFs, `avatar.jpg`, slides, and teaching materials
   (`microiii/`, `LawEcon/` are kept so old `/files/...` links keep working)
 
 ## Editing
 
-- **Add a paper:** copy one `<div class="paper">…</div>` block in the research
-  panel of `index.html` and change the title, link, coauthors, status, abstract.
+- **Add a paper:** add an entry to the `papers` list at the top of `papers.js`
+  (title, pdf, with, status, abstract — all but the title are optional).
+  Papers appear in the order listed.
 - **Add a tab:** add a `<section class="panel" id="panel-NAME">`, then a
   `<a href="#NAME" data-panel="NAME">` in the nav — the script handles the rest.
 - **Change the accent color:** edit `--accent` at the top of `style.css`.
