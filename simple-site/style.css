@@ -158,7 +158,21 @@ h2 {
   color: var(--muted);
   font-size: 15px;
 }
-.paper .status { font-style: italic; }
+.paper .title { display: block; }          /* title on its own line */
+.paper .meta  { display: block; margin-top: 3px; }  /* coauthors + status below it */
+.paper .status {                            /* small tag for publication status */
+  display: inline-block;
+  font-style: normal;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--accent);
+  background: #edf2f6;
+  border-radius: 4px;
+  padding: 1px 7px;
+  vertical-align: 1px;
+}
 .paper .abstract {
   margin: 8px 0 2px;
   padding-left: 16px;
