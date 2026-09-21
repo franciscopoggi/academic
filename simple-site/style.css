@@ -127,6 +127,8 @@ nav.tabs a.active {
   max-width: 60ch;
 }
 .news strong { color: var(--accent); }
+.news ul { margin: 4px 0 0; padding-left: 18px; }
+.news li { margin: 3px 0; }
 
 /* ---------- section heading ---------- */
 h2 {
