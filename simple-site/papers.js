@@ -21,7 +21,7 @@ var papers = [
   },
   {
     title: "Market-based Policies",
-    pdf: "files/market-based_mechanisms.pdf",
+    pdf: "files/Market-based_Policies.pdf",
     with: [["Quitzé Valenzuela-Stookey", "http://www.quitzevalenzuelastookey.com"]],
     status: "R&R at JPE",
     // abstract: "How can policies use information contained in market outcomes when market participants care about the policy itself?",
