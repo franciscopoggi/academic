@@ -12,15 +12,15 @@
 
 var news = [
   {
+    text: "I am on sabbatical for the 2026–2027 academic year and will spend the Fall Quarter at the University of Chicago.",
+  },
+  {
     date: "Sep 2026",
     text: '<a href="files/scir.pdf">Strategic Concealment in Innovation Races</a> has been conditionally accepted at <em>AEJ: Microeconomics</em>.',
   },
   {
     date: "Sep 2026",
     text: 'New version of <a href="files/market-based_mechanisms.pdf">Market-based Policies</a>.',
-  },
-  {
-    text: "I am on sabbatical for the 2026–2027 academic year and will spend the Fall Quarter at the University of Chicago.",
   },
 ];
 
