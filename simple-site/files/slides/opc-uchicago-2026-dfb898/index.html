@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="" data-school="vwl" data-layout="spread" data-footer="" data-minutes="90">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Off-Protocol Communication — UChicago 2026</title>
+
+<!--
+═══════════════════════════════════════════════════════════════════════
+  HTML SLIDE TEMPLATE   slides.html · style.css · deck.js · lib/ · assets/
+═══════════════════════════════════════════════════════════════════════
+
+HOW TO USE
+  • Copy this folder into Research/NN_<Project>/Presentations/YYYY.MM EVENT/.
+  • Edit only slides.html. Styling lives in style.css, behaviour in deck.js.
+  • Works offline: KaTeX and the fonts are vendored in lib/ (no CDN).
+  • Each slide is a <section class="slide"> inside #deck. The canvas is a
+    fixed 1280×720 that scales to any screen, so what fits on your laptop
+    fits on every projector. A slide whose content overflows is flagged
+    with a red dashed outline (and a console warning) — fix it, don't scroll.
+
+THEME   (attributes on <html> above; ?theme=mannheim etc. in the URL also work)
+  data-theme=""          default: teal / red, Fira Sans
+  data-theme="mannheim"  Universität Mannheim CD: UM blue, silver rule,
+                         Myriad Pro (falls back to Source Sans 3)
+  data-school="vwl"      Mannheim school accent: vwl bwl sowi phil wim
+  data-footer="…"        text in the footer centre, e.g. "University of Mannheim"
+  data-minutes="20"      talk length → clock shows remaining time (T key)
+  data-size="4:3"        960×720 canvas instead of 1280×720
+  Logos (Mannheim theme): assets/logo.png top-right of content slides,
+  assets/logo-white.png on the title slide. See assets/README.txt to swap them.
+
+KEYS   (press ? in the deck)
+  → ↓ Space PgDn next · ← ↑ ⇧Space PgUp back · Home/End · 12⏎ jump · a2⏎ appendix 2
+  Backspace return from a jump · O/Esc overview · F fullscreen · B/. black
+  N notes · T clock (⇧T reset) · P print preview · M toggle Mannheim · ? help
+  Click: right 72 % next, left 28 % back. Swipe on touch screens.
+
+PDF    ⌘P / Ctrl-P opens a chooser: Slides as presented (one 16:9 page per step,
+       like beamer overlays), Slides one per slide (all steps revealed), or Handout
+       (4 or 6 per sheet landscape, 2 per sheet portrait; A4 or Letter, remembered). Then "Save as PDF" at 100 %, 1 page per sheet — never
+       the dialog's own "pages per sheet". p / P preview the two layouts on screen;
+       ?print, ?print&steps, ?print&handout=4, &paper=letter, &noappendix: same by URL.
+       handout.py tiles an already exported slides PDF the same way (for Safari,
+       which ignores the page size, or for other layouts).
+
+SLIDE TYPES
+  <section class="slide title-slide">            title page (dark)
+  <section class="slide section-slide">          part divider (dark)
+  <section class="slide">                        content slide
+  <section class="slide section-slide appendix"> appendix divider — everything
+                                                 after it is numbered A1, A2, …
+                                                 and the progress bar ignores it
+  Add class "static" to show everything at once. Add id="…" to link to a slide.
+
+STEPS   (content inside .body reveals one step at a time)
+  default         each direct child of .body is a step; a <ul>/<ol> → its <li>s
+  .now            show this child immediately (e.g. a figure the bullets discuss)
+  .steps          reveal this container's children one by one (e.g. .two.steps)
+  .step           make any element anywhere its own step (inside .two, .block …)
+  .swap           children replace each other in place (beamer \only)
+
+COMPONENTS (every one is demonstrated below — delete what you don't need)
+  <h1>                    slide title
+  <h2>                    sub-heading inside a slide
+  .alert                  emphasis in the accent colour (beamer \alert)
+  .block                  box with dark header   (.bt header, .bb body)
+  .block.accent           accent header          (key points)
+  .block.def  .block.rem  gray header            (definitions, remarks)
+  .block.prop .lem .thm .cor   numbered automatically: "Proposition 1 (name)"
+  .block.plain            headed box without background
+  .two / .three           column grids; .two.l2 / .two.r2 = 2:1 / 1:2; .mid centres
+  .fig  or  <figure>      centred figure that absorbs the free height
+                          (img or inline svg; .fixed = natural size)
+  <table>                 booktabs style; <tr class="mid"> rule, <tr class="se"> s.e. row,
+                          .hl highlighted cell/row, table.full, table.left
+  .mathline               centred display-math line
+  .quote  .who            serif pull quote with attribution
+  .source                 "Source: …" line bottom-left (place after .body)
+  .links + a.btn          bottom-right buttons:  <a class="btn" href="#id">
+                          … and <a class="btn back" href="#back"> to return
+  <aside class="notes">   speaker notes (N key), can contain math
+  .muted .small .tiny .center .right .serif .spacer .spacer.big .fill
+
+MATH    $inline$  $$display$$  \( \)  \[ \]  — rendered by KaTeX.
+        Literal dollar signs: write \$ or wrap in <span class="nomath">.
+        Macros (\E \R \1 \argmax \eps \abs{} …): edit MACROS at the top of deck.js.
+
+FIGURES (inline SVG helper classes)   .axis .tick .grid  .cv-blue .cv-red
+        .cv-green .cv-orange .cv-gray .cv-black .dash .region .dot .lblB .lblR
+        Figure colours follow --blue --red … in style.css, not the theme accent.
+
+COLOURS / SIZES   everything is a variable in :root of style.css.
+═══════════════════════════════════════════════════════════════════════
+-->
+
+<link rel="stylesheet" href="lib/fonts/fonts.css">
+<link rel="stylesheet" href="lib/katex/katex.min.css">
+<script defer src="lib/katex/katex.min.js"></script>
+<script defer src="lib/katex/auto-render.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Slide "Truthfulness and Obedience": the final step swaps every .v-half for its .v-gen twin
+     (title, quack constraint, gloss). The trigger is the .step.v-gen gloss; print "one per slide"
+     and handout show the final state. */
+  .ic:not(:has(.step.v-gen.on)) .v-gen{display:none}
+  .ic:has(.step.v-gen.on) .v-half{display:none}
+  html.print:not(.steps) .ic .v-half{display:none}
+  html.print:not(.steps) .ic:not(:has(.step.v-gen.on)) .v-gen{display:revert}
+  /* title: both variants stacked in one cell, so the switch does not reflow the slide */
+  .ic h1 .ttl{display:inline-grid;vertical-align:baseline}
+  .ic h1 .ttl > span{grid-area:1/1;display:inline!important}
+  .ic:not(:has(.step.v-gen.on)) h1 .ttl > .v-gen{visibility:hidden}
+  .ic:has(.step.v-gen.on) h1 .ttl > .v-half{visibility:hidden}
+  html.print:not(.steps) .ic h1 .ttl > .v-half{visibility:hidden}
+  html.print:not(.steps) .ic:not(:has(.step.v-gen.on)) h1 .ttl > .v-gen{visibility:visible}
+  /* Slide "Symmetric Mechanisms in the Unit Square": the weak-case iso-payoff lines (.isoA) give way
+     to the strong case's own lines when that step (.caseB) is on. */
+  .fsq:has(.caseB.on) .isoA{opacity:0!important}
+  html.print:not(.steps) .fsq .isoA{opacity:0!important}
+</style>
+<script defer src="deck.js"></script>
+</head>
+<body>
+
+<div id="deck">
+
+<!-- ───────────────────────── TITLE ───────────────────────── -->
+<section class="slide title-slide">
+  <div class="t">Off-Protocol <span class="hl">Communication</span></div>
+  <div class="rule"></div>
+  <div class="au"><b>Francisco Poggi</b></div>
+  <div class="af">University of Mannheim</div>
+  <div class="ev">University of Chicago · 2026</div>
+</section>
+
+<!-- ───────────────────────── 1. MOTIVATION ───────────────────────── -->
+<section class="slide" id="motivation">
+  <h1>Motivation</h1>
+  <div class="body">
+    <ul>
+      <li>Communication is sometimes organized around a <span class="alert">protocol</span>: who speaks, when, what messages are allowed.
+        <ul><li>E.g., peer review, courtroom procedure, expert committees, internal reporting.</li></ul>
+      </li>
+      <li>Protocols shape information transmission and hence outcomes.</li>
+      <li>However, participants may also communicate <span class="alert">off protocol</span>:
+        <ul>
+          <li>referee and editor at a conference dinner;</li>
+          <li>ex parte communication with the judge;</li>
+          <li>employee and supervisor in the hallway.</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="block accent mt">
+      <div class="bt">Questions</div>
+      <div class="bb rows">
+        <div>When does off-protocol communication undermine the protocol?</div>
+        <div>How can protocols be designed to be robust to off-protocol communication?</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════════════════ EXAMPLES ═════════════════════════ -->
+<section class="slide section-slide">
+  <div class="sn">Examples</div>
+  <div class="st">Two Simple Examples</div>
+  <div class="rule"></div>
+  <div class="ss">To fix ideas about the kind of deviations we have in mind.</div>
+</section>
+
+<!-- ─────────────── EXAMPLE I: SETUP ─────────────── -->
+<section class="slide" id="ex1">
+  <h1>Example I: Assigning an Unpleasant Task</h1>
+  <div class="body">
+    <ul>
+      <li>$n$ workers $i=1,\dots,n$.</li>
+      <li>A supervisor assigns a task to one of them, or to nobody.</li>
+      <li>Private cost $c_i\in\{\mathcal{l},\mathcal{h}\}$, independent, $p:=\Pr(c_i=\mathcal{h})$.</li>
+      <li><b>Payoffs.</b> Each worker gets $1$ if the task is performed; the assignee $i$ also pays $c_i$.
+        <ul><li>Supervisor: $1-c_i$ if performed, $0$ otherwise.</li></ul>
+      </li>
+      <li>$\mathcal{l}<1<\mathcal{h}$: a low-cost worker is worth assigning; a high-cost one is not.</li>
+    </ul>
+    <div class="block accent">
+      <div class="bt">First best</div>
+      <div class="bb">Assign the task to a low-cost worker if there is one; otherwise, assign it to nobody.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────── EXAMPLE I: INCENTIVES + PROTOCOL ─────────────── -->
+<section class="slide" id="ex1-protocol">
+  <h1>Example I: Incentives and a Protocol</h1>
+  <div class="body">
+    <ul>
+      <li>$n=1$: supervisor and worker have the <em>same</em> payoff. Nothing to design: ask him.</li>
+      <li>$n\ge 2$: <span class="alert">free-riding</span>. A low-cost worker prefers that another worker do it.</li>
+    </ul>
+    <div class="block def">
+      <div class="bt">A protocol</div>
+      <div class="bb rows">
+        <div>Workers simultaneously report their costs.</div>
+        <div>Assign the task uniformly at random among the workers who report a low cost.</div>
+        <div>If nobody reports a low cost, assign it to nobody.</div>
+      </div>
+    </div>
+    <ul class="mt">
+      <li><b>Obedience.</b> If workers report truthfully, the supervisor is happy to follow through with the protocol.</li>
+      <li><b>Truthful reporting</b> is an equilibrium if $p$ is high enough:
+        $$\mathcal{l}\ \le\ \frac{n\,(1-p)\,p^{\,n-1}}{1-p^{\,n}}$$
+      </li>
+    </ul>
+  </div>
+  <aside class="notes">
+    With $n=1$, strictly speaking neologism-proofness selects the most informative equilibria of this cheap-talk game.
+    <br><br>
+    Condition: a low-cost worker who reports $L$ gets $1-\mathcal{l}\,\E[1/(k+1)]$, where $k\sim\mathrm{Bin}(n-1,1-p)$ is the number of other low reports; $\E[1/(k+1)]=\frac{1-p^n}{n(1-p)}$. Reporting $H$ gives $\Pr(k\ge1)=1-p^{n-1}$. Truthful iff $\mathcal{l}\,\frac{1-p^n}{n(1-p)}\le p^{n-1}$. For $n=2$ this is $p\ge\mathcal{l}/(2-\mathcal{l})$. The high type's constraint holds automatically since $\mathcal{h}>1\ge\frac{n(1-p)p^{n-1}}{1-p^n}$.
+  </aside>
+</section>
+
+<!-- ─────────────── A SPEECH ─────────────── -->
+<section class="slide" id="speech">
+  <h1>A Speech</h1>
+  <div class="body">
+    <p>A low-cost worker <span class="alert">reports $H$</span>. Then he meets the supervisor in the hallway and privately tells him:</p>
+    <div class="quote">"If the protocol says <em>nobody</em>, assign the task to me. Otherwise follow its recommendation."</div>
+    <p>What should the supervisor make of this?</p>
+    <ul>
+      <li><b>The worker gains.</b> He free-rides whenever a colleague is low, and the task still gets done when nobody else is.</li>
+      <li><b>A high-cost worker would never say this.</b> It would get him the task exactly when nobody else is low: $1-\mathcal{h}<0$.</li>
+      <li><b>So the supervisor believes him,</b> and is happy to do as asked: when the protocol says nobody, this worker is the only low-cost one.</li>
+    </ul>
+    <p class="mt"><span class="alert">The protocol unravels.</span> Reporting truthfully is no longer optimal once the worker can talk to the supervisor off protocol.</p>
+  </div>
+</section>
+
+<!-- ─────────────── EXAMPLE II ─────────────── -->
+<section class="slide" id="ex2">
+  <h1>Example II: Experts with Career Concerns</h1>
+  <div class="body">
+    <ul class="tight">
+      <li>A decision-maker must take an action.</li>
+      <li>Consults two advisers: one is an <b>expert</b>, the other is a <b>quack</b>.</li>
+      <li>The decision-maker cannot distinguish them.</li>
+      <li>The expert knows the best course of action; the quack does not.</li>
+      <li>Both want the correct action taken, but also care about their <span class="alert">reputation</span>:
+        <ul><li>the expert wants to be recognized as the expert;</li><li>the quack wants to pool with the expert.</li></ul>
+      </li>
+    </ul>
+    <div class="block def">
+      <div class="bt">Protocol that maximizes the quality of the action</div>
+      <div class="bb">Advisers submit a <b>joint report</b>, with no attribution of individual recommendations.<br>
+        Individual recommendations are unobserved, so career concerns do not distort truthful reporting.</div>
+    </div>
+    <p>But the expert can communicate off protocol:</p>
+    <div class="quote tight">"I'm the expert. I deliberately sabotaged the joint report. Ignore it; here is the correct action instead…"</div>
+    <p class="alert center tight">Is this credible?</p>
+  </div>
+</section>
+
+<!-- ─────────────── WHAT WE DO ─────────────── -->
+<section class="slide" id="what-we-do">
+  <h1>What We Do</h1>
+  <div class="body">
+    <ul class="groups">
+      <li>Study communication protocols when senders can also talk to the receiver <span class="alert">off protocol</span>.
+        <ul>
+          <li>A designer chooses the protocol: who communicates, what messages are allowed, how they are processed.</li>
+          <li>She cannot prevent a sender from addressing the receiver directly (privately, cheaply).</li>
+          <li>No commitment: the receiver cannot promise to ignore what she hears outside the protocol.</li>
+        </ul>
+      </li>
+      <li>Propose a robustness criterion based on the credibility of <span class="alert">speeches</span>.
+        <ul>
+          <li>A speech makes claims about the sender's type and behavior, and recommends what the receiver should do.</li>
+          <li>It is <b>credible</b> if
+            <ul>
+              <li>the receiver would comply when taking it at face value;</li>
+              <li>complying is profitable to the sender only if the speech is true.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="block accent">
+      <div class="bt">Robustness criterion</div>
+      <div class="bb">No credible off-protocol speech. &nbsp; Deliberately demanding: we see this as a <em>minimal</em> notion.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────── PREVIEW OF RESULTS ─────────────── -->
+<section class="slide" id="preview">
+  <h1>Preview of Results</h1>
+  <div class="body">
+    <ul class="groups">
+      <li><b>Proof of concept.</b> Speeches as a way to discipline communication mechanisms.</li>
+      <li><b>Experts with career concerns.</b>
+        <ul>
+          <li>Weak career concerns: robust protocols trade <span class="alert">decision accuracy against concealment</span> — reveal more about expertise, or decide less well.</li>
+          <li>Strong career concerns: the quack's appetite for promotion protects the protocol; perfect concealment survives.</li>
+        </ul>
+      </li>
+      <li><b>General results.</b>
+        <ul>
+          <li>One sender: robustness is neologism-proofness (Farrell 1993). A claim about what I <em>did</em> inside the protocol adds nothing to a claim about who I <em>am</em>. Direct mechanisms are without loss.</li>
+          <li>Multiple senders: claims about protocol behavior have bite. Direct <em>reports</em> remain without loss; direct <em>recommendations</em> do not.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ─────────────── LITERATURE ─────────────── -->
+<section class="slide" id="literature">
+  <h1>Related Literature</h1>
+  <div class="body">
+    <ul class="groups">
+      <li><b>Neologism-proofness</b> (Farrell 1993); <b>natural language equilibrium</b> (Reny 2025).
+        <ul>
+          <li>Equilibrium refinements in cheap-talk and signaling games.</li>
+          <li>This paper: speeches as additional <em>deviations</em> from a designed communication protocol.</li>
+        </ul>
+      </li>
+      <li><b>Communication among mechanism participants.</b>
+        <ul>
+          <li>Collusion-proof mechanism design: agents write side deals.</li>
+          <li>Akbarpour and Li (2020), credibility: the designer may misrepresent what happened in the mechanism.</li>
+        </ul>
+      </li>
+      <li><b>Main application:</b> Ottaviani and Sørensen (2006) — incentives to appear informed degrade communication.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ─────────────── PLAN ─────────────── -->
+<section class="slide" id="plan">
+  <h1>Plan for Today</h1>
+  <div class="body">
+    <ul class="groups">
+      <li>Focus mostly on the <span class="alert">expert-advice application</span> (as in Example II).</li>
+      <li class="mt-lg">General results:
+        <ul style="font-size:var(--fs-body)">
+          <li>One-sender revelation principle — issues with the Bayesian framework.</li>
+          <li>One-sender equivalence — issues with multiple senders.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═════════════════════════ APPLICATION ═════════════════════════ -->
+<section class="slide section-slide">
+  <div class="sn">Application</div>
+  <div class="st">Expert Advice with Career Concerns</div>
+  <div class="rule"></div>
+</section>
+
+<!-- ─────────────── MODEL ─────────────── -->
+<section class="slide" id="app-model">
+  <h1>Expert Advice with Career Concerns: Model</h1>
+  <div class="body">
+    <ul>
+      <li><b>Players:</b> two senders $i=1,2$ and one receiver.</li>
+      <li>One sender is an <span class="alert">expert</span> ($E$), the other a <span class="alert">quack</span> ($Q$).</li>
+      <li>Roles are private; each assignment is equally likely.</li>
+      <li><b>Payoff-relevant state</b> $\omega\in\{L,R\}$, uniform prior.</li>
+      <li>Each sender observes a conditionally independent binary signal $s_i\in\{l,r\}$ with precision $p_E$ and $p_Q$.
+        <ul><li>For exposition, $p_Q=1/2$: the quack is completely uninformed.</li></ul>
+      </li>
+      <li>The <b>receiver</b> chooses an action $a\in\{L,R\}$ and a promotion $\pi\in\{1,2\}$.</li>
+    </ul>
+    <div class="block def mt">
+      <div class="bt">Payoffs</div>
+      <div class="bb rows">
+        <div>Everyone receives $1$ if $a=\omega$.</div>
+        <div>Sender $i$ gets an additional bonus $B>0$ iff promoted ($\pi=i$).</div>
+        <div>The receiver gets an additional bonus $D>0$ if the expert is promoted ($\pi=E$).</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────── DIRECT REVELATION MECHANISMS ─────────────── -->
+<section class="slide" id="app-drm">
+  <h1>Direct Revelation Mechanisms</h1>
+  <div class="body">
+    <ul>
+      <li>A <b>direct revelation mechanism</b> asks each sender to report whether they are the expert, and their signal realization.
+        <ul><li>Given the uninformativeness of the quack's signal, we can simplify to $M_i=\{L,R,Q\}$.</li></ul>
+      </li>
+      <li>It recommends an action and a promotion to the receiver, $(a,\pi)\in\{L,R\}\times\{1,2\}$.</li>
+    </ul>
+    <div class="mathline">$$\tau:\ \{L,R,Q\}^2 \;\to\; \Delta\big(\{L,R\}\times\{1,2\}\big)$$</div>
+    <div class="block def">
+      <div class="bt">Truthful and obedient</div>
+      <div class="bb">A direct revelation mechanism is <b>truthful and obedient</b> if there is an equilibrium in which senders report truthfully and the receiver follows the recommendation.</div>
+    </div>
+    <p class="mt">The <b>Revelation Principle</b> (Myerson 1982) justifies the focus on direct revelation mechanisms (<em>absent speeches</em>).</p>
+  </div>
+</section>
+
+<!-- ─────────────── SYMMETRIC FAMILY ─────────────── -->
+<section class="slide" id="app-symmetric">
+  <h1>A Symmetric Family</h1>
+  <div class="body">
+    <ul>
+      <li>We focus on a <span class="alert">symmetric</span> family of direct revelation mechanisms:
+        <ul>
+          <li>both senders are treated symmetrically;</li>
+          <li>both states and actions are treated symmetrically.</li>
+        </ul>
+      </li>
+      <li>Under truthful reports, a symmetric mechanism is summarized by two numbers:
+        $$x=\Pr(a=\omega \mid \text{truthful reports}),\qquad y=\Pr(\pi=E \mid \text{truthful reports}).$$
+      </li>
+      <li>We must also define what happens after <span class="alert">inconsistent reports</span>.</li>
+    </ul>
+    <div class="block def">
+      <div class="bt">Inconsistent reports</div>
+      <div class="bb rows">
+        <div>Both senders claim to be the quack: $(a,\pi)$ drawn uniformly at random.</div>
+        <div>Both senders claim to be the expert:
+          <ul class="tight" style="margin:4px 0 0;padding-left:26px">
+            <li>reports do not coincide: $(a,\pi)$ drawn uniformly at random;</li>
+            <li>reports coincide: the action matches the reports with probability $\alpha$.</li>
+          </ul>
+        </div>
+        <div class="muted">($\alpha=1/2$: every inconsistency leads to a uniform draw.)</div>
+      </div>
+    </div>
+  </div>
+  <div class="source">A similar application can be constructed with independent types. There are then no inconsistent reports, but more cases to consider.</div>
+  <aside class="notes">
+    Symmetry is without loss: the environment is invariant under permutations of sender identities and simultaneous exchanges of state, signal, and action labels.
+  </aside>
+</section>
+
+<!-- ─────────────── TRUTHFULNESS AND OBEDIENCE ─────────────── -->
+<section class="slide ic" id="app-ic">
+  <h1>Truthfulness and Obedience
+    <span class="ttl"><span class="muted v-half">($\alpha=1/2$)</span><span class="alert v-gen">(general $\alpha$)</span></span></h1>
+  <div class="body">
+    <div class="block def">
+      <div class="bt">Obedience</div>
+      <div class="bb">The receiver follows the recommendation iff $x\ge \tfrac12$ and $y\ge \tfrac12$.</div>
+    </div>
+    <div class="block def">
+      <div class="bt">Expert truthfulness</div>
+      <div class="bb">
+        $$\underbrace{U_E \;:=\; x + y\,B}_{\text{truthful report}} \;\ge\; \max\Big\{\underbrace{\tfrac12+\tfrac{B}{2}}_{\text{claim to be the quack}},\;\; \underbrace{(1-x)+y\,B}_{\text{flip the signal}}\Big\}$$
+        <span class="alert">Implied by obedience.</span>
+        <span class="muted small">Claiming $Q$ makes the reports inconsistent (uniform draw).</span>
+      </div>
+    </div>
+    <div class="block accent">
+      <div class="bt">Quack truthfulness</div>
+      <div class="bb">
+        <div class="v-half">$$\underbrace{U_Q \;:=\; x + (1-y)\,B}_{\text{truthful report}} \;\ge\; \underbrace{\tfrac12+\tfrac{B}{2}}_{\text{claim to be the expert}}$$</div>
+        <div class="v-gen">$$\underbrace{U_Q \;:=\; x + (1-y)\,B}_{\text{truthful report}} \;\ge\; \underbrace{\colorbox{#f3d9da}{$\textcolor{#b5121b}{\tilde{x}(\alpha)}$}+\tfrac{B}{2}}_{\text{claim to be the expert}}$$</div>
+        <span class="alert">Not</span> implied by obedience.
+        <span class="muted small v-half">Claiming to be the expert also makes the reports inconsistent (uniform draw).</span>
+        <span class="small step v-gen"><span class="alert">$\tilde{x}(\alpha)$</span>: accuracy of the recommended action when the quack pretends to be the expert.</span>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    Last step switches the slide from $\alpha=1/2$ to general $\alpha$. Obedience and expert truthfulness are untouched: the expert's deviation to $Q$ yields two $Q$ claims, which is a uniform draw for every $\alpha$. Only the quack's deviation (both claim expert) is affected: $\tilde{x}(\alpha)=\tfrac12[\alpha p_E+(1-\alpha)(1-p_E)]+\tfrac14$, so $\tilde{x}(\tfrac12)=\tfrac12$ and $\tilde{x}\in[\tfrac34-\tfrac{p_E}{2},\,\tfrac14+\tfrac{p_E}{2}]$.
+  </aside>
+  <div class="links"><a class="btn" href="#app-ic-alpha">$\tilde{x}(\alpha)$: derivation</a></div>
+</section>
+
+<!-- ─────────────── FIGURE 1: FEASIBILITY ─────────────── -->
+<section class="slide fsq" id="app-fig-feasible">
+  <h1>Symmetric Mechanisms in the Unit Square</h1>
+  <div class="body">
+    <!-- Layout: a 2:3 grid. The figure is several overlapping SVG layers in the same grid cell (same
+         viewBox, same sizing) so that bullets can sit between them in the DOM — steps reveal in
+         document order: bullets 1–2 → feasibility → iso-payoff bullet → iso-payoff lines (weak B)
+         → truthfulness bullet → weak case → strong case (swap; the weak-B iso lines hide then). -->
+    <div class="two r2 mid steps" style="grid-template-rows:auto auto auto;grid-template-columns:2fr 3fr">
+      <ul style="grid-column:1;grid-row:1;align-self:end">
+        <li>By obedience, $x,y\ge\tfrac12$: an obedient, symmetric mechanism is a point
+          $$(2x-1,\;2y-1)\in[0,1]^2.$$
+          <ul>
+            <li>horizontal: decision accuracy;</li>
+            <li>vertical: how often the expert is promoted.</li>
+          </ul>
+        </li>
+        <li><b>Feasibility.</b> The decision cannot be more accurate than the expert's signal: $x\le p_E$.</li>
+      </ul>
+
+      <!-- layer 1: unit square, feasibility (step), axes -->
+      <figure class="fig now" style="grid-column:2;grid-row:1 / span 3">
+        <svg viewBox="0 0 580 460" style="width:100%;max-width:700px">
+          <rect class="grid" x="100" y="40" width="360" height="360"/>
+          <g class="step">
+            <rect class="region" x="100" y="40" width="216" height="360"/>
+            <path class="cv-red" d="M316 400 V40"/>
+            <text class="it lblR" x="324" y="62">x = p<tspan class="sub">E</tspan></text>
+            <text class="lblB txt" x="208" y="346" text-anchor="middle">feasible</text>
+            <text class="it" x="316" y="426" text-anchor="middle">2p<tspan class="sub">E</tspan> − 1</text>
+          </g>
+          <path class="axis" d="M100 40 V400 H460"/>
+          <line class="tick" x1="460" y1="400" x2="460" y2="408"/>
+          <line class="tick" x1="92"  y1="40"  x2="100" y2="40"/>
+          <text x="100" y="426" text-anchor="middle">0</text>
+          <text x="460" y="426" text-anchor="middle">1</text>
+          <text x="82"  y="46"  text-anchor="end">1</text>
+          <text class="it" x="474" y="406">2x − 1</text>
+          <text class="it" x="100" y="24" text-anchor="middle">2y − 1</text>
+        </svg>
+      </figure>
+
+      <ul style="grid-column:1;grid-row:2;align-self:center">
+        <li><b>Quack's iso-payoff curves.</b> $U_Q=x+(1-y)B$: parallel lines of slope $1/B$; $U_Q$ rises to the south-east.</li>
+      </ul>
+
+      <!-- layer 2: iso-payoff lines for the weak case (B = 0.4); hidden once the strong case is shown -->
+      <figure class="fig now" style="grid-column:2;grid-row:1 / span 3;pointer-events:none">
+        <svg viewBox="0 0 580 460" style="width:100%;max-width:700px">
+          <g class="step isoA">
+            <path class="dash" d="M100 220 L172 40"/>
+            <path class="dash" d="M100 400 L244 40"/>
+            <path class="dash" d="M172 400 L316 40"/>
+            <path class="dash" d="M244 400 L388 40"/>
+            <path class="dash" d="M316 400 L460 40"/>
+            <path class="dash" d="M388 400 L460 220"/>
+            <path class="cv-gray" style="stroke-dasharray:none" d="M372 318 L412 334"/><polygon fill="var(--gray)" points="420,337 410,339 414,329"/>
+            <text class="it lblG" x="350" y="318">U<tspan class="sub">Q</tspan></text>
+          </g>
+        </svg>
+      </figure>
+
+      <ul style="grid-column:1;grid-row:3;align-self:start;margin-top:0">
+        <li><b>Quack truthfulness.</b> $U_Q$ must be at least its value at the origin, $\tfrac12+\tfrac B2$: the region below the iso-payoff line through the origin.</li>
+      </ul>
+
+      <!-- layer 3: the two cases, shown in place of each other
+           (drawn with p_E = 0.8, i.e. 2p_E − 1 = 0.6; weak case B = 0.4, strong case B = 0.9) -->
+      <figure class="fig now" style="grid-column:2;grid-row:1 / span 3;pointer-events:none">
+        <svg viewBox="0 0 580 460" style="width:100%;max-width:700px">
+          <g class="swap">
+            <g class="step">
+              <polygon class="region red" points="100,400 100,40 244,40"/>
+              <path class="cv-blue" d="M100 400 L244 40"/>
+              <text class="it lblB" x="244" y="30" text-anchor="middle">U<tspan class="sub">Q</tspan> = ½ + B/2</text>
+              <text class="lblR txt" x="112" y="76">quack lies</text>
+              <circle class="dot blue" cx="316" cy="40" r="5"/>
+              <text class="txt" x="400" y="100" text-anchor="middle" style="font-weight:600">weak career concerns</text>
+              <text class="it" x="400" y="124" text-anchor="middle">B ≤ 2p<tspan class="sub">E</tspan> − 1</text>
+              <text x="400" y="146" text-anchor="middle" class="lblG txt">corner is truthful</text>
+            </g>
+            <g class="step caseB">
+              <path class="dash" d="M100 80 L136 40"/>
+              <path class="dash" d="M100 160 L208 40"/>
+              <path class="dash" d="M100 240 L280 40"/>
+              <path class="dash" d="M100 320 L352 40"/>
+              <path class="dash" d="M172 400 L460 80"/>
+              <path class="dash" d="M244 400 L460 160"/>
+              <path class="dash" d="M316 400 L460 240"/>
+              <path class="dash" d="M388 400 L460 320"/>
+              <path class="cv-gray" style="stroke-dasharray:none" d="M372 318 L404 347"/><polygon fill="var(--gray)" points="411,353 401,350 407,343"/>
+              <text class="it lblG" x="350" y="318">U<tspan class="sub">Q</tspan></text>
+              <polygon class="region red" points="100,400 100,40 316,40 316,160"/>
+              <path class="cv-blue" d="M100 400 L424 40"/>
+              <text class="it lblB" x="568" y="64" text-anchor="end">U<tspan class="sub">Q</tspan> = ½ + B/2</text>
+              <text class="lblR txt" x="140" y="76">quack lies</text>
+              <circle class="dot open" cx="316" cy="40" r="5"/>
+              <circle class="dot blue" cx="316" cy="160" r="5"/>
+              <text class="txt" x="400" y="250" text-anchor="middle" style="font-weight:600">strong career concerns</text>
+              <text class="it" x="400" y="274" text-anchor="middle">B &gt; 2p<tspan class="sub">E</tspan> − 1</text>
+              <text x="400" y="296" text-anchor="middle" class="lblG txt">corner is not truthful</text>
+            </g>
+          </g>
+        </svg>
+      </figure>
+    </div>
+  </div>
+  <div class="links"><a class="btn" href="#app-fig-alpha">General $\alpha$</a></div>
+</section>
+
+<!-- ─────────────── DESIGNER OBJECTIVES ─────────────── -->
+<section class="slide" id="app-designer">
+  <h1>Designer Objectives</h1>
+  <div class="body">
+    <p>So far we have only looked at what can be implemented. Let us give the designer an objective.</p>
+    <ul>
+      <li>The designer gets $1$ if $a=\omega$, plus $b$ if the expert is promoted.</li>
+      <li>Expected payoff under truthful reports: $\;x + b\,y$.</li>
+      <li class="muted">$b>0$: wants the expert promoted. &nbsp; $b<0$: wants the expert not promoted.</li>
+    </ul>
+    <div class="two steps">
+      <div class="block">
+        <div class="bt">Weak career concerns: $B < 2p_E-1$</div>
+        <div class="bb">
+          The designer attains his <span class="alert">maximum payoff</span>: truthfulness does not bind.
+          <ul>
+            <li><b>Full credit</b> if $b>0$: $\;y=1$.</li>
+            <li><b>No credit</b> if $b<0$: $\;y=\tfrac12$.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="block accent" style="margin-top:0">
+        <div class="bt">Strong career concerns: $B > 2p_E-1$</div>
+        <div class="bb">
+          Quack truthfulness binds when the designer wants to promote the expert.
+          <ul>
+            <li><b>Maximum credit</b> if $b>0$: $\;y<1$.</li>
+            <li><b>No credit</b> if $b<0$: $\;y=\tfrac12$.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="center mt-lg">In every case the decision is as accurate as it can be: $x=p_E$.</p>
+  </div>
+</section>
+
+<!-- ═════════════════════════ OFF-PROTOCOL COMMUNICATION ═════════════════════════ -->
+<section class="slide section-slide">
+  <div class="sn">Robustness</div>
+  <div class="st">Off-Protocol Communication</div>
+  <div class="rule"></div>
+</section>
+
+<!-- ─────────────── TIMING ─────────────── -->
+<section class="slide" id="opc-timing">
+  <h1>Off-Protocol Communication</h1>
+  <div class="body">
+    <p class="muted">Timing (informal):</p>
+    <ol>
+      <li>Senders observe their types.</li>
+      <li>Senders and receiver participate in the mechanism.</li>
+      <li>Senders communicate with the receiver <span class="alert">off protocol</span>.</li>
+      <li>Receiver takes an action.</li>
+    </ol>
+    <div class="block accent">
+      <div class="bt">Approach</div>
+      <div class="bb">We do not want to fix any particular form of off-protocol communication. Instead, we look at <b>speeches</b>.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────── TWO TYPES OF SPEECHES ─────────────── -->
+<section class="slide" id="opc-types">
+  <h1>Two Types of Speeches</h1>
+  <div class="body">
+    <div class="block def">
+      <div class="bt">"Simple" speeches: about private information only</div>
+      <div class="bb">
+        <div class="quote">"I'm the expert. Promote me."</div>
+        <div class="quote">"I'm the expert, my signal was $s$. Play $s$ and promote me."</div>
+      </div>
+    </div>
+    <div class="block def">
+      <div class="bt">"Complex" speeches: about private information <em>and</em> behavior</div>
+      <div class="bb">
+        <div class="quote">"I'm the expert, and I lied in my report. Flip the recommended action; and since a quack would not benefit from asking you this, promote me."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────── SPEECHES FORMALLY + CREDIBILITY ─────────────── -->
+<section class="slide" id="opc-formal">
+  <h1>Speeches and Credibility</h1>
+  <div class="body">
+    <p>A <b>speech</b> by a sender consists of:</p>
+    <ul>
+      <li>a <b>claim about her type</b>: a set $S$ of types ("I am one of these");</li>
+      <li>for complex speeches, a <b>claim about her report</b>: how she played in the protocol;</li>
+      <li>a <b>recommendation</b>: what the receiver should do, as a function of what the protocol tells him.</li>
+    </ul>
+    <div class="block def">
+      <div class="bt">Credibility</div>
+      <div class="bb rows">
+        <div><b>Receiver:</b> taking the speech at face value, he is willing to follow the recommendation.</div>
+        <div><b>Sender:</b> the types who gain from the recommendation being followed are <em>exactly</em> the claimed ones.</div>
+        <div><b>Behavior</b> (complex speeches): the claimed report is optimal given that the recommendation is followed.</div>
+      </div>
+    </div>
+    <div class="block accent">
+      <div class="bt">Robustness</div>
+      <div class="bb">A mechanism is <b>robust to off-protocol communication</b> iff there is no credible speech.</div>
+    </div>
+  </div>
+  <div class="links"><a class="btn" href="#gm-credible">Formal definition</a></div>
+</section>
+
+<!-- ─────────────── SIMPLE SPEECH DEVIATION ─────────────── -->
+<section class="slide" id="opc-simple">
+  <h1>Simple Speech</h1>
+  <div class="body">
+    <div class="quote">"I'm the expert, got signal $L$. Play $L$ and promote me."</div>
+    <div class="two steps">
+      <div class="block plain">
+        <div class="bt">Profitable for the expert iff</div>
+        <div class="bb">$$U_E \;:=\; x + y\,B \;\le\; p_E + B$$ <span class="small muted">(strict if $(x,y)\neq(p_E,1)$)</span></div>
+      </div>
+      <div class="block plain" style="margin-top:0">
+        <div class="bt">Profitable for the quack iff</div>
+        <div class="bb">$$U_Q \;\le\; \tfrac12 + B$$</div>
+      </div>
+    </div>
+    <div class="block accent mt">
+      <div class="bt">Credible iff $\;U_Q \ge \tfrac12 + B$</div>
+      <div class="bb">Robustness requires $\;U_Q \le \tfrac12 + B$.</div>
+    </div>
+    <p class="small muted">Caveat: one must also check that the expert with signal $R$ profits from a credible speech, $U_E \le (1-p_E)+B$. But if this holds, the quack profits as well.</p>
+  </div>
+</section>
+
+<!-- ─────────────── COMPLEX SPEECH DEVIATION ─────────────── -->
+<section class="slide" id="opc-complex">
+  <h1>Complex Speech</h1>
+  <div class="body">
+    <div class="quote">"I'm the expert and was not truthful. Do not follow the action recommendation, and promote me."</div>
+    <div class="two steps">
+      <div class="block plain">
+        <div class="bt">Profitable for the expert iff</div>
+        <div class="bb">$$U_E \;\le\; x + B$$ <span class="small muted">(strict if $y<1$)</span></div>
+      </div>
+      <div class="block plain" style="margin-top:0">
+        <div class="bt">Profitable for the quack iff</div>
+        <div class="bb">$$U_Q \;\le\; \big[1-\tilde{x}(\alpha)\big] + B$$</div>
+      </div>
+    </div>
+    <div class="block accent mt">
+      <div class="bt">Robustness requires</div>
+      <div class="bb">$$U_Q \;\le\; \big[1-\tilde{x}(\alpha)\big] + B$$</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────── QUACK'S COMPLEX SPEECH + BINDING CONSTRAINTS ─────────────── -->
+<section class="slide" id="opc-quack">
+  <h1>Quack's Complex Speech and Binding Constraints</h1>
+  <div class="body">
+    <div class="quote">"I'm the quack and I claimed to be the expert. Thus, flip the action and don't promote me."</div>
+    <ul>
+      <li>Profitable iff $\;U_Q < 1-\tilde{x}(\alpha)$.</li>
+      <li>Not binding for $\tilde{x}(\alpha)=\tfrac12$.</li>
+    </ul>
+    <div class="block accent">
+      <div class="bt">Binding constraints for $\tilde{x}(\alpha)=\tfrac12$</div>
+      <div class="bb">Incentive compatibility and robustness amount to
+        $$U_Q \;\in\; \Big[\tfrac12+\tfrac{B}{2}\,,\;\tfrac12+B\Big].$$
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────── FIGURE 2: IC + ROBUSTNESS (simple speech), two cases swapped ───────────────
+     Same drawing conventions as slide 16: p_E = 0.8; case A uses B = 0.4, case B uses B = 0.9.
+     Robustness U_Q ≤ ½ + B  ⇔  2y−1 ≥ (2x−1)/B − 1: slope 1/B through (B, 0); points BELOW it fail. -->
+<section class="slide" id="opc-fig-simple">
+  <h1>Robustness to the Simple Speech <span class="muted">($\alpha=1/2$)</span></h1>
+  <div class="body">
+    <div class="two r2 mid steps">
+      <ul>
+        <li><b style="color:var(--blue)">Quack truthfulness:</b> <span style="color:var(--blue)">$U_Q\ \ge\ \tfrac12+\tfrac B2$.</span></li>
+        <li><b style="color:var(--orange)">Robustness:</b> <span style="color:var(--orange)">$U_Q\ \le\ \tfrac12+B$.</span></li>
+        <li>Mechanisms with accurate decisions and little credit for the expert invite <em>"I'm the expert, promote me."</em></li>
+      </ul>
+      <figure class="fig now">
+        <svg viewBox="0 0 580 460" style="width:100%;max-width:700px">
+          <rect class="grid" x="100" y="40" width="360" height="360"/>
+          <rect class="region" x="100" y="40" width="216" height="360"/>
+          <path class="cv-red" d="M316 400 V40"/>
+          <text class="it lblR" x="324" y="380">x = p<tspan class="sub">E</tspan></text>
+          <text class="lblB txt" x="208" y="346" text-anchor="middle">feasible</text>
+          <text class="it" x="316" y="426" text-anchor="middle">2p<tspan class="sub">E</tspan> − 1</text>
+          <g class="swap">
+            <!-- case A: B = 0.4 -->
+            <g class="step">
+              <polygon class="region red" points="100,400 100,40 244,40"/>
+              <path class="cv-blue" d="M100 400 L244 40"/>
+              <text class="it lblB" x="244" y="30" text-anchor="middle">U<tspan class="sub">Q</tspan> ≥ ½ + B/2</text>
+              <text class="lblR txt" x="112" y="76">quack lies</text>
+              <polygon class="region" style="fill:var(--orange);opacity:.22" points="244,400 316,400 316,220"/>
+              <path class="cv-orange" d="M244 400 L388 40"/>
+              <text class="it" style="fill:var(--orange)" x="388" y="30" text-anchor="middle">U<tspan class="sub">Q</tspan> ≤ ½ + B</text>
+              <text class="it" x="244" y="426" text-anchor="middle">B</text>
+              <circle class="dot blue" cx="316" cy="40" r="5"/>
+              <circle class="dot open" cx="316" cy="400" r="5"/>
+              <text class="txt" x="400" y="278" text-anchor="middle" style="font-weight:600">weak career concerns</text>
+              <text class="it" x="400" y="302" text-anchor="middle">B &lt; 2p<tspan class="sub">E</tspan> − 1</text>
+              <text x="400" y="324" text-anchor="middle" class="lblG txt">no credit is not robust</text>
+            </g>
+            <!-- case B: B = 0.9 -->
+            <g class="step">
+              <polygon class="region red" points="100,400 100,40 316,40 316,160"/>
+              <path class="cv-blue" d="M100 400 L424 40"/>
+              <text class="it lblB" x="568" y="64" text-anchor="end">U<tspan class="sub">Q</tspan> ≥ ½ + B/2</text>
+              <text class="lblR txt" x="140" y="76">quack lies</text>
+              <path class="cv-orange" d="M424 400 L460 360"/>
+              <text class="it" style="fill:var(--orange)" x="418" y="352" text-anchor="end">U<tspan class="sub">Q</tspan> ≤ ½ + B</text>
+              <text class="it" x="424" y="426" text-anchor="middle">B</text>
+              <circle class="dot open" cx="316" cy="40" r="5"/>
+              <circle class="dot blue" cx="316" cy="160" r="5"/>
+              <text class="txt" x="400" y="228" text-anchor="middle" style="font-weight:600">strong career concerns</text>
+              <text class="it" x="400" y="252" text-anchor="middle">B &gt; 2p<tspan class="sub">E</tspan> − 1</text>
+              <text x="400" y="274" text-anchor="middle" class="lblG txt">robustness is slack</text>
+            </g>
+          </g>
+          <path class="axis" d="M100 40 V400 H460"/>
+          <line class="tick" x1="460" y1="400" x2="460" y2="408"/>
+          <line class="tick" x1="92"  y1="40"  x2="100" y2="40"/>
+          <text x="100" y="426" text-anchor="middle">0</text>
+          <text x="460" y="426" text-anchor="middle">1</text>
+          <text x="82"  y="46"  text-anchor="end">1</text>
+          <text class="it" x="474" y="406">2x − 1</text>
+          <text class="it" x="100" y="24" text-anchor="middle">2y − 1</text>
+        </svg>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────── INTUITION ─────────────── -->
+<section class="slide" id="opc-intuition">
+  <h1>Intuition</h1>
+  <div class="body">
+    <p>$\tilde{x}(\alpha)$ plays a <span class="alert">dual role</span>:</p>
+    <ul>
+      <li>punish <b>on-protocol</b> deviations by the quack;</li>
+      <li>make <b>off-protocol</b> deviations by the quack more attractive, rendering the expert's deviation non-credible.</li>
+    </ul>
+    <p>Both effects push $\tilde{x}(\alpha)$ <span class="alert">down</span>.</p>
+    <div class="block def">
+      <div class="bt">Binding constraints</div>
+      <div class="bb">Obedience, and two constraints on the quack's payoff.</div>
+    </div>
+    <div class="block accent">
+      <div class="bt">Two ways to lower the quack's payoff $\;U_Q = x + (1-y)\,B$</div>
+      <div class="bb rows">
+        <div><b>Promote him less often</b> (higher $y$): give the quack less credit.</div>
+        <div><b>Decide less accurately</b> (lower $x$): reduce the precision of the action.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────── DESIGNER PAYOFFS UNDER ROBUSTNESS (weak career concerns) ───────────────
+     Figure: case A of slide 25 (p_E = 0.8, B = 0.4) with the three optimal points marked.
+     ȳ solves U_Q = ½ + B at x = p_E  →  y̲ = (2p_E − 1)/(2B);   p̲ solves it at y = ½  →  p̲ = (1 + B)/2. -->
+<section class="slide" id="opc-designer">
+  <h1>Designer Payoffs under Robustness</h1>
+  <div class="body">
+    <div class="two mid steps">
+      <div>
+        <p>The designer maximizes $\;x + b\,y\;$ subject to robustness. He chooses:</p>
+        <div class="block accent">
+          <div class="bt">Weak career concerns: $B < 2p_E-1$</div>
+          <div class="bb">
+            <ul>
+              <li><b>Full credit</b> $\;(x,y)=(p_E,\,1)\;$ if $b>0$.</li>
+              <li><b>Minimum credit</b> $\;(x,y)=(p_E,\,\underline{y})\;$ if $b\in(-B,0)$.</li>
+              <li><b>No credit and garble</b> $\;(x,y)=(\underline{p},\,\tfrac12)\;$ if $b<-B$.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <figure class="fig now">
+        <svg class="big" viewBox="0 0 580 500" style="width:100%;max-width:640px">
+          <rect class="grid" x="100" y="40" width="360" height="360"/>
+          <rect class="region" x="100" y="40" width="216" height="360"/>
+          <path class="cv-red" d="M316 400 V40"/>
+          <text class="it lblR" x="324" y="380">x = p<tspan class="sub">E</tspan></text>
+          <text class="it" x="316" y="426" text-anchor="middle">2p<tspan class="sub">E</tspan> − 1</text>
+          <polygon class="region red" points="100,400 100,40 244,40"/>
+          <path class="cv-blue" d="M100 400 L244 40"/>
+          <polygon class="region" style="fill:var(--orange);opacity:.22" points="244,400 316,400 316,220"/>
+          <path class="cv-orange" d="M244 400 L388 40"/>
+          <text class="it" x="240" y="426" text-anchor="end">2p̲ − 1</text>
+          <text class="it" x="400" y="300" text-anchor="middle">B &lt; 2p<tspan class="sub">E</tspan> − 1</text>
+          <g class="step">
+            <circle class="dot" cx="316" cy="40" r="6"/>
+            <text class="it" x="326" y="48">b &gt; 0:</text>
+            <text class="txt" x="326" y="72">full credit</text>
+          </g>
+          <g class="step">
+            <circle class="dot" cx="316" cy="220" r="6"/>
+            <text class="it" x="326" y="206">b ∈ (−B, 0):</text>
+            <text class="txt" x="326" y="230">minimum credit</text>
+            <text class="it" x="82" y="224" text-anchor="end">2y̲ − 1</text>
+            <line class="dash" x1="100" y1="220" x2="316" y2="220"/>
+          </g>
+          <g class="step">
+            <circle class="dot" cx="244" cy="400" r="6"/>
+            <text class="it" x="244" y="458" text-anchor="middle">b &lt; −B:</text>
+            <text class="txt" x="244" y="484" text-anchor="middle">no credit, garble</text>
+          </g>
+          <path class="axis" d="M100 40 V400 H460"/>
+          <line class="tick" x1="460" y1="400" x2="460" y2="408"/>
+          <line class="tick" x1="92"  y1="40"  x2="100" y2="40"/>
+          <text x="100" y="426" text-anchor="middle">0</text>
+          <text x="460" y="426" text-anchor="middle">1</text>
+          <text x="82"  y="46"  text-anchor="end">1</text>
+          <text class="it" x="474" y="406">2x − 1</text>
+          <text class="it" x="100" y="24" text-anchor="middle">2y − 1</text>
+        </svg>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────── TRANSITION QUESTIONS ─────────────── -->
+<section class="slide" id="transition">
+  <h1>Transition Questions</h1>
+  <div class="body">
+    <ul class="groups">
+      <li>We used direct revelation mechanisms.
+        <ul>
+          <li>These are without loss if we do not care about speeches.</li>
+          <li>Can anything implementable with a general mechanism robust to off-protocol communication also be implemented with a <em>robust direct</em> mechanism?</li>
+        </ul>
+      </li>
+      <li>In the application there was no welfare loss in setting $\alpha$ small: it only affected outcomes off path.
+        <ul>
+          <li>A modification with two possible experts remains tractable.</li>
+          <li>There, reducing $\tilde{x}(\alpha)$ is costly: the designer faces a new trade-off.</li>
+        </ul>
+      </li>
+      <li>Given low $\alpha$, the "complex speeches" were not binding.
+        <ul>
+          <li>In general, under what conditions is it enough to check <em>simple</em> speeches?</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═════════════════════════ GENERAL MODEL ═════════════════════════ -->
+<section class="slide section-slide">
+  <div class="sn">Part II</div>
+  <div class="st">General Model</div>
+  <div class="rule"></div>
+</section>
+
+<!-- ─────────────── SETUP ─────────────── -->
+<section class="slide" id="gm-setup">
+  <h1>Setup</h1>
+  <div class="body">
+    <ul>
+      <li>A receiver, $i=0$, and $n$ senders $i=1,\dots,n$.</li>
+      <li>Sender $i$ has a type $\theta_i\in\Theta_i$; common prior $\mu\in\Delta(\Theta)$. The receiver has no private information.</li>
+      <li>The receiver chooses $a\in A$. All sets are finite.</li>
+    </ul>
+    <div class="block def mt">
+      <div class="bt">Payoffs and timing</div>
+      <div class="bb rows">
+        <div><b>Payoffs:</b> $u_i(a,\theta)$ for $i=0,\dots,n$.</div>
+        <div><b>Timing:</b> types realize $\to$ communication $\to$ receiver acts.</div>
+      </div>
+    </div>
+    <p class="muted mt">Application: $\Theta_i=\{L,R,Q\}$, $A=\{L,R\}\times\{1,2\}$.</p>
+  </div>
+</section>
+
+<!-- ─────────────── PROTOCOLS ─────────────── -->
+<section class="slide" id="gm-protocols">
+  <h1>Protocols</h1>
+  <div class="body">
+    <div class="block def">
+      <div class="bt">Protocol</div>
+      <div class="bb">A tuple $\big(\{M_i\}_{i\ge 1},\,M_0,\,\tau\big)$.</div>
+    </div>
+    <ol>
+      <li>Senders simultaneously report $m_i\in M_i$ to a black box.</li>
+      <li>The receiver sees $m_0$, drawn according to $\tau:\prod_i M_i\to\Delta(M_0)$.</li>
+      <li>The receiver acts.</li>
+    </ol>
+    <div class="block plain mt">
+      <div class="bt">Includes</div>
+      <div class="bb rows">
+        <div><b>Direct mechanisms:</b> $M_i=\Theta_i$, $M_0=A$.</div>
+        <div><b>Transparent protocols:</b> $M_0=\prod_i M_i$, $\tau$ the identity.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────── EQUILIBRIUM + REVELATION PRINCIPLE ─────────────── -->
+<section class="slide" id="gm-eq">
+  <h1>Equilibrium and the Revelation Principle</h1>
+  <div class="body">
+    <p>Strategies:</p>
+    <div class="mathline">$$\sigma_i:\Theta_i\to\Delta(M_i), \qquad \sigma_0:M_0\to\Delta(A).$$</div>
+    <p>An <b>equilibrium</b> is a BNE. It induces an <b>outcome</b>: a distribution on $\Theta\times A$.</p>
+    <div class="block def mt">
+      <div class="bt">Revelation principle (Myerson 1982, Forges 1986)</div>
+      <div class="bb">Absent off-protocol speech, every equilibrium outcome of every protocol is the truthful–obedient outcome of some incentive-compatible direct protocol.</div>
+    </div>
+    <ul>
+      <li>Fix a protocol and an equilibrium with outcome $\eta\in\Delta(\Theta\times A)$ and conditionals $\hat{\tau}:\Theta\to\Delta(A)$. The direct mechanism $\hat{\tau}$ is truthful and obedient.</li>
+      <li>So if we only care about implementable outcomes, it is without loss to focus on truthful and obedient direct mechanisms.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ─────────────── OFF-PROTOCOL COMMUNICATION, GENERAL ─────────────── -->
+<section class="slide" id="gm-opc">
+  <h1>Off-Protocol Communication</h1>
+  <div class="body">
+    <p>Fix a protocol and an equilibrium $(\sigma,\sigma_0)$; let $U_i^*(\theta_i)$ be sender $i$'s interim payoff. After the protocol delivers $m_0$, a sender may address the receiver privately.</p>
+    <div class="two steps">
+      <div class="block def">
+        <div class="bt">Simple speech by sender $i$: $(S,\hat{\tau})$</div>
+        <div class="bb rows">
+          <div>$S\subseteq\Theta_i$: the claimed types.</div>
+          <div>$\hat{\tau}:M_0\to\Delta(A)$: the proposed adjustment.</div>
+          <div class="muted">Behavior inside the protocol is presumed on path.</div>
+        </div>
+      </div>
+      <div class="block def">
+        <div class="bt">Confession by sender $i$: $(S,\hat{\sigma},\hat{\tau})$</div>
+        <div class="bb rows">
+          <div>Adds $\hat{\sigma}:S\to\Delta(M_i)$, the claimed reporting strategy.</div>
+          <div class="muted">"I am in $S$, I reported according to $\hat{\sigma}$, now do $\hat{\tau}$."</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="links"><a class="btn" href="#app-speeches">The speeches we have seen</a></div>
+</section>
+
+<!-- ─────────────── CREDIBLE SPEECHES ─────────────── -->
+<section class="slide" id="gm-credible">
+  <h1>Credible Speeches</h1>
+  <div class="body">
+    <div class="block def">
+      <div class="bt">A simple speech $(S,\hat{\tau})$ is credible if</div>
+      <div class="bb">
+        <ol>
+          <li>given equilibrium play, <b>exactly</b> the claimed types strictly gain from the adjustment;</li>
+          <li>at every consistent $m_0$, $\hat{\tau}(m_0)$ is optimal for the receiver taking the claim at face value;</li>
+          <li>at every inconsistent $m_0$, the speech is ignored: $\hat{\tau}(m_0)=\sigma_0(m_0)$.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="block def">
+      <div class="bt">A confession $(S,\hat{\sigma},\hat{\tau})$ is credible if, on top,</div>
+      <div class="bb">the claimed report $\hat{\sigma}$ is a best response to the adjustment.</div>
+    </div>
+    <div class="block accent mt">
+      <div class="bt">Robustness</div>
+      <div class="bb">An equilibrium is <b>confession-proof</b> if it admits no credible confession (and <b>simple-speech-proof</b> if no credible simple speech).</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════════════════ RESULTS ═════════════════════════ -->
+<section class="slide section-slide">
+  <div class="sn">Part III</div>
+  <div class="st">Results</div>
+  <div class="rule"></div>
+</section>
+
+<!-- ─────────────── REVELATION PRINCIPLE, SENDER SIDE ─────────────── -->
+<section class="slide" id="res-sender">
+  <h1>Revelation Principle, Sender Side</h1>
+  <div class="body">
+    <div class="block def">
+      <div class="bt">Sender-direct</div>
+      <div class="bb">A protocol is <b>sender-direct</b> if $M_i=\Theta_i$ for every sender $i$.</div>
+    </div>
+    <div class="block thm mt">
+      <div class="bt"></div>
+      <div class="bb">Let $(\sigma,\sigma_0)$ be an equilibrium of a protocol in which every sender's strategy is <b>pure and onto</b>, and let $\tau':=\tau\circ\sigma$ be the sender-direct protocol with the same $M_0$. Then truthful reporting with $\sigma_0$ is an equilibrium of $\tau'$ inducing the same outcome, and it is confession-proof iff $(\sigma,\sigma_0)$ is.</div>
+    </div>
+    <ul class="mt">
+      <li><b>Pure:</b> each type sends one message. <b>Onto:</b> every message is sent by some type. Pooling is allowed.</li>
+      <li>Truthful reporting in any direct mechanism qualifies. Next: the hypothesis has bite.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ─────────────── IDLE MESSAGES SHELTER THE EQUILIBRIUM ─────────────── -->
+<section class="slide" id="res-sender-mimicking">
+  <h1>Richer Sender Messages Can Undermine Credibility</h1>
+  <div class="body">
+    <div class="now">
+      <p style="margin:0 0 6px">Independent, uniform types $a,b$ and $L,R$. Sender 2 is indifferent and reports truthfully. Sender 1 has messages $x,y$.</p>
+      <div class="two" style="grid-template-columns:1.2fr 1fr;gap:44px;align-items:start">
+        <div>
+          <p class="small" style="margin:0"><b>Payoffs $(u_0,u_1)$</b></p>
+          <table class="full" style="margin:4px 0 0;font-size:var(--fs-small)">
+            <thead><tr><th>Action</th><th>$a,L$</th><th>$a,R$</th><th>$b,L$</th><th>$b,R$</th></tr></thead>
+            <tbody><tr><td>$e$</td><td>$(1,0)$</td><td>$(1,0)$</td><td>$(1,0)$</td><td>$(1,0)$</td></tr>
+            <tr><td>$h$</td><td>$(2,1)$</td><td>$(0,1)$</td><td>$(0,1)$</td><td>$(0,-2)$</td></tr></tbody>
+          </table>
+        </div>
+        <div>
+          <p class="small" style="margin:0"><b>Protocol: probability of $r$ (otherwise $s$)</b></p>
+          <table class="full" style="margin:4px 0 0;font-size:var(--fs-small)">
+            <thead><tr><th>Message</th><th>$L$</th><th>$R$</th></tr></thead>
+            <tbody><tr><td>$x$</td><td>$3/4$</td><td>$1/2$</td></tr>
+            <tr><td>$y$</td><td>$3/4$</td><td class="alert">$1/4$</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <p style="margin:6px 0 0">Equilibrium: both types send $x$, receiver plays $e$. Pure, <span class="alert">not onto</span>: $y$ is idle, and $\tau\circ\sigma$ discards it.</p>
+    </div>
+    <div>
+      <p style="margin:8px 0 0"><b>Speech:</b> "I am $a$. Play $h$ after $r$, and $e$ after $s$."
+        <span class="small muted">Optimal for the receiver under every claimed mixture of $x$ and $y$ by $a$.</span></p>
+      <table class="full" style="margin:4px 0 0;font-size:var(--fs-small)">
+        <thead><tr><th style="width:63%">Payoff if the receiver follows the speech</th><th>Type $a$</th><th>Type $b$</th></tr></thead>
+        <tbody>
+          <tr><td>$x$ (every direct report reproduces $x$)</td><td>$5/8$</td><td>$-1/8$</td></tr>
+          <tr><td>$y$ (available only in the original protocol)</td><td>$1/2$</td><td class="hl alert">$+1/8$</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <p class="alert" style="margin:8px 0 2px"><b>Sender-direct $\tau\circ\sigma$:</b> the speech is credible. <b>Original:</b> $b$ mimics profitably using $y$; the original is confession-proof.</p>
+      <p style="margin:0"><b>More messages expand deviations and confessions, but also mimicking opportunities: credibility can be destroyed.</b></p>
+    </div>
+  </div>
+  <aside class="notes">
+    Present in three stages: reveal the speech and the x payoffs, then the extra message y, then the conclusion.
+    <br><br>
+    The canonical sender-direct construction translates every sender 1 report into x. The direct protocol therefore offers only x's distribution. Baseline sender payoffs are zero. Under the speech, a gains 5/8 and b loses 1/8. The receiver strictly prefers h at r and e at s conditional on a, and every report is optimal in the direct protocol.
+    <br><br>
+    Message y leaves Pr(r given L)=3/4 unchanged and lowers Pr(r given R) from 1/2 to 1/4. Type b likes h in L but dislikes it in R. His payoff becomes (3/4 - 2 times 1/4)/2 = 1/8. Type a still prefers x, which gives 5/8 rather than 1/2. Self-selection anticipates b's profitable strategy change and rejects the speech.
+    <br><br>
+    All alternative claims fail. If a claims probability q of y, Pr(L given a,r)=3/(5-q), and Pr(L given a,s)=1/(3+q). Hence the receiver must always choose h at r and e at s, and b always profits by choosing y. A claim of b forces e everywhere and yields no gain. A claim including both a and b requires incompatible strict best responses at r. Sender 2 cannot strictly gain. Thus the original equilibrium is confession-proof.
+    <br><br>
+    Every receiver delivery has positive probability at every submitted-message profile. Reversion is vacuous. On path, Pr(r)=5/8 and Pr(s)=3/8. Receiver payoffs from h are 3/5 and 1/3 respectively, below its payoff 1 from e.
+    <br><br>
+    This refutes the canonical sender-direct construction, not sender-direct implementability: the sender-direct protocol that maps report a to x's row and report b to y's row is pure and onto, induces the same outcome, and is confession-proof (it is the original protocol relabeled). Payoffs depend on the full type profile, as allowed in TM-02.
+  </aside>
+</section>
+
+<!-- ─────────────── REVELATION PRINCIPLE, RECEIVER SIDE ─────────────── -->
+<section class="slide" id="res-receiver">
+  <h1>Receiver Information Can Make Speech Non-Credible</h1>
+  <div class="body">
+    <div class="now">
+      <p style="margin:0 0 6px">Independent, uniform types $a,b$ and $L,R$. Sender 2 is indifferent and reports truthfully.</p>
+      <div class="two" style="grid-template-columns:1.15fr 1fr;gap:40px;align-items:start">
+        <div>
+          <p class="small" style="margin:0"><b>Payoffs $(u_0,u_1)$</b></p>
+          <table class="full" style="margin:4px 0 0;font-size:var(--fs-small)">
+            <thead><tr><th>Action</th><th>$a,L$</th><th>$a,R$</th><th>$b,L$</th><th>$b,R$</th></tr></thead>
+            <tbody>
+              <tr><td>$e$</td><td>$(2,0)$</td><td>$(2,0)$</td><td>$(2,0)$</td><td>$(2,0)$</td></tr>
+              <tr><td>$h$</td><td>$(3,1)$</td><td>$(2,1)$</td><td>$(0,-1)$</td><td>$(0,-1)$</td></tr>
+              <tr><td>$k$</td><td>$(0,1)$</td><td>$(3,1)$</td><td>$(0,3)$</td><td>$(0,3)$</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <p class="small" style="margin:0 0 6px"><b>Same sender reports, different disclosure</b></p>
+          <p style="margin:0 0 4px"><b>Coarse:</b> send a constant message.</p>
+          <p style="margin:0 0 4px"><b>Informative:</b> reveal sender 2's report.</p>
+          <p class="small" style="margin:0"><b>Both:</b> ignore sender 1's report. The receiver strictly prefers $e$ on path. All sender equilibrium payoffs are zero.</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p style="margin:6px 0 4px"><b>Speech:</b> "I am $a$." What response can the receiver accept?</p>
+      <table class="full" style="margin:0;font-size:var(--fs-small)">
+        <thead><tr><th style="width:28%">Receiver's information</th><th style="width:42%">Best response to the claim</th><th>Type $a$</th><th>Type $b$</th></tr></thead>
+        <tbody>
+          <tr><td>No information about $L,R$</td><td>$h$</td><td>$+1$</td><td>$-1$</td></tr>
+          <tr><td>Observes $L$ or $R$</td><td>$h$ at $L$, $k$ at $R$</td><td>$+1$</td><td class="hl alert">$+1$</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <p class="alert" style="margin:0 0 4px"><b>Coarse:</b> only $a$ gains, so the speech is credible. <b>Informative:</b> $b$ also gains, so self-selection fails.</p>
+      <p style="margin:0"><b>Disclosure preserves equilibrium play but changes the response to a confession. The required response can attract outsiders and destroy credibility.</b></p>
+    </div>
+  </div>
+  <aside class="notes">
+    Three reveals: first the claim and its response with no information, then the row with disclosure, then the credibility comparison and intuition.
+    <br><br>
+    Both protocols are sender-direct. Both senders report truthfully, so sender strategies are pure and onto. Sender 1's report never affects deliveries, making every claimed report, including every mixed strategy, optimal. Sender 2 always gets zero. The example isolates receiver information from the previous slide's sender-message effect.
+    <br><br>
+    Equilibrium obedience is strict. Without information, receiver payoffs from $e,h,k$ are $2,5/4,3/4$. After observing $L$, they are $2,3/2,0$. After observing $R$, they are $2,1,3/2$. Thus the receiver chooses $e$ in either protocol, and every sender type gets zero.
+    <br><br>
+    With coarse information, the confession is $S=\{a\}$ with adjustment $h$ at the constant delivery and any claimed sender 1 report. Conditional on $a$, receiver payoffs from $e,h,k$ are $2,5/2,3/2$, so $h$ is uniquely optimal. Type $a$ gets $1$ and type $b$ gets $-1$, making self-selection exact. This establishes a credible confession.
+    <br><br>
+    With disclosure, a claim of $a$ forces $h$ at $L$ and $k$ at $R$, each uniquely optimal. Type $a$ gets $1$ and outsider $b$ gets $(-1+3)/2=1$. Asking for $h$ at both deliveries would deter $b$, but the receiver rejects that instruction at $R$, where $k$ gives $3$ instead of $2$.
+    <br><br>
+    The informative equilibrium is confession-proof, not just immune to this particular speech. For any claim $S=\{a\}$, the same forced responses attract $b$. For $S=\{b\}$, receiver optimality forces $e$ at both deliveries, so nobody gains. For $S=\{a,b\}$, receiver optimality requires $h$ conditional on $a$ and $e$ conditional on $b$ at $L$. These strict requirements are incompatible. Sender 2 never strictly gains. This exhausts all type sets, mixed claims, and mixed adjustments under belief-free credibility.
+    <br><br>
+    All receiver deliveries occur on path. Both informative deliveries are consistent with every confession by sender 1, so reversion plays no role in the argument. Sender 1's payoff depends only on its own type and the action.
+    <br><br>
+    The canonical truthful-obedient DRP always recommends $e$ and therefore conceals sender 2's type. It admits the coarse protocol's confession. Because every type profile has positive probability, any truthful-obedient DRP implementing the constant-$e$ outcome must recommend $e$ at every report profile. Hence no truthful-obedient DRP implements this outcome confession-proofly.
+    <br><br>
+    The result shows that disclosure can improve robustness, not that more disclosure always does. Suggested verbal link: richer sender messages change an outsider's available deviations under a fixed adjustment; richer receiver information changes which adjustment the receiver can rationally follow.
+  </aside>
+</section>
+
+<!-- ─────────────── ONE SENDER: REVELATION PRINCIPLE ─────────────── -->
+<section class="slide" id="res-one">
+  <h1>Revelation Principle with One Sender</h1>
+  <div class="body">
+    <div class="block thm">
+      <div class="bt"></div>
+      <div class="bb">Let $n=1$ and credibility be belief-free. Fix an equilibrium of any protocol with outcome $\rho$. The canonical DRP is incentive compatible, its truthful–obedient equilibrium induces $\rho$, and it is confession-proof iff the original equilibrium is.</div>
+    </div>
+    <p class="mt">Proof idea: confession-proofness depends on the protocol only through the interim payoffs $U^*$.</p>
+    <ul>
+      <li><b>Extract a lottery.</b> A claimed message in a credible confession induces a lottery $\lambda$ over actions: profitable for the claimant, receiver-optimal against every claimed type.</li>
+      <li><b>Keep exactly its gainers.</b> $G(\lambda):=\{\theta:\,u_1(\lambda,\theta)>U^*(\theta)\}$ is nonempty and contained in the claim, so $\lambda$ stays optimal against every type in $G(\lambda)$.</li>
+      <li><b>Transfer the lottery.</b> In any protocol with the same $U^*$, a full-support claim by $G(\lambda)$ with the constant adjustment $\lambda$ is credible. The canonical DRP preserves $U^*$.</li>
+    </ul>
+    <p class="center alert"><em>For fixed preferences, only interim payoffs determine confession-proofness.</em></p>
+    <p class="small muted center">Receiver ties are allowed; with unique receiver favorites the lottery is a pure action.</p>
+  </div>
+  <aside class="notes">
+    This strengthens TM-03's original theorem. All type, message, and action sets are finite, and the credibility definition is belief-free. Neither unique per-type receiver best replies nor pure or onto equilibrium sender strategies are required.
+    <br><br>
+    Let $B_S=\bigcap_{\theta\in S}\arg\max_a u_0(a,\theta)$. Given a credible confession $(S,\hat\sigma,\hat\tau)$, choose a claimant $\bar\theta$ and a message $\bar m$ in its claimed support. The induced lottery is $\lambda(a)=\sum_z\tau(z\mid\bar m)\hat\tau(a\mid z)$. All its deliveries are consistent, so belief-free optimality puts the support of $\lambda$ inside $B_S$.
+    <br><br>
+    Honest play and strict self-selection imply $u_1(\lambda,\bar\theta)>U^*(\bar\theta)$. Every original outsider could send the same message and receive the same lottery, so none gains. Thus $\varnothing\ne G(\lambda)\subseteq S$, and $\operatorname{supp}\lambda\subseteq B_S\subseteq B_{G(\lambda)}$. Shrinking the type set is the step that removes the need for uniqueness.
+    <br><br>
+    Conversely, if a lottery is receiver-optimal for every type in its nonempty set of strict gainers, ask each claimant to use the same full-support distribution on the protocol's sender messages. Every reachable delivery becomes consistent. Propose the same lottery at each such delivery and revert at unreachable ones. Every sender message now induces the same lottery, so honesty is automatic and self-selection is exact.
+    <br><br>
+    The characterization depends only on preferences and $U^*$. The canonical direct mechanism preserves the outcome and hence $U^*$. Truthfulness follows by replicating original mixed deviations; obedience follows because a recommended action is optimal at every original posterior pooled into that recommendation.
+    <br><br>
+    Under unique receiver favorites, the common best-response set of any feasible claim is a singleton, so the lottery is a pure action and the original pure-neologism equivalence follows. With ties, pure neologisms may fail to detect profitable lottery confessions.
+    <br><br>
+    Do not infer that the claimed strategy can be held at equilibrium play. Full-support scrambling may be necessary. The simple-speech equivalence on the following slide needs separate correction; it is not used by this proof.
+  </aside>
+</section>
+
+<!-- ─────────────── ONE SENDER: SIMPLE SPEECHES SUFFICE ─────────────── -->
+<section class="slide" id="res-simple">
+  <h1>One Sender: Confessions and Neologisms</h1>
+  <div class="body">
+    <div class="block def">
+      <div class="bt">Neologism (Farrell 1993, belief-free)</div>
+      <div class="bb">$(S,c)$ is <b>credible</b> if exactly the types in $S$ prefer $c$ to equilibrium, $\;u_1(c,\theta)>U^*(\theta)\iff\theta\in S$, and $c$ is receiver-optimal against every type in $S$.</div>
+    </div>
+    <div class="block thm mt">
+      <div class="bt"></div>
+      <div class="bb">With one sender, belief-free credibility, and unique per-type receiver best responses,
+        $$\text{confession-proof}\;\iff\;\text{neologism-proof}.$$
+      </div>
+    </div>
+    <ul class="mt">
+      <li><b>Confession $\Rightarrow$ neologism.</b> Every consistent delivery induces the same action $c$. Claimants gain; outsiders can imitate, so none can prefer $c$.</li>
+      <li><b>Neologism $\Rightarrow$ confession.</b> A full-support claim implements $c$ at every reachable delivery.</li>
+    </ul>
+    <p class="center alert mt"><em>Every credible confession has a credible type-only counterpart.</em></p>
+  </div>
+  <aside class="notes">
+    Theorem 3 of the talk; TM-04. Both directions are statements about existence of credible speeches, so the proof directions are "confession implies neologism" and "neologism implies confession"; their contrapositives give the two halves of the equivalence.
+    <br><br>
+    Confession implies neologism. Take a credible confession $(S,\hat\sigma,\hat\tau)$. With one sender, belief-free optimality has no belief content: at every consistent delivery the adjustment must lie in the common best-response set of $S$, which under uniqueness is a single action $c$. A claimant's claimed message reaches only consistent deliveries, so it yields $c$; honest play and strict self-selection give $u_1(c,\theta)>U^*(\theta)$ on $S$. An outsider can send that same message and also get $c$, so self-selection bounds $u_1(c,\theta')\le U^*(\theta')$ off $S$. Hence $(S,c)$ is a credible neologism.
+    <br><br>
+    Neologism implies confession. Let every type in $S$ claim the same full-support distribution over the protocol's messages, so every reachable delivery is consistent; adjust to $c$ there and revert elsewhere. Every message by every type then yields $c$, so honest play is automatic and self-selection is exactly the neologism's.
+    <br><br>
+    Implementation qualification. The theorem characterizes when a credible confession exists; it does not say the confession can hold the claimed strategy at equilibrium play. Full-support scrambling of the claimed strategy may be necessary. In particular, "confession-proof iff simple-speech-proof" is false: TM-04 §6 has an equilibrium that admits no credible simple speech (claimed strategy equal to equilibrium play) yet admits a credible confession. The old inference "a credible simple speech yields a credible neologism, hence simple-speech-proof implies neologism-proof" had its contrapositive reversed. A sufficient condition for simple speeches to suffice is coverage: each claimant's equilibrium messages reach every reachable delivery (TM-04 §7).
+    <br><br>
+    Extension without uniqueness. Drop unique best responses and replace the action $c$ by a lottery $\lambda$ over actions: a credible lottery neologism is $(G(\lambda),\lambda)$ with $G(\lambda)=\{\theta:u_1(\lambda,\theta)>U^*(\theta)\}$ nonempty and $\lambda$ supported on actions optimal against every type in $G(\lambda)$. Then, with one sender and belief-free credibility, confession-proof iff no credible lottery neologism (TM-03 §8, TM-04 §3). Extract $\lambda$ from a claimant's message, shrink the claim to its exact gainers, transfer by full-support scrambling. With receiver ties, pure neologisms can miss a profitable lottery confession (TM-04 §8).
+    <br><br>
+    With several senders the equivalence fails: receiver optimality conditions on the others' types through the claimed report and the delivery, which is exactly what the expert's sabotage-and-confess speech exploits in the application.
+  </aside>
+</section>
+
+<!-- ─────────────── EXISTENCE I ─────────────── -->
+<section class="slide" id="res-exist">
+  <h1>The Existence Issue</h1>
+  <div class="body">
+    <div class="two r2 mid">
+      <p>One sender, two equally likely types, three actions. Payoffs (sender, receiver):</p>
+      <table>
+        <thead><tr><th></th><th>$U$</th><th>$C$</th><th>$D$</th></tr></thead>
+        <tbody>
+          <tr><td>$t_1$</td><td>$(3,3)$</td><td>$(2,2)$</td><td>$(1,0)$</td></tr>
+          <tr><td>$t_2$</td><td>$(1,0)$</td><td>$(2,2)$</td><td>$(0,3)$</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Receiver's best responses: $U$ against $t_1$, $D$ against $t_2$, $C$ when $\Pr(t_1)\in[\tfrac13,\tfrac23]$.</p>
+    <div class="block def mt">
+      <div class="bt">Cheap talk (Farrell 1993)</div>
+      <div class="bb">Unique equilibrium outcome: pooling on $C$, both types get $2$. "I'm $t_1$" is credible — $t_1$ would get $3$, $t_2$ would get $1$, the receiver plays $U$. <span class="alert">No neologism-proof equilibrium.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────── EXISTENCE II ─────────────── -->
+<section class="slide" id="res-exist2">
+  <h1>Does a Mediator Rescue Existence?</h1>
+  <div class="body">
+    <p>With a mediator the set of communication equilibria is much larger: e.g. $t_1\mapsto\tfrac12 U+\tfrac12 C$, $t_2\mapsto C$ is incentive compatible.</p>
+    <p class="alert"><b>No.</b> In every incentive-compatible direct mechanism:</p>
+    <ul>
+      <li>$U^*(t_1)<3$: giving $t_1$ the action $U$ for sure makes $U$ obedient only if $t_2$ rarely gets it — and then $t_2$ claims to be $t_1$.</li>
+      <li>$U^*(t_2)\ge 1$: $t_2$ can always claim $t_1$, and obedience keeps $t_1$'s lottery valuable enough to him (an LP; the minimum is exactly $1$).</li>
+    </ul>
+    <div class="block accent mt">
+      <div class="bt">So "I'm $t_1$; play $U$" is a credible neologism against every IC direct mechanism</div>
+      <div class="bb">By Theorems 2–3, <b>no equilibrium of any protocol is confession-proof.</b></div>
+    </div>
+    <p class="muted">Confession-proofness is a Farrell-type test and inherits Farrell's non-existence. The mediator does not help.</p>
+  </div>
+</section>
+
+<!-- ─────────────── CONCLUSION (to be filled) ─────────────── -->
+<section class="slide" id="conclusion">
+  <h1>Conclusion</h1>
+  <div class="body">
+    <ul class="groups">
+      <li><b>Incentive compatibility is not enough.</b> A sender can change her behavior inside the protocol and explain it outside. Robustness requires ruling out credible confessions.</li>
+      <li><b>Expert advice: accuracy versus concealment.</b> With weak career concerns, concealing expertise can require less accurate decisions. Strong career concerns can protect concealment by making the expert's speech attractive to the quack.</li>
+      <li><b>One sender: a neologism test.</b> Under belief-free credibility, every credible confession has a neologism counterpart, and direct mechanisms suffice.</li>
+      <li><b>Multiple senders: protocol details matter.</b> Richer message spaces and more receiver information can undermine credibility by making speeches attractive to outsiders.</li>
+    </ul>
+    <p class="center alert mt-lg"><em>Design the protocol with the speeches it makes credible in mind.</em></p>
+    <p class="center" style="font-size:24px">Thank you!</p>
+  </div>
+</section>
+
+<!-- ═════════════════════════ APPENDIX ═════════════════════════ -->
+<section class="slide section-slide appendix">
+  <div class="sn">Backup</div>
+  <div class="st">Appendix</div>
+  <div class="rule"></div>
+</section>
+
+<!-- ─────────────── TRUTHFULNESS AND OBEDIENCE, GENERAL ALPHA ─────────────── -->
+<section class="slide" id="app-ic-alpha">
+  <h1>Truthfulness and Obedience <span class="muted">(general $\alpha$)</span></h1>
+  <div class="body">
+    <p>The designer has an extra instrument: <span class="alert">punish inconsistent reports</span>.</p>
+    <ul>
+      <li>Obedience and expert truthfulness: untouched.</li>
+    </ul>
+    <div class="block accent">
+      <div class="bt">Quack truthfulness</div>
+      <div class="bb">
+        $$U_Q \;\ge\; \tilde{x}(\alpha) + \frac{B}{2}$$
+        where $\tilde{x}(\alpha)$ is the precision of the recommended action when the expert tells the truth and the quack pretends to be the expert.
+      </div>
+    </div>
+    <!-- CHECK: interval derived from the symmetric family with p_Q = 1/2:
+         x̃(α) = ½[α p_E + (1−α)(1−p_E)] + ¼, so x̃(½) = ½ and x̃ ranges over [¾ − p_E/2, ¼ + p_E/2]. -->
+    <p>Note that $\tilde{x}(\alpha)\in\big[\tfrac34-\tfrac{p_E}{2},\;\tfrac14+\tfrac{p_E}{2}\big]$, with $\tilde{x}(\tfrac12)=\tfrac12$.</p>
+  </div>
+  <div class="links"><a class="btn back" href="#back">Back</a></div>
+</section>
+
+<!-- ─────────────── A2: FIGURE, GENERAL ALPHA (p_E = 0.8, B = 1; x̃ at its lower bound ¾ − p_E/2) ─────────────── -->
+<section class="slide" id="app-fig-alpha">
+  <h1>Quack Truthfulness with Punishment <span class="muted">(general $\alpha$)</span></h1>
+  <div class="body">
+    <div class="two r2 mid steps">
+      <ul>
+        <li>The quack constraint becomes $$2y-1 \le \frac{(2x-1)-(2\tilde{x}(\alpha)-1)}{B},$$ a line of slope $1/B$ through $(2\tilde{x}(\alpha)-1,\,0)$.</li>
+        <li>Punishing inconsistent reports lowers $\tilde{x}(\alpha)$ below $\tfrac12$ and shifts the line up. At the lower bound, $2\tilde{x}-1=\tfrac12-p_E<0$.</li>
+        <li class="small muted">Drawn for $B>2p_E-1$. Dashed: $\alpha=\tfrac12$.</li>
+      </ul>
+      <figure class="fig now">
+        <svg viewBox="-40 0 620 460" style="width:100%;max-width:700px">
+          <rect class="grid" x="100" y="40" width="360" height="360"/>
+          <!-- feasibility -->
+          <rect class="region" x="100" y="40" width="216" height="360"/>
+          <path class="cv-red" d="M316 400 V40"/>
+          <text class="it lblR" x="324" y="380">x = p<tspan class="sub">E</tspan></text>
+          <text class="lblB txt" x="208" y="346" text-anchor="middle">feasible</text>
+          <text class="it" x="316" y="426" text-anchor="middle">2p<tspan class="sub">E</tspan> − 1</text>
+          <!-- alpha = 1/2 reference ray -->
+          <path class="cv-gray" d="M100 400 L460 40"/>
+          <text class="it lblG" x="466" y="36">α = ½</text>
+          <circle class="dot open" cx="316" cy="184" r="5"/>
+          <text class="it" x="400" y="250" text-anchor="middle">B &gt; 2p<tspan class="sub">E</tspan> − 1</text>
+          <!-- general alpha, x̃ at its lower bound (step) -->
+          <g class="step">
+            <polygon class="region red" points="100,292 100,40 316,40 316,76"/>
+            <path class="cv-blue" d="M100 292 L352 40"/>
+            <text class="it lblB" x="332" y="30">U<tspan class="sub">Q</tspan> ≥ x̃(α) + B/2</text>
+            <text class="lblR txt" x="112" y="76">quack lies</text>
+            <circle class="dot open" cx="316" cy="40" r="5"/>
+            <circle class="dot blue" cx="316" cy="76" r="5"/>
+            <text class="it lblB" x="88" y="296" text-anchor="end">(p<tspan class="sub">E</tspan> − ½)/B</text>
+          </g>
+          <!-- axes -->
+          <path class="axis" d="M100 40 V400 H460"/>
+          <line class="tick" x1="460" y1="400" x2="460" y2="408"/>
+          <line class="tick" x1="92"  y1="40"  x2="100" y2="40"/>
+          <line class="tick" x1="92"  y1="292" x2="100" y2="292"/>
+          <text x="100" y="426" text-anchor="middle">0</text>
+          <text x="460" y="426" text-anchor="middle">1</text>
+          <text x="82"  y="46"  text-anchor="end">1</text>
+          <text class="it" x="474" y="406">2x − 1</text>
+          <text class="it" x="100" y="24" text-anchor="middle">2y − 1</text>
+        </svg>
+      </figure>
+    </div>
+  </div>
+  <div class="links"><a class="btn back" href="#back">Back</a></div>
+</section>
+
+<!-- ─────────────── A3: THE SPEECHES WE HAVE SEEN, FORMALLY (check the mapping) ─────────────── -->
+<section class="slide static" id="app-speeches">
+  <h1>The Speeches We Have Seen</h1>
+  <div class="body">
+    <table class="full left">
+      <thead><tr><th>Speech</th><th>$S$ (claimed types)</th><th>$\hat{\sigma}$ (claimed report)</th><th>$\hat{\tau}$ (adjustment)</th></tr></thead>
+      <tbody>
+        <tr><td><em>"I'm the expert, got signal $L$. Play $L$ and promote me."</em></td><td>expert with $s=l$</td><td class="muted">— (simple)</td><td>play $L$, promote the speaker</td></tr>
+        <tr><td><em>"I'm the expert and was not truthful. Do not follow the recommendation and promote me."</em></td><td>expert, either signal</td><td>report the opposite signal</td><td>flip the recommended action, promote the speaker</td></tr>
+        <tr><td><em>"I'm the quack and I claimed to be the expert. Flip the action and don't promote me."</em></td><td>quack</td><td>claim to be the expert</td><td>flip the recommended action, promote the other sender</td></tr>
+      </tbody>
+    </table>
+    <p class="small muted mt">In the application the receiver's own message is the recommendation $(a,\pi)$, so adjustments are maps from recommendations to actions.</p>
+  </div>
+  <div class="links"><a class="btn back" href="#back">Back</a></div>
+</section>
+
+</div>
+
+</body>
+</html>

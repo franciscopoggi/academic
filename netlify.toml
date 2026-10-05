@@ -49,3 +49,9 @@
   from = "/author/*"
   to = "/"
   status = 301
+
+# ---- Hidden slide decks: reachable by URL only, kept out of search engines ----
+[[headers]]
+  for = "/files/slides/opc-uchicago-2026-dfb898/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
