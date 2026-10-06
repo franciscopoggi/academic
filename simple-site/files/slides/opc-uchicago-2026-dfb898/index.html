@@ -2,8 +2,8 @@
 <html lang="en" data-theme="" data-school="vwl" data-layout="spread" data-footer="" data-minutes="90">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Off-Protocol Communication — UChicago 2026</title>
 
 <!--
@@ -165,7 +165,7 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
 <!-- ═════════════════════════ EXAMPLES ═════════════════════════ -->
 <section class="slide section-slide">
   <div class="sn">Examples</div>
-  <div class="st">Two Simple Examples</div>
+  <div class="st">Two Informal Examples</div>
   <div class="rule"></div>
   <div class="ss">To fix ideas about the kind of deviations we have in mind.</div>
 </section>
@@ -184,7 +184,7 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
       <li>$\mathcal{l}<1<\mathcal{h}$: a low-cost worker is worth assigning; a high-cost one is not.</li>
     </ul>
     <div class="block accent">
-      <div class="bt">First best</div>
+      <div class="bt">Supervisor's full-information optimum</div>
       <div class="bb">Assign the task to a low-cost worker if there is one; otherwise, assign it to nobody.</div>
     </div>
   </div>
@@ -196,19 +196,19 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
   <div class="body">
     <ul>
       <li>$n=1$: supervisor and worker have the <em>same</em> payoff. Nothing to design: ask him.</li>
-      <li>$n\ge 2$: <span class="alert">free-riding</span>. A low-cost worker prefers that another worker do it.</li>
+      <li>$n\ge 2$: <span class="alert">free-riding</span>. A low-cost worker prefers that another worker performs the task.</li>
     </ul>
     <div class="block def">
       <div class="bt">A protocol</div>
       <div class="bb rows">
-        <div>Workers simultaneously report their costs.</div>
-        <div>Assign the task uniformly at random among the workers who report a low cost.</div>
-        <div>If nobody reports a low cost, assign it to nobody.</div>
+        <div>Workers privately volunteer for the task, or not.</div>
+        <div>The task is assigned among volunteers uniformly at random.</div>
+        <div>If no one volunteers, no one is assigned.</div>
       </div>
     </div>
     <ul class="mt">
-      <li><b>Obedience.</b> If workers report truthfully, the supervisor is happy to follow through with the protocol.</li>
-      <li><b>Truthful reporting</b> is an equilibrium if $p$ is high enough:
+      <li><b>Obedience.</b> If exactly the low-cost workers volunteer, the supervisor is happy to follow through with the protocol.</li>
+      <li><b>Volunteering iff low-cost</b> is an equilibrium if $p$ is high enough:
         $$\mathcal{l}\ \le\ \frac{n\,(1-p)\,p^{\,n-1}}{1-p^{\,n}}$$
       </li>
     </ul>
@@ -224,15 +224,15 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
 <section class="slide" id="speech">
   <h1>A Speech</h1>
   <div class="body">
-    <p>A low-cost worker <span class="alert">reports $H$</span>. Then he meets the supervisor in the hallway and privately tells him:</p>
-    <div class="quote">"If the protocol says <em>nobody</em>, assign the task to me. Otherwise follow its recommendation."</div>
+    <p>A low-cost worker <span class="alert">decides not to volunteer</span>. Then he meets the supervisor in the hallway and privately tells him:</p>
+    <div class="quote">"If no one volunteers, assign the task to me."</div>
     <p>What should the supervisor make of this?</p>
     <ul>
       <li><b>The worker gains.</b> He free-rides whenever a colleague is low, and the task still gets done when nobody else is.</li>
       <li><b>A high-cost worker would never say this.</b> It would get him the task exactly when nobody else is low: $1-\mathcal{h}<0$.</li>
-      <li><b>So the supervisor believes him,</b> and is happy to do as asked: when the protocol says nobody, this worker is the only low-cost one.</li>
+      <li><b>So the supervisor believes he is low cost,</b> and is happy to do as asked: when no one volunteers, this worker is the only low-cost one.</li>
     </ul>
-    <p class="mt"><span class="alert">The protocol unravels.</span> Reporting truthfully is no longer optimal once the worker can talk to the supervisor off protocol.</p>
+    <p class="mt"><span class="alert">The protocol may unravel.</span> Volunteering may no longer be optimal once the worker can talk to the supervisor off protocol.</p>
   </div>
 </section>
 
@@ -241,7 +241,7 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
   <h1>Example II: Experts with Career Concerns</h1>
   <div class="body">
     <ul class="tight">
-      <li>A decision-maker must take an action.</li>
+      <li>A decision-maker must take an action, but does not know which action is best.</li>
       <li>Consults two advisers: one is an <b>expert</b>, the other is a <b>quack</b>.</li>
       <li>The decision-maker cannot distinguish them.</li>
       <li>The expert knows the best course of action; the quack does not.</li>
@@ -251,7 +251,7 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
     </ul>
     <div class="block def">
       <div class="bt">Protocol that maximizes the quality of the action</div>
-      <div class="bb">Advisers submit a <b>joint report</b>, with no attribution of individual recommendations.<br>
+      <div class="bb">The decision-maker asks the advisers to submit a <b>joint anonymous report</b>, without any attribution.<br>
         Individual recommendations are unobserved, so career concerns do not distort truthful reporting.</div>
     </div>
     <p>But the expert can communicate off protocol:</p>
@@ -274,7 +274,7 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
       </li>
       <li>Propose a robustness criterion based on the credibility of <span class="alert">speeches</span>.
         <ul>
-          <li>A speech makes claims about the sender's type and behavior, and recommends what the receiver should do.</li>
+          <li>A speech makes claims about the sender's <span class="alert">type</span> and <span class="alert">behavior</span>, and recommends what the receiver should do.</li>
           <li>It is <b>credible</b> if
             <ul>
               <li>the receiver would comply when taking it at face value;</li>
@@ -299,14 +299,15 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
       <li><b>Proof of concept.</b> Speeches as a way to discipline communication mechanisms.</li>
       <li><b>Experts with career concerns.</b>
         <ul>
-          <li>Weak career concerns: robust protocols trade <span class="alert">decision accuracy against concealment</span> — reveal more about expertise, or decide less well.</li>
-          <li>Strong career concerns: the quack's appetite for promotion protects the protocol; perfect concealment survives.</li>
+          <li>Characterize what direct revelation mechanisms can implement<br>
+            when they must be <span class="alert">robust to off-protocol communication</span>.</li>
         </ul>
       </li>
       <li><b>General results.</b>
         <ul>
-          <li>One sender: robustness is neologism-proofness (Farrell 1993). A claim about what I <em>did</em> inside the protocol adds nothing to a claim about who I <em>am</em>. Direct mechanisms are without loss.</li>
-          <li>Multiple senders: claims about protocol behavior have bite. Direct <em>reports</em> remain without loss; direct <em>recommendations</em> do not.</li>
+          <li>Conditions under which checking <em>simple</em> speeches suffices for robustness.</li>
+          <li>Conditions under which the revelation principle holds,<br>
+            and the forces that make it fail.</li>
         </ul>
       </li>
     </ul>
@@ -315,22 +316,29 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
 
 <!-- ─────────────── LITERATURE ─────────────── -->
 <section class="slide" id="literature">
-  <h1>Related Literature</h1>
+  <h1>Some Related Literature</h1>
   <div class="body">
     <ul class="groups">
-      <li><b>Neologism-proofness</b> (Farrell 1993); <b>natural language equilibrium</b> (Reny 2025).
+      <li><b>Credible speech and meaning.</b><br>
+        <span class="small muted">Farrell (1993); Matthews, Okuno-Fujiwara &amp; Postlewaite (1991); Reny (2026)</span>
         <ul>
-          <li>Equilibrium refinements in cheap-talk and signaling games.</li>
-          <li>This paper: speeches as additional <em>deviations</em> from a designed communication protocol.</li>
+          <li>&rarr; Credibility of claims about private information<br>
+            <em>and behavior within a protocol</em>.</li>
         </ul>
       </li>
-      <li><b>Communication among mechanism participants.</b>
+      <li><b>Further communication and negotiation.</b><br>
+        <span class="small muted">Myerson (1989); Blume &amp; Sobel (1995)</span>
         <ul>
-          <li>Collusion-proof mechanism design: agents write side deals.</li>
-          <li>Akbarpour and Li (2020), credibility: the designer may misrepresent what happened in the mechanism.</li>
+          <li>&rarr; Design protocols that survive credible <em>unilateral</em> confessions.</li>
         </ul>
       </li>
-      <li><b>Main application:</b> Ottaviani and Sørensen (2006) — incentives to appear informed degrade communication.</li>
+      <li><b>Expert advice, reputation, and transparency.</b><br>
+        <span class="small muted">Ottaviani &amp; S&oslash;rensen (2006); Swank &amp; Visser (2013)</span>
+        <ul>
+          <li>&rarr; Concealing expertise when participants can disclose it themselves<br>
+            &mdash; and others can imitate them.</li>
+        </ul>
+      </li>
     </ul>
   </div>
 </section>
@@ -340,11 +348,18 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
   <h1>Plan for Today</h1>
   <div class="body">
     <ul class="groups">
-      <li>Focus mostly on the <span class="alert">expert-advice application</span> (as in Example II).</li>
+      <li>Mostly: the <span class="alert">expert-advice application</span> (as in Example II).
+        <ul style="font-size:var(--fs-body)">
+          <li>Benchmark: what is incentive compatible?</li>
+          <li>Robustness: which speeches are credible, and what the designer must give up: accuracy vs. concealment.</li>
+        </ul>
+      </li>
+      <li class="mt-lg">General model: protocols, speeches, credibility.</li>
       <li class="mt-lg">General results:
         <ul style="font-size:var(--fs-body)">
-          <li>One-sender revelation principle — issues with the Bayesian framework.</li>
-          <li>One-sender equivalence — issues with multiple senders.</li>
+          <li>Many senders: reports can be made direct; recommendations cannot.</li>
+          <li>One sender: a revelation principle, equivalence with neologism-proofness.</li>
+          <li>Discussion on the existence problem.</li>
         </ul>
       </li>
     </ul>
@@ -364,7 +379,7 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
   <div class="body">
     <ul>
       <li><b>Players:</b> two senders $i=1,2$ and one receiver.</li>
-      <li>One sender is an <span class="alert">expert</span> ($E$), the other a <span class="alert">quack</span> ($Q$).</li>
+      <li>One sender is an <span class="alert">expert</span> ($E$), the other a <span class="alert">quack</span> ($Q$). Let $e\in\{1,2\}$ be the expert's identity.</li>
       <li>Roles are private; each assignment is equally likely.</li>
       <li><b>Payoff-relevant state</b> $\omega\in\{L,R\}$, uniform prior.</li>
       <li>Each sender observes a conditionally independent binary signal $s_i\in\{l,r\}$ with precision $p_E$ and $p_Q$.
@@ -377,7 +392,7 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
       <div class="bb rows">
         <div>Everyone receives $1$ if $a=\omega$.</div>
         <div>Sender $i$ gets an additional bonus $B>0$ iff promoted ($\pi=i$).</div>
-        <div>The receiver gets an additional bonus $D>0$ if the expert is promoted ($\pi=E$).</div>
+        <div>The receiver gets an additional bonus $D>0$ if the expert is promoted ($\pi=e$).</div>
       </div>
     </div>
   </div>
@@ -389,11 +404,13 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
   <div class="body">
     <ul>
       <li>A <b>direct revelation mechanism</b> asks each sender to report whether they are the expert, and their signal realization.
-        <ul><li>Given the uninformativeness of the quack's signal, we can simplify to $M_i=\{L,R,Q\}$.</li></ul>
+        <ul><li>Given the uninformativeness of the quack's signal, we can simplify to $\Theta_i=\{L,R,Q\}$.</li></ul>
       </li>
-      <li>It recommends an action and a promotion to the receiver, $(a,\pi)\in\{L,R\}\times\{1,2\}$.</li>
+      <li>It recommends an action and a promotion to the receiver, $(\hat{a},\hat{\pi})\in\{L,R\}\times\{1,2\}$.</li>
+      <li>A direct revelation mechanism is thus a map from reports to a lottery over recommendations,
+        $$\tau:\ \Theta_1\times\Theta_2 \;\to\; \Delta\big(\{L,R\}\times\{1,2\}\big).$$
+      </li>
     </ul>
-    <div class="mathline">$$\tau:\ \{L,R,Q\}^2 \;\to\; \Delta\big(\{L,R\}\times\{1,2\}\big)$$</div>
     <div class="block def">
       <div class="bt">Truthful and obedient</div>
       <div class="bb">A direct revelation mechanism is <b>truthful and obedient</b> if there is an equilibrium in which senders report truthfully and the receiver follows the recommendation.</div>
@@ -413,26 +430,27 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
           <li>both states and actions are treated symmetrically.</li>
         </ul>
       </li>
-      <li>Under truthful reports, a symmetric mechanism is summarized by two numbers:
-        $$x=\Pr(a=\omega \mid \text{truthful reports}),\qquad y=\Pr(\pi=E \mid \text{truthful reports}).$$
+      <li>Under truthful reports, a symmetric mechanism is summarized by two numbers:<sup>&dagger;</sup>
+        $$x=\Pr(\hat{a}=\omega \mid \text{truthful reports}),\qquad y=\Pr(\hat{\pi}=e \mid \text{truthful reports}).$$
       </li>
-      <li>We must also define what happens after <span class="alert">inconsistent reports</span>.</li>
+      <li>We must also define what happens after <span class="alert">inconsistent reports</span>.<sup>*</sup></li>
     </ul>
     <div class="block def">
       <div class="bt">Inconsistent reports</div>
       <div class="bb rows">
-        <div>Both senders claim to be the quack: $(a,\pi)$ drawn uniformly at random.</div>
+        <div>Both senders claim to be the quack: $(\hat{a},\hat{\pi})$ drawn uniformly at random.</div>
         <div>Both senders claim to be the expert:
           <ul class="tight" style="margin:4px 0 0;padding-left:26px">
-            <li>reports do not coincide: $(a,\pi)$ drawn uniformly at random;</li>
-            <li>reports coincide: the action matches the reports with probability $\alpha$.</li>
+            <li>reports do not coincide: $(\hat{a},\hat{\pi})$ drawn uniformly at random;</li>
+            <li>reports coincide: the recommended action $\hat{a}$ matches the common report with probability $\alpha$.</li>
           </ul>
         </div>
         <div class="muted">($\alpha=1/2$: every inconsistency leads to a uniform draw.)</div>
       </div>
     </div>
   </div>
-  <div class="source">A similar application can be constructed with independent types. There are then no inconsistent reports, but more cases to consider.</div>
+  <div class="source"><sup>&dagger;</sup>The correlation between $\hat{a}$ and $\hat{\pi}$ is not payoff relevant: payoffs depend only on the marginals, which is why $x$ and $y$ suffice.<br>
+    <sup>*</sup>A similar application can be constructed with independent types. There are then no inconsistent reports, but more cases to consider.</div>
   <aside class="notes">
     Symmetry is without loss: the environment is invariant under permutations of sender identities and simultaneous exchanges of state, signal, and action labels.
   </aside>
@@ -462,7 +480,8 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
         <div class="v-gen">$$\underbrace{U_Q \;:=\; x + (1-y)\,B}_{\text{truthful report}} \;\ge\; \underbrace{\colorbox{#f3d9da}{$\textcolor{#b5121b}{\tilde{x}(\alpha)}$}+\tfrac{B}{2}}_{\text{claim to be the expert}}$$</div>
         <span class="alert">Not</span> implied by obedience.
         <span class="muted small v-half">Claiming to be the expert also makes the reports inconsistent (uniform draw).</span>
-        <span class="small step v-gen"><span class="alert">$\tilde{x}(\alpha)$</span>: accuracy of the recommended action when the quack pretends to be the expert.</span>
+        <span class="small step v-gen"><span class="alert">$\tilde{x}(\alpha)$</span>: accuracy of the recommended action when the quack pretends to be the expert,
+          $$\tilde{x}(\alpha)=\tfrac14+\tfrac12\big[\alpha\,p_E+(1-\alpha)(1-p_E)\big],\qquad \alpha\in[0,1].$$</span>
       </div>
     </div>
   </div>
@@ -474,14 +493,14 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
 
 <!-- ─────────────── FIGURE 1: FEASIBILITY ─────────────── -->
 <section class="slide fsq" id="app-fig-feasible">
-  <h1>Symmetric Mechanisms in the Unit Square</h1>
+  <h1>Symmetric Mechanisms in the Unit Square <span class="muted">($\alpha=1/2$)</span></h1>
   <div class="body">
     <!-- Layout: a 2:3 grid. The figure is several overlapping SVG layers in the same grid cell (same
          viewBox, same sizing) so that bullets can sit between them in the DOM — steps reveal in
          document order: bullets 1–2 → feasibility → iso-payoff bullet → iso-payoff lines (weak B)
          → truthfulness bullet → weak case → strong case (swap; the weak-B iso lines hide then). -->
-    <div class="two r2 mid steps" style="grid-template-rows:auto auto auto;grid-template-columns:2fr 3fr">
-      <ul style="grid-column:1;grid-row:1;align-self:end">
+    <div class="two r2 mid steps" style="grid-template-rows:auto auto 1fr;grid-template-columns:2fr 3fr;row-gap:0;align-items:start">
+      <ul style="grid-column:1;grid-row:1;margin:0">
         <li>By obedience, $x,y\ge\tfrac12$: an obedient, symmetric mechanism is a point
           $$(2x-1,\;2y-1)\in[0,1]^2.$$
           <ul>
@@ -514,8 +533,10 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
         </svg>
       </figure>
 
-      <ul style="grid-column:1;grid-row:2;align-self:center">
-        <li><b>Quack's iso-payoff curves.</b> $U_Q=x+(1-y)B$: parallel lines of slope $1/B$; $U_Q$ rises to the south-east.</li>
+      <ul style="grid-column:1;grid-row:2;align-self:start;margin:-9px 0 0">
+        <li><b>Quack's iso-payoff lines.</b>
+          $$U_Q = x+(1-y)\,B$$
+          Slope $1/B$; $U_Q$ rises to the south-east.</li>
       </ul>
 
       <!-- layer 2: iso-payoff lines for the weak case (B = 0.4); hidden once the strong case is shown -->
@@ -534,8 +555,8 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
         </svg>
       </figure>
 
-      <ul style="grid-column:1;grid-row:3;align-self:start;margin-top:0">
-        <li><b>Quack truthfulness.</b> $U_Q$ must be at least its value at the origin, $\tfrac12+\tfrac B2$: the region below the iso-payoff line through the origin.</li>
+      <ul style="grid-column:1;grid-row:3;align-self:start;margin:-9px 0 0">
+        <li><b>Quack truthfulness.</b> $U_Q\ge\tfrac12+\tfrac B2$, its value at the origin: the region below the line through the origin.</li>
       </ul>
 
       <!-- layer 3: the two cases, shown in place of each other
@@ -588,7 +609,7 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
   <div class="body">
     <p>So far we have only looked at what can be implemented. Let us give the designer an objective.</p>
     <ul>
-      <li>The designer gets $1$ if $a=\omega$, plus $b$ if the expert is promoted.</li>
+      <li>The designer gets $1$ if $a=\omega$, plus $b$ if the expert is promoted.<sup>*</sup></li>
       <li>Expected payoff under truthful reports: $\;x + b\,y$.</li>
       <li class="muted">$b>0$: wants the expert promoted. &nbsp; $b<0$: wants the expert not promoted.</li>
     </ul>
@@ -616,6 +637,7 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
     </div>
     <p class="center mt-lg">In every case the decision is as accurate as it can be: $x=p_E$.</p>
   </div>
+  <div class="source"><sup>*</sup>The designer's and the receiver's objectives may differ: the receiver gets $D>0$ from promoting the expert, the designer gets $b$, of either sign.</div>
 </section>
 
 <!-- ═════════════════════════ OFF-PROTOCOL COMMUNICATION ═════════════════════════ -->
@@ -655,7 +677,7 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
       </div>
     </div>
     <div class="block def">
-      <div class="bt">"Complex" speeches: about private information <em>and</em> behavior</div>
+      <div class="bt">"Complex" speeches, or <span class="alert">confessions</span>: about private information <em>and</em> behavior</div>
       <div class="bb">
         <div class="quote">"I'm the expert, and I lied in my report. Flip the recommended action; and since a quack would not benefit from asking you this, promote me."</div>
       </div>
@@ -686,7 +708,7 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
       <div class="bb">A mechanism is <b>robust to off-protocol communication</b> iff there is no credible speech.</div>
     </div>
   </div>
-  <div class="links"><a class="btn" href="#gm-credible">Formal definition</a></div>
+  <div class="links"><a class="btn" href="#app-def">Formal definition</a> <a class="btn" href="#app-beliefs">Belief convention</a></div>
 </section>
 
 <!-- ─────────────── SIMPLE SPEECH DEVIATION ─────────────── -->
@@ -696,59 +718,60 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
     <div class="quote">"I'm the expert, got signal $L$. Play $L$ and promote me."</div>
     <div class="two steps">
       <div class="block plain">
-        <div class="bt">Profitable for the expert iff</div>
-        <div class="bb">$$U_E \;:=\; x + y\,B \;\le\; p_E + B$$ <span class="small muted">(strict if $(x,y)\neq(p_E,1)$)</span></div>
+        <div class="bt">The expert strictly gains iff</div>
+        <div class="bb">$$U_E \;:=\; x + y\,B \;<\; p_E + B$$ <span class="small muted">i.e. iff $(x,y)\neq(p_E,1)$: at full credit he has nothing to gain.</span></div>
       </div>
       <div class="block plain" style="margin-top:0">
-        <div class="bt">Profitable for the quack iff</div>
-        <div class="bb">$$U_Q \;\le\; \tfrac12 + B$$</div>
+        <div class="bt">The quack strictly gains iff</div>
+        <div class="bb">$$U_Q \;<\; \tfrac12 + B$$ <span class="small muted">An indifferent quack does <em>not</em> block the speech.</span></div>
       </div>
     </div>
     <div class="block accent mt">
-      <div class="bt">Credible iff $\;U_Q \ge \tfrac12 + B$</div>
-      <div class="bb">Robustness requires $\;U_Q \le \tfrac12 + B$.</div>
+      <div class="bt">Credible iff the expert strictly gains and the quack does not</div>
+      <div class="bb">Robustness requires $\;U_Q < \tfrac12 + B$, unless $(x,y)=(p_E,1)$.</div>
     </div>
-    <p class="small muted">Caveat: one must also check that the expert with signal $R$ profits from a credible speech, $U_E \le (1-p_E)+B$. But if this holds, the quack profits as well.</p>
+    <p class="small muted">Self-selection also requires that the expert with signal $R$ does not strictly gain, $U_E \ge (1-p_E)+B$.<br>This never binds: if he strictly gains, so does the quack.</p>
   </div>
 </section>
 
 <!-- ─────────────── COMPLEX SPEECH DEVIATION ─────────────── -->
 <section class="slide" id="opc-complex">
-  <h1>Complex Speech</h1>
+  <h1>Complex Speech: the Expert's Confession</h1>
   <div class="body">
     <div class="quote">"I'm the expert and was not truthful. Do not follow the action recommendation, and promote me."</div>
     <div class="two steps">
       <div class="block plain">
-        <div class="bt">Profitable for the expert iff</div>
-        <div class="bb">$$U_E \;\le\; x + B$$ <span class="small muted">(strict if $y<1$)</span></div>
+        <div class="bt">The expert strictly gains iff</div>
+        <div class="bb">$$U_E \;<\; x + B$$ <span class="small muted">i.e. iff $y<1$.</span></div>
       </div>
       <div class="block plain" style="margin-top:0">
-        <div class="bt">Profitable for the quack iff</div>
-        <div class="bb">$$U_Q \;\le\; \big[1-\tilde{x}(\alpha)\big] + B$$</div>
+        <div class="bt">The quack strictly gains iff</div>
+        <div class="bb">$$U_Q \;<\; \max\big\{\,1-x,\;1-\tilde{x}(\alpha)\big\} + B$$ <span class="small muted">He picks his report: claim the quack role ($1-x$) or the expert role ($1-\tilde{x}(\alpha)$).</span></div>
       </div>
     </div>
     <div class="block accent mt">
       <div class="bt">Robustness requires</div>
-      <div class="bb">$$U_Q \;\le\; \big[1-\tilde{x}(\alpha)\big] + B$$</div>
+      <div class="bb">$$U_Q \;<\; \max\big\{\,1-x,\;1-\tilde{x}(\alpha)\big\} + B\qquad\text{unless } y=1.$$</div>
     </div>
   </div>
 </section>
 
 <!-- ─────────────── QUACK'S COMPLEX SPEECH + BINDING CONSTRAINTS ─────────────── -->
 <section class="slide" id="opc-quack">
-  <h1>Quack's Complex Speech and Binding Constraints</h1>
+  <h1>The Quack's Confession and Binding Constraints</h1>
   <div class="body">
     <div class="quote">"I'm the quack and I claimed to be the expert. Thus, flip the action and don't promote me."</div>
     <ul>
-      <li>Profitable iff $\;U_Q < 1-\tilde{x}(\alpha)$.</li>
-      <li>Not binding for $\tilde{x}(\alpha)=\tfrac12$.</li>
+      <li>Strictly profitable iff $\;U_Q < 1-\tilde{x}(\alpha)$.</li>
+      <li>Not binding for $\tilde{x}(\alpha)=\tfrac12$: it reads $U_Q<\tfrac12$, while quack truthfulness already gives $U_Q\ge\tfrac12+\tfrac B2$.</li>
     </ul>
     <div class="block accent">
-      <div class="bt">Binding constraints for $\tilde{x}(\alpha)=\tfrac12$</div>
+      <div class="bt">Binding constraints for $\tilde{x}(\alpha)=\tfrac12$, away from full credit $(x,y)\neq(p_E,1)$</div>
       <div class="bb">Incentive compatibility and robustness amount to
-        $$U_Q \;\in\; \Big[\tfrac12+\tfrac{B}{2}\,,\;\tfrac12+B\Big].$$
+        $$U_Q \;\in\; \Big[\tfrac12+\tfrac{B}{2}\,,\;\tfrac12+B\Big).$$
       </div>
     </div>
+    <p class="small muted">Full credit $(x,y)=(p_E,1)$: the expert cannot strictly gain from either speech. Treated separately.</p>
   </div>
 </section>
 
@@ -761,7 +784,7 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
     <div class="two r2 mid steps">
       <ul>
         <li><b style="color:var(--blue)">Quack truthfulness:</b> <span style="color:var(--blue)">$U_Q\ \ge\ \tfrac12+\tfrac B2$.</span></li>
-        <li><b style="color:var(--orange)">Robustness:</b> <span style="color:var(--orange)">$U_Q\ \le\ \tfrac12+B$.</span></li>
+        <li><b style="color:var(--orange)">Robustness:</b> <span style="color:var(--orange)">$U_Q\ <\ \tfrac12+B$</span> <span class="small muted">(boundary excluded: dashed).</span></li>
         <li>Mechanisms with accurate decisions and little credit for the expert invite <em>"I'm the expert, promote me."</em></li>
       </ul>
       <figure class="fig now">
@@ -780,8 +803,8 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
               <text class="it lblB" x="244" y="30" text-anchor="middle">U<tspan class="sub">Q</tspan> ≥ ½ + B/2</text>
               <text class="lblR txt" x="112" y="76">quack lies</text>
               <polygon class="region" style="fill:var(--orange);opacity:.22" points="244,400 316,400 316,220"/>
-              <path class="cv-orange" d="M244 400 L388 40"/>
-              <text class="it" style="fill:var(--orange)" x="388" y="30" text-anchor="middle">U<tspan class="sub">Q</tspan> ≤ ½ + B</text>
+              <path class="cv-orange" style="stroke-dasharray:7 5" d="M244 400 L388 40"/>
+              <text class="it" style="fill:var(--orange)" x="388" y="30" text-anchor="middle">U<tspan class="sub">Q</tspan> &lt; ½ + B</text>
               <text class="it" x="244" y="426" text-anchor="middle">B</text>
               <circle class="dot blue" cx="316" cy="40" r="5"/>
               <circle class="dot open" cx="316" cy="400" r="5"/>
@@ -795,8 +818,8 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
               <path class="cv-blue" d="M100 400 L424 40"/>
               <text class="it lblB" x="568" y="64" text-anchor="end">U<tspan class="sub">Q</tspan> ≥ ½ + B/2</text>
               <text class="lblR txt" x="140" y="76">quack lies</text>
-              <path class="cv-orange" d="M424 400 L460 360"/>
-              <text class="it" style="fill:var(--orange)" x="418" y="352" text-anchor="end">U<tspan class="sub">Q</tspan> ≤ ½ + B</text>
+              <path class="cv-orange" style="stroke-dasharray:7 5" d="M424 400 L460 360"/>
+              <text class="it" style="fill:var(--orange)" x="418" y="352" text-anchor="end">U<tspan class="sub">Q</tspan> &lt; ½ + B</text>
               <text class="it" x="424" y="426" text-anchor="middle">B</text>
               <circle class="dot open" cx="316" cy="40" r="5"/>
               <circle class="dot blue" cx="316" cy="160" r="5"/>
@@ -851,17 +874,18 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
   <div class="body">
     <div class="two mid steps">
       <div>
-        <p>The designer maximizes $\;x + b\,y\;$ subject to robustness. He chooses:</p>
+        <p>The designer maximizes $\;x + b\,y\;$ subject to robustness.</p>
         <div class="block accent">
-          <div class="bt">Weak career concerns: $B < 2p_E-1$</div>
+          <div class="bt">Intermediate career concerns: $\;p_E-\tfrac12 < B < 2p_E-1$</div>
           <div class="bb">
             <ul>
-              <li><b>Full credit</b> $\;(x,y)=(p_E,\,1)\;$ if $b>0$.</li>
-              <li><b>Minimum credit</b> $\;(x,y)=(p_E,\,\underline{y})\;$ if $b\in(-B,0)$.</li>
-              <li><b>No credit and garble</b> $\;(x,y)=(\underline{p},\,\tfrac12)\;$ if $b<-B$.</li>
+              <li>$b>0$: <b>full credit</b>, $\;(x,y)=(p_E,\,1)$.</li>
+              <li>$b\in(-B,0)$: <b>minimum credit</b>, $\;(x,y)\to(p_E,\,\underline{y})$, $\;\underline{y}=\tfrac{p_E-1/2}{B}$.</li>
+              <li>$b<-B$: <b>no credit and garble</b>, $\;(x,y)\to(\underline{p},\,\tfrac12)$, $\;\underline{p}=\tfrac{1+B}{2}$.</li>
             </ul>
           </div>
         </div>
+        <p class="small muted">$\underline{y}$ and $\underline{p}$ solve $U_Q=\tfrac12+B$ on the edges $x=p_E$ and $y=\tfrac12$. The frontier itself is excluded: these payoffs are suprema, approached from inside.</p>
       </div>
       <figure class="fig now">
         <svg class="big" viewBox="0 0 580 500" style="width:100%;max-width:640px">
@@ -873,23 +897,24 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
           <polygon class="region red" points="100,400 100,40 244,40"/>
           <path class="cv-blue" d="M100 400 L244 40"/>
           <polygon class="region" style="fill:var(--orange);opacity:.22" points="244,400 316,400 316,220"/>
-          <path class="cv-orange" d="M244 400 L388 40"/>
+          <path class="cv-orange" style="stroke-dasharray:7 5" d="M244 400 L388 40"/>
           <text class="it" x="240" y="426" text-anchor="end">2p̲ − 1</text>
           <text class="it" x="400" y="300" text-anchor="middle">B &lt; 2p<tspan class="sub">E</tspan> − 1</text>
+          <text class="txt small" x="400" y="340" text-anchor="middle" style="fill:var(--muted)">○ supremum, not attained</text>
           <g class="step">
             <circle class="dot" cx="316" cy="40" r="6"/>
             <text class="it" x="326" y="48">b &gt; 0:</text>
             <text class="txt" x="326" y="72">full credit</text>
           </g>
           <g class="step">
-            <circle class="dot" cx="316" cy="220" r="6"/>
+            <circle class="dot open" cx="316" cy="220" r="6"/>
             <text class="it" x="326" y="206">b ∈ (−B, 0):</text>
             <text class="txt" x="326" y="230">minimum credit</text>
             <text class="it" x="82" y="224" text-anchor="end">2y̲ − 1</text>
             <line class="dash" x1="100" y1="220" x2="316" y2="220"/>
           </g>
           <g class="step">
-            <circle class="dot" cx="244" cy="400" r="6"/>
+            <circle class="dot open" cx="244" cy="400" r="6"/>
             <text class="it" x="244" y="458" text-anchor="middle">b &lt; −B:</text>
             <text class="txt" x="244" y="484" text-anchor="middle">no credit, garble</text>
           </g>
@@ -909,24 +934,24 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
 
 <!-- ─────────────── TRANSITION QUESTIONS ─────────────── -->
 <section class="slide" id="transition">
-  <h1>Transition Questions</h1>
+  <h1>General Questions Raised by the Application</h1>
   <div class="body">
     <ul class="groups">
-      <li>We used direct revelation mechanisms.
-        <ul>
-          <li>These are without loss if we do not care about speeches.</li>
-          <li>Can anything implementable with a general mechanism robust to off-protocol communication also be implemented with a <em>robust direct</em> mechanism?</li>
-        </ul>
-      </li>
       <li>In the application there was no welfare loss in setting $\alpha$ small: it only affected outcomes off path.
         <ul>
           <li>A modification with two possible experts remains tractable.</li>
           <li>There, reducing $\tilde{x}(\alpha)$ is costly: the designer faces a new trade-off.</li>
         </ul>
       </li>
-      <li>Given low $\alpha$, the "complex speeches" were not binding.
+      <li>Given low $\alpha$, the confessions were not binding.
         <ul>
           <li>In general, under what conditions is it enough to check <em>simple</em> speeches?</li>
+        </ul>
+      </li>
+      <li>We used direct revelation mechanisms.
+        <ul>
+          <li>These are without loss if we do not care about speeches.</li>
+          <li>Can anything implementable with a general mechanism robust to off-protocol communication also be implemented with a <em>robust direct</em> mechanism?</li>
         </ul>
       </li>
     </ul>
@@ -1006,21 +1031,13 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
   <h1>Off-Protocol Communication</h1>
   <div class="body">
     <p>Fix a protocol and an equilibrium $(\sigma,\sigma_0)$; let $U_i^*(\theta_i)$ be sender $i$'s interim payoff. After the protocol delivers $m_0$, a sender may address the receiver privately.</p>
-    <div class="two steps">
-      <div class="block def">
-        <div class="bt">Simple speech by sender $i$: $(S,\hat{\tau})$</div>
-        <div class="bb rows">
-          <div>$S\subseteq\Theta_i$: the claimed types.</div>
-          <div>$\hat{\tau}:M_0\to\Delta(A)$: the proposed adjustment.</div>
-          <div class="muted">Behavior inside the protocol is presumed on path.</div>
-        </div>
-      </div>
-      <div class="block def">
-        <div class="bt">Confession by sender $i$: $(S,\hat{\sigma},\hat{\tau})$</div>
-        <div class="bb rows">
-          <div>Adds $\hat{\sigma}:S\to\Delta(M_i)$, the claimed reporting strategy.</div>
-          <div class="muted">"I am in $S$, I reported according to $\hat{\sigma}$, now do $\hat{\tau}$."</div>
-        </div>
+    <div class="block def">
+      <div class="bt">Confession by sender $i$: $(S,\hat{\sigma},\hat{\tau})$</div>
+      <div class="bb rows">
+        <div>$\emptyset\neq S\subseteq\Theta_i$: the claimed types.</div>
+        <div>$\hat{\sigma}:S\to\Delta(M_i)$: the claimed reporting strategy.</div>
+        <div>$\hat{\tau}:M_0\to\Delta(A)$: the proposed adjustment.</div>
+        <div class="muted">"I am in $S$, I reported according to $\hat{\sigma}$, now do $\hat{\tau}$."</div>
       </div>
     </div>
   </div>
@@ -1031,23 +1048,21 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
 <section class="slide" id="gm-credible">
   <h1>Credible Speeches</h1>
   <div class="body">
+    <p class="now">Let $V_i(\theta_i;\hat{\tau}):=\max_{m_i\in M_i}U_i\big((\theta_i,m_i),\hat{\tau}\big)$: the best type $\theta_i$ can do by <em>choosing its report</em> with the adjustment in place.</p>
     <div class="block def">
-      <div class="bt">A simple speech $(S,\hat{\tau})$ is credible if</div>
+      <div class="bt">A confession $(S,\hat{\sigma},\hat{\tau})$ is credible if</div>
       <div class="bb">
         <ol>
-          <li>given equilibrium play, <b>exactly</b> the claimed types strictly gain from the adjustment;</li>
-          <li>at every consistent $m_0$, $\hat{\tau}(m_0)$ is optimal for the receiver taking the claim at face value;</li>
-          <li>at every inconsistent $m_0$, the speech is ignored: $\hat{\tau}(m_0)=\sigma_0(m_0)$.</li>
+          <li><b>Honest play.</b> $\operatorname{supp}\hat{\sigma}(\theta_i)\subseteq\arg\max_{m_i}U_i\big((\theta_i,m_i),\hat{\tau}\big)$ for every $\theta_i\in S$.</li>
+          <li><b>Self-selection.</b> $V_i(\theta_i;\hat{\tau})>U_i^*(\theta_i)\iff\theta_i\in S$. <span class="muted">Outsiders are tested at their best report, not at equilibrium play.</span></li>
+          <li><b>Receiver optimality.</b> At every consistent $m_0$, $\hat{\tau}(m_0)$ is optimal for the receiver taking the claim $(S,\hat{\sigma})$ at face value.</li>
+          <li><b>Reversion.</b> At every inconsistent $m_0$, the speech is ignored: $\hat{\tau}(m_0)=\sigma_0(m_0)$.</li>
         </ol>
       </div>
     </div>
-    <div class="block def">
-      <div class="bt">A confession $(S,\hat{\sigma},\hat{\tau})$ is credible if, on top,</div>
-      <div class="bb">the claimed report $\hat{\sigma}$ is a best response to the adjustment.</div>
-    </div>
-    <div class="block accent mt">
+    <div class="block accent">
       <div class="bt">Robustness</div>
-      <div class="bb">An equilibrium is <b>confession-proof</b> if it admits no credible confession (and <b>simple-speech-proof</b> if no credible simple speech).</div>
+      <div class="bb">An equilibrium is <b>confession-proof</b> if it admits no credible confession.</div>
     </div>
   </div>
 </section>
@@ -1067,8 +1082,8 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
       <div class="bt">Sender-direct</div>
       <div class="bb">A protocol is <b>sender-direct</b> if $M_i=\Theta_i$ for every sender $i$.</div>
     </div>
-    <div class="block thm mt">
-      <div class="bt"></div>
+    <div class="block rem mt">
+      <div class="bt">Remark 1</div>
       <div class="bb">Let $(\sigma,\sigma_0)$ be an equilibrium of a protocol in which every sender's strategy is <b>pure and onto</b>, and let $\tau':=\tau\circ\sigma$ be the sender-direct protocol with the same $M_0$. Then truthful reporting with $\sigma_0$ is an equilibrium of $\tau'$ inducing the same outcome, and it is confession-proof iff $(\sigma,\sigma_0)$ is.</div>
     </div>
     <ul class="mt">
@@ -1106,17 +1121,17 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
     </div>
     <div>
       <p style="margin:8px 0 0"><b>Speech:</b> "I am $a$. Play $h$ after $r$, and $e$ after $s$."
-        <span class="small muted">Optimal for the receiver under every claimed mixture of $x$ and $y$ by $a$.</span></p>
+        <span class="small muted">Optimal for the receiver under every claimed mixture of $x$ and $y$ by $a$. Self-selection is tested at $V_1$: each type picks its best report.</span></p>
       <table class="full" style="margin:4px 0 0;font-size:var(--fs-small)">
-        <thead><tr><th style="width:63%">Payoff if the receiver follows the speech</th><th>Type $a$</th><th>Type $b$</th></tr></thead>
+        <thead><tr><th style="width:63%">Payoff from each report if the receiver follows the speech</th><th>Type $a$</th><th>Type $b$</th></tr></thead>
         <tbody>
-          <tr><td>$x$ (every direct report reproduces $x$)</td><td>$5/8$</td><td>$-1/8$</td></tr>
-          <tr><td>$y$ (available only in the original protocol)</td><td>$1/2$</td><td class="hl alert">$+1/8$</td></tr>
+          <tr><td>report $x$ (every direct report reproduces $x$)</td><td>$5/8$</td><td>$-1/8$</td></tr>
+          <tr><td>report $y$ (available only in the original protocol)</td><td>$1/2$</td><td class="hl alert">$+1/8$</td></tr>
         </tbody>
       </table>
     </div>
     <div>
-      <p class="alert" style="margin:8px 0 2px"><b>Sender-direct $\tau\circ\sigma$:</b> the speech is credible. <b>Original:</b> $b$ mimics profitably using $y$; the original is confession-proof.</p>
+      <p class="alert" style="margin:8px 0 2px"><b>Sender-direct $\tau\circ\sigma$:</b> $V_1(b)=-1/8<0$, the speech is credible. <b>Original:</b> $b$ switches to $y$, $V_1(b)=+1/8>0$; self-selection fails, the original is confession-proof.</p>
       <p style="margin:0"><b>More messages expand deviations and confessions, but also mimicking opportunities: credibility can be destroyed.</b></p>
     </div>
   </div>
@@ -1203,7 +1218,7 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
   <div class="body">
     <div class="block thm">
       <div class="bt"></div>
-      <div class="bb">Let $n=1$ and credibility be belief-free. Fix an equilibrium of any protocol with outcome $\rho$. The canonical DRP is incentive compatible, its truthful–obedient equilibrium induces $\rho$, and it is confession-proof iff the original equilibrium is.</div>
+      <div class="bb">Let $n=1$. Fix an equilibrium of any protocol with outcome $\rho$. The canonical DRP is incentive compatible, its truthful–obedient equilibrium induces $\rho$, and it is confession-proof iff the original equilibrium is.</div>
     </div>
     <p class="mt">Proof idea: confession-proofness depends on the protocol only through the interim payoffs $U^*$.</p>
     <ul>
@@ -1212,7 +1227,6 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
       <li><b>Transfer the lottery.</b> In any protocol with the same $U^*$, a full-support claim by $G(\lambda)$ with the constant adjustment $\lambda$ is credible. The canonical DRP preserves $U^*$.</li>
     </ul>
     <p class="center alert"><em>For fixed preferences, only interim payoffs determine confession-proofness.</em></p>
-    <p class="small muted center">Receiver ties are allowed; with unique receiver favorites the lottery is a pure action.</p>
   </div>
   <aside class="notes">
     This strengthens TM-03's original theorem. All type, message, and action sets are finite, and the credibility definition is belief-free. Neither unique per-type receiver best replies nor pure or onto equilibrium sender strategies are required.
@@ -1236,12 +1250,12 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
   <h1>One Sender: Confessions and Neologisms</h1>
   <div class="body">
     <div class="block def">
-      <div class="bt">Neologism (Farrell 1993, belief-free)</div>
+      <div class="bt">Neologism (Farrell 1993)</div>
       <div class="bb">$(S,c)$ is <b>credible</b> if exactly the types in $S$ prefer $c$ to equilibrium, $\;u_1(c,\theta)>U^*(\theta)\iff\theta\in S$, and $c$ is receiver-optimal against every type in $S$.</div>
     </div>
     <div class="block thm mt">
       <div class="bt"></div>
-      <div class="bb">With one sender, belief-free credibility, and unique per-type receiver best responses,
+      <div class="bb">With one sender and unique per-type receiver best responses,
         $$\text{confession-proof}\;\iff\;\text{neologism-proof}.$$
       </div>
     </div>
@@ -1252,7 +1266,7 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
     <p class="center alert mt"><em>Every credible confession has a credible type-only counterpart.</em></p>
   </div>
   <aside class="notes">
-    Theorem 3 of the talk; TM-04. Both directions are statements about existence of credible speeches, so the proof directions are "confession implies neologism" and "neologism implies confession"; their contrapositives give the two halves of the equivalence.
+    Theorem 2 of the talk; TM-04. Both directions are statements about existence of credible speeches, so the proof directions are "confession implies neologism" and "neologism implies confession"; their contrapositives give the two halves of the equivalence.
     <br><br>
     Confession implies neologism. Take a credible confession $(S,\hat\sigma,\hat\tau)$. With one sender, belief-free optimality has no belief content: at every consistent delivery the adjustment must lie in the common best-response set of $S$, which under uniqueness is a single action $c$. A claimant's claimed message reaches only consistent deliveries, so it yields $c$; honest play and strict self-selection give $u_1(c,\theta)>U^*(\theta)$ on $S$. An outsider can send that same message and also get $c$, so self-selection bounds $u_1(c,\theta')\le U^*(\theta')$ off $S$. Hence $(S,c)$ is a credible neologism.
     <br><br>
@@ -1271,18 +1285,18 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
   <h1>The Existence Issue</h1>
   <div class="body">
     <div class="two r2 mid">
-      <p>One sender, two equally likely types, three actions. Payoffs (sender, receiver):</p>
+      <p>One sender, two equally likely types, three actions. Payoffs $(u_0,u_1)$ = (receiver, sender), as before:</p>
       <table>
         <thead><tr><th></th><th>$U$</th><th>$C$</th><th>$D$</th></tr></thead>
         <tbody>
-          <tr><td>$t_1$</td><td>$(3,3)$</td><td>$(2,2)$</td><td>$(1,0)$</td></tr>
-          <tr><td>$t_2$</td><td>$(1,0)$</td><td>$(2,2)$</td><td>$(0,3)$</td></tr>
+          <tr><td>$t_1$</td><td>$(3,3)$</td><td>$(2,2)$</td><td>$(0,1)$</td></tr>
+          <tr><td>$t_2$</td><td>$(0,1)$</td><td>$(2,2)$</td><td>$(3,0)$</td></tr>
         </tbody>
       </table>
     </div>
     <p>Receiver's best responses: $U$ against $t_1$, $D$ against $t_2$, $C$ when $\Pr(t_1)\in[\tfrac13,\tfrac23]$.</p>
     <div class="block def mt">
-      <div class="bt">Cheap talk (Farrell 1993)</div>
+      <div class="bt">Cheap talk &mdash; Farrell-type example, in the version of Reny (2026)</div>
       <div class="bb">Unique equilibrium outcome: pooling on $C$, both types get $2$. "I'm $t_1$" is credible — $t_1$ would get $3$, $t_2$ would get $1$, the receiver plays $U$. <span class="alert">No neologism-proof equilibrium.</span></div>
     </div>
   </div>
@@ -1300,10 +1314,13 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
     </ul>
     <div class="block accent mt">
       <div class="bt">So "I'm $t_1$; play $U$" is a credible neologism against every IC direct mechanism</div>
-      <div class="bb">By Theorems 2–3, <b>no equilibrium of any protocol is confession-proof.</b></div>
+      <div class="bb">By Theorems 1&ndash;2, <b>no equilibrium of any protocol is confession-proof.</b></div>
     </div>
     <p class="muted">Confession-proofness is a Farrell-type test and inherits Farrell's non-existence. The mediator does not help.</p>
   </div>
+  <aside class="notes">
+    Same strict self-selection convention as the application: $t_2$ is indifferent to imitating "I am $t_1$; play $U$", and the speech is still credible. Under the alternative rule (indifferent outsiders block) the tight mechanism $t_1\mapsto\tfrac12U+\tfrac14C+\tfrac14D$, $t_2\mapsto\tfrac12C+\tfrac12D$ would defeat non-existence.
+  </aside>
 </section>
 
 <!-- ─────────────── CONCLUSION (to be filled) ─────────────── -->
@@ -1311,13 +1328,12 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
   <h1>Conclusion</h1>
   <div class="body">
     <ul class="groups">
-      <li><b>Incentive compatibility is not enough.</b> A sender can change her behavior inside the protocol and explain it outside. Robustness requires ruling out credible confessions.</li>
-      <li><b>Expert advice: accuracy versus concealment.</b> With weak career concerns, concealing expertise can require less accurate decisions. Strong career concerns can protect concealment by making the expert's speech attractive to the quack.</li>
-      <li><b>One sender: a neologism test.</b> Under belief-free credibility, every credible confession has a neologism counterpart, and direct mechanisms suffice.</li>
+      <li><b>Incentive compatibility is not enough</b> when participants can talk outside the protocol. A sender can change her behavior inside the protocol and explain it outside. Robustness requires ruling out credible confessions.</li>
+      <li><b>Expert advice.</b> Under weak career concerns, concealing expertise can require less accurate decisions. Strong career concerns can help concealment by making the expert's speech attractive to the quack.</li>
+      <li><b>One sender.</b> The revelation principle survives, and every credible confession has a neologism counterpart.</li>
       <li><b>Multiple senders: protocol details matter.</b> Richer message spaces and more receiver information can undermine credibility by making speeches attractive to outsiders.</li>
     </ul>
-    <p class="center alert mt-lg"><em>Design the protocol with the speeches it makes credible in mind.</em></p>
-    <p class="center" style="font-size:24px">Thank you!</p>
+    <p class="center mt-lg" style="font-size:24px">Thank you!</p>
   </div>
 </section>
 
@@ -1332,20 +1348,20 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
 <section class="slide" id="app-ic-alpha">
   <h1>Truthfulness and Obedience <span class="muted">(general $\alpha$)</span></h1>
   <div class="body">
-    <p>The designer has an extra instrument: <span class="alert">punish inconsistent reports</span>.</p>
-    <ul>
-      <li>Obedience and expert truthfulness: untouched.</li>
-    </ul>
+    <p>The designer has an extra instrument: <span class="alert">punish inconsistent reports</span>. Obedience and expert truthfulness are untouched.</p>
     <div class="block accent">
       <div class="bt">Quack truthfulness</div>
-      <div class="bb">
-        $$U_Q \;\ge\; \tilde{x}(\alpha) + \frac{B}{2}$$
-        where $\tilde{x}(\alpha)$ is the precision of the recommended action when the expert tells the truth and the quack pretends to be the expert.
+      <div class="bb">$U_Q \;\ge\; \tilde{x}(\alpha) + \tfrac{B}{2}$, where $\tilde{x}(\alpha)$ is the accuracy of the recommended action when the expert tells the truth and the quack pretends to be the expert.</div>
+    </div>
+    <div class="block def">
+      <div class="bt">Derivation of $\tilde{x}(\alpha)$</div>
+      <div class="bb rows">
+        <div>Both claim the expert role; the expert reports truthfully. The quack's signal is noise, so the reports <b>coincide with probability $\tfrac12$</b>, independently of the state.</div>
+        <div><b>Coincide:</b> the action follows the common report w.p. $\alpha$; that report is the expert's signal, correct w.p. $p_E$ &mdash; accuracy $\alpha p_E+(1-\alpha)(1-p_E)$. &nbsp;<b>Differ:</b> uniform draw &mdash; accuracy $\tfrac12$.</div>
+        <div class="center">$\tilde{x}(\alpha)\;=\;\tfrac12\big[\alpha\,p_E+(1-\alpha)(1-p_E)\big]+\tfrac14,\qquad\alpha\in[0,1].$</div>
       </div>
     </div>
-    <!-- CHECK: interval derived from the symmetric family with p_Q = 1/2:
-         x̃(α) = ½[α p_E + (1−α)(1−p_E)] + ¼, so x̃(½) = ½ and x̃ ranges over [¾ − p_E/2, ¼ + p_E/2]. -->
-    <p>Note that $\tilde{x}(\alpha)\in\big[\tfrac34-\tfrac{p_E}{2},\;\tfrac14+\tfrac{p_E}{2}\big]$, with $\tilde{x}(\tfrac12)=\tfrac12$.</p>
+    <p class="small">Hence $\tilde{x}(0)=\tfrac34-\tfrac{p_E}{2}$, $\;\tilde{x}(\tfrac12)=\tfrac12$, $\;\tilde{x}(1)=\tfrac14+\tfrac{p_E}{2}$: &nbsp;$\tilde{x}(\alpha)\in\big[\tfrac34-\tfrac{p_E}{2},\;\tfrac14+\tfrac{p_E}{2}\big]$.</p>
   </div>
   <div class="links"><a class="btn back" href="#back">Back</a></div>
 </section>
@@ -1402,6 +1418,66 @@ COLOURS / SIZES   everything is a variable in :root of style.css.
 </section>
 
 <!-- ─────────────── A3: THE SPEECHES WE HAVE SEEN, FORMALLY (check the mapping) ─────────────── -->
+<section class="slide" id="app-def">
+  <h1>Credible Confession in the Application <span class="muted">(1/2)</span></h1>
+  <div class="body">
+    <p class="now">Fix a protocol $\tau$ and its truthful&ndash;obedient equilibrium. Sender $i$'s type is $\theta_i\in\Theta_i=\{E_L,E_R,Q\}$; the receiver's action is $d=(a,\pi)\in A$; $U_i^*(\theta_i)$ is $i$'s equilibrium payoff.</p>
+    <div class="block def">
+      <div class="bt">Confession</div>
+      <div class="bb">A triple $(S,\widehat{\sigma}_i,\widehat{\tau})$: a nonempty set of claimed types $S\subseteq\Theta_i$; a claimed reporting strategy $\widehat{\sigma}_i:S\to\Delta(\Theta_i)$; a proposed response $\widehat{\tau}:A\to\Delta(A)$ to the protocol's recommendation $z$.</div>
+    </div>
+    <div class="block rem">
+      <div class="bt">Beliefs within each claimed role</div>
+      <div class="bb">Let $S_E=S\cap\{E_L,E_R\}$ and $S_Q=S\cap\{Q\}$. For each nonempty $S_r$, the receiver starts from the prior conditional on $\theta_i\in S_r$ &mdash; so $\Pr(E_L\mid S_E)=\Pr(E_R\mid S_E)=\tfrac12$ when both signals are claimed &mdash; and then updates using the recommendation $z$, the claimed strategy $\widehat{\sigma}_i$, and truthful reporting by the other sender.<br>
+        <span class="small">A recommendation $z$ is <em>consistent</em> if it has positive probability under at least one claimed role and $\widehat{\sigma}_i$.</span></div>
+    </div>
+    <p class="small">$V_i(\theta_i,m_i;\widehat{\tau})$: sender $i$'s expected payoff when her type is $\theta_i$, she submits $m_i$, the other sender reports truthfully, and the receiver follows $\widehat{\tau}$.</p>
+  </div>
+  <div class="links"><a class="btn" href="#app-beliefs">Belief convention</a> <a class="btn back" href="#back">Back</a></div>
+</section>
+
+<section class="slide" id="app-def-2">
+  <h1>Credible Confession in the Application <span class="muted">(2/2)</span></h1>
+  <div class="body">
+    <div class="block def now">
+      <div class="bt">The confession $(S,\widehat{\sigma}_i,\widehat{\tau})$ is credible if</div>
+      <div class="bb rows">
+        <div><b>1. Optimal claimed reporting.</b> For every $\theta_i\in S$: $\;\operatorname{supp}\widehat{\sigma}_i(\theta_i)\subseteq\arg\max_{m_i\in\Theta_i}V_i(\theta_i,m_i;\widehat{\tau})$.</div>
+        <div><b>2. Exact self-selection.</b> For every $\theta_i\in\Theta_i$: $\;\max_{m_i\in\Theta_i}V_i(\theta_i,m_i;\widehat{\tau})>U_i^*(\theta_i)\iff\theta_i\in S$.<br>
+          <span class="small muted">Outsiders may change their reports when imitating the confession.</span></div>
+        <div><b>3. Receiver optimality under the signal convention.</b> At every consistent $z$, the response is optimal conditional on <em>each</em> claimed role:
+          $$\operatorname{supp}\widehat{\tau}(z)\;\subseteq\;\bigcap_{r:\,S_r\neq\varnothing}\;\arg\max_{d\in A}\;\mathbb{E}_r^{S,\widehat{\sigma}_i}\!\big[u_0(d,\omega,e)\,\big|\,z\big].$$
+          <span class="small muted">$e$ is the expert's identity. If $z$ has zero probability under a role claim, use that role's distribution before conditioning on $z$.</span></div>
+        <div><b>4. Reversion.</b> At every inconsistent $z$, the receiver follows the original recommendation: $\widehat{\tau}(z)=\delta_z$.</div>
+      </div>
+    </div>
+    <div class="block accent">
+      <div class="bt">Confession-proof</div>
+      <div class="bb">The truthful&ndash;obedient equilibrium is confession-proof under this belief convention if it admits no credible confession.</div>
+    </div>
+  </div>
+  <div class="links"><a class="btn" href="#app-beliefs">Belief convention</a> <a class="btn back" href="#back">Back</a></div>
+</section>
+
+<section class="slide" id="app-beliefs">
+  <h1>Belief Convention for the Application</h1>
+  <div class="body">
+    <p>How does the receiver evaluate a speech "at face value"?</p>
+    <ul>
+      <li>A speech that does not distinguish between the expert's two signal realizations <span class="alert">preserves their equal prior probabilities</span>.</li>
+      <li>The receiver then updates using the <b>protocol's recommendation</b> and the <b>claimed reporting strategy</b>.</li>
+    </ul>
+    <div class="block rem">
+      <div class="bt">Within each claimed role</div>
+      <div class="bb">For $S_r\in\{S_E,S_Q\}$ nonempty, with recommendation $z$, claimed report $\widehat{\sigma}_i$, and the other sender truthful:
+        $$\Pr\big(\theta_i,\theta_{-i},\omega \,\big|\, z,\,S_r,\,\widehat{\sigma}_i\big)\;\propto\;\mu(\theta_i\mid S_r)\,\mu(\theta_{-i},\omega\mid\theta_i)\,\tau\big(z\mid\widehat{\sigma}_i(\theta_i),\theta_{-i}\big).$$
+      </div>
+    </div>
+    <p class="small muted">Bayesian within a role &mdash; the expert's two signals pool at the prior &mdash; and belief-free across roles: the response must be optimal under each claimed role separately. The general results use the fully belief-free test, type by type.</p>
+  </div>
+  <div class="links"><a class="btn back" href="#back">Back</a></div>
+</section>
+
 <section class="slide static" id="app-speeches">
   <h1>The Speeches We Have Seen</h1>
   <div class="body">
