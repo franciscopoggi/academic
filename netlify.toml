@@ -55,3 +55,8 @@
   for = "/files/slides/opc-uchicago-2026-dfb898/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/files/slides/opc-fsu-2026-f4e4c1/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
