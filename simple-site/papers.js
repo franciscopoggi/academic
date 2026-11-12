@@ -16,7 +16,7 @@ var papers = [
     title: "Strategic Concealment in Innovation Races",
     pdf: "files/scir.pdf",
     with: [["Yonggyun Kim", "https://sites.google.com/view/yonggyun-yg-kim/"]],
-    status: "Conditionally accepted at AEJ: Micro",
+    status: "Fothcoming at AEJ:Micro",
     // abstract: "Firms might avoid patenting intermediate innovations, even when this would mean capturing the full social value of the innovation.",
   },
   {
@@ -38,16 +38,17 @@ var papers = [
     // abstract: "Breakthroughs always enhance incentives to work on complementary projects, but only when the timing is endogenous.",
   },
   {
+    title: "Selling (Un)finished Products",
+    pdf: "files/unfinished.pdf",
+    with: [["Jorge Lemus", "https://sites.google.com/site/jorgelemuswebsite/home"]],
+  },
+  {
     title: "Liability Design with Information Acquisition",
     pdf: "files/liability.pdf",
     with: [["Bruno Strulovici", "https://faculty.wcas.northwestern.edu/bhs675/"]],
     // abstract: "How should liability be determined for an agent who acquires information about an unknown risk?",
   },
-  {
-    title: "(Un)finished Products",
-    with: [["Jorge Lemus", "https://sites.google.com/site/jorgelemuswebsite/home"]],
-    status: "Work in progress",
-  },
+
   {
     title: "Off-protocol Communication",
     status: "Work in progress",
