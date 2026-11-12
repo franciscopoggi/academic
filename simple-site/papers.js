@@ -16,7 +16,7 @@ var papers = [
     title: "Strategic Concealment in Innovation Races",
     pdf: "files/scir.pdf",
     with: [["Yonggyun Kim", "https://sites.google.com/view/yonggyun-yg-kim/"]],
-    status: "Fothcoming at AEJ:Micro",
+    status: "Forthcoming at AEJ:Micro",
     // abstract: "Firms might avoid patenting intermediate innovations, even when this would mean capturing the full social value of the innovation.",
   },
   {
